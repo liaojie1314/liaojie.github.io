@@ -465,22 +465,11 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>Welcome to Lj’Blog! This is my <a target="_blank" rel="noopener" href="https://github.com/liaojie1314">github website</a>. </p>
-<h2 id="手机号码正则表达式"><a href="#手机号码正则表达式" class="headerlink" title="手机号码正则表达式"></a>手机号码正则表达式</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ public static final String REGEX_MOBILE_EXACT = <span class="string">&quot;^((13[0-9])|(14[5,7])|(15[0-3,5-9])|(17[0,3,5-8])|(18[0-9])|166|198|199|(147))\\d&#123;8&#125;$&quot;</span>;</span><br></pre></td></tr></table></figure>
+<h2 id="手机号码正则表达式"><a href="#手机号码正则表达式" class="headerlink" title="手机号码正则表达式"></a>手机号码正则表达式</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ public static final String REGEX_MOBILE_EXACT = </span><br><span class="line">  <span class="string">&quot;^((13[0-9])|(14[5,7])|(15[0-3,5-9])|(17[0,3,5-8])|(18[0-9])|166|198|199|(147))\\d&#123;8&#125;$&quot;</span>;</span><br></pre></td></tr></table></figure>
 
 
-<h2 id="声明属性名称和值的类型"><a href="#声明属性名称和值的类型" class="headerlink" title="声明属性名称和值的类型"></a>声明属性名称和值的类型</h2><pre><code>Integer，比如说行数，TextView的maxLine，就是Integer类型
-enum，枚举类型，比如说left,top,bottom,center,right这些是枚举类型
-boolean，布尔类型，比如说layout_alignParentRight
-dimension，尺寸比如说size,margin_left这些，单位为px,dp,sp这些
-color，颜色，比如说background，比如说textColor
-flags，标记，比如说activity声明周期时的configChanges，gravity
-float，浮点数，也就是小数，比如说透明度alpha
-fraction，百分数，比如说动画的开始位置，fromDx
-refrence，引用，比如说background，src，但background可以是color又可以是refrence，
-其实是可以多个，比如说：name=&quot;switch_time&quot; format=&quot;integer|float&quot;，可以是Integer类型，或者float类型
-string，比如说text
-</code></pre>
-<h2 id="获取属性值"><a href="#获取属性值" class="headerlink" title="获取属性值"></a>获取属性值</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$  TypedArray a = context.obtainStyledAttributes(attrs,R.styleable.looper_style);</span><br><span class="line">        //从TypedArray中读取属性值</span><br><span class="line">        //......</span><br><span class="line">        //如：a.getColor(R.styleable.KeypadView_numberColor, context.getResources().getColor(R.color.white));</span><br><span class="line">        a.recycle();</span><br></pre></td></tr></table></figure>
+<h2 id="声明属性名称和值的类型"><a href="#声明属性名称和值的类型" class="headerlink" title="声明属性名称和值的类型"></a>声明属性名称和值的类型</h2><p>Integer，比如说行数，TextView的maxLine，就是Integer类型<br>enum，枚举类型，比如说left,top,bottom,center,right这些是枚举类型<br>boolean，布尔类型，比如说layout_alignParentRight<br>dimension，尺寸比如说size,margin_left这些，单位为px,dp,sp这些<br>color，颜色，比如说background，比如说textColor<br>flags，标记，比如说activity声明周期时的configChanges，gravity<br>float，浮点数，也就是小数，比如说透明度alpha<br>fraction，百分数，比如说动画的开始位置，fromDx<br>refrence，引用，比如说background，src，但background可以是color又可以是refrence，其实是可以多个，比如说：name=”switch_time” format=”integer|float”，可以是Integer类型，或者float类型<br>string，比如说text</p>
+<h2 id="获取属性值"><a href="#获取属性值" class="headerlink" title="获取属性值"></a>获取属性值</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$  TypedArray a = context.obtainStyledAttributes(attrs,R.styleable.looper_style);</span><br><span class="line">   //从TypedArray中读取属性值</span><br><span class="line">   //......</span><br><span class="line">   //如：a.getColor(R.styleable.KeypadView_numberColor, context.getResources().getColor(R.color.white));</span><br><span class="line">   a.recycle();</span><br></pre></td></tr></table></figure>
 
 <h2 id="属性的获取"><a href="#属性的获取" class="headerlink" title="属性的获取"></a>属性的获取</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ app:itemMargin=<span class="string">&quot;4dp&quot;</span></span><br></pre></td></tr></table></figure>
 
