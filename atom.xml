@@ -6,11 +6,11 @@
   <link href="https://liaojie.github.io.git/atom.xml" rel="self"/>
   
   <link href="https://liaojie.github.io.git/"/>
-  <updated>2021-10-18T04:52:39.242Z</updated>
+  <updated>2021-10-19T14:10:19.025Z</updated>
   <id>https://liaojie.github.io.git/</id>
   
   <author>
-    <name>廖杰</name>
+    <name>lj</name>
     
   </author>
   
@@ -21,20 +21,23 @@
     <link href="https://liaojie.github.io.git/2021/10/11/android/"/>
     <id>https://liaojie.github.io.git/2021/10/11/android/</id>
     <published>2021-10-11T15:33:03.028Z</published>
-    <updated>2021-10-18T04:52:39.242Z</updated>
+    <updated>2021-10-19T14:10:19.025Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to Lj’Blog! This is my &lt;a href=&quot;https://github.com/liaojie1314&quot;&gt;github website&lt;/a&gt;. &lt;/p&gt;
-&lt;h2 id=&quot;手机号码正则表达式&quot;&gt;&lt;a href=&quot;#手机号码正则表达式&quot;</summary>
+    <summary type="html">&lt;p&gt;Welcome to Lj’Blog! In this page,we will learn Android together.&lt;br&gt;If you have some trouble, you can send me an e-mail. I will try my</summary>
         
       
     
     
     
+    <category term="Android" scheme="https://liaojie.github.io.git/categories/Android/"/>
+    
+    
+    <category term="Android" scheme="https://liaojie.github.io.git/tags/Android/"/>
     
   </entry>
   
