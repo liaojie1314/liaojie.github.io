@@ -425,14 +425,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    566
+                    2.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    10 分
                 </div>
                 
 
@@ -456,39 +456,228 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>Welcome to Lj’Blog! In this page,we will learn Android together.<br>If you have some trouble, you can send me an e-mail. I will try my best to help you.<br>This is my <a target="_blank" rel="noopener" href="https://github.com/liaojie1314">github website</a>. </p>
-<h3 id="自定义控件"><a href="#自定义控件" class="headerlink" title="自定义控件"></a>自定义控件</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ 自定义组合控件
-  继承自ViewGroup,比如说LinearLayout/RealativeLayout/FrameLayout--<span class="token operator">&gt;</span>定义相关属性,获取相关属性
-  --<span class="token operator">&gt;</span>加载组合的View/根据属性调整UI--<span class="token operator">&gt;</span>处理相关事件/根据属性去处理数据--<span class="token operator">&gt;</span>定义功能接口,对外暴露接口方法
-  --<span class="token operator">&gt;</span>处理事件/数据<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ 自定义ViewGroup
-  继承自ViewGroup--<span class="token operator">&gt;</span>定义相关属性,获取相关属性--<span class="token operator">&gt;</span>把子View添加进来--<span class="token operator">&gt;</span>测量:测量孩子,测量自己<span class="token punctuation">(</span>覆写onMeasure方法<span class="token punctuation">)</span>
-  --<span class="token operator">&gt;</span>布局Layout--<span class="token operator">&gt;</span>定义功能接口--<span class="token operator">&gt;</span>处理事件和数据<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ 自定义view
-  继承自View--<span class="token operator">&gt;</span>定义相关属性,获取相关属性--<span class="token operator">&gt;</span>测量自己--<span class="token operator">&gt;</span>创建相关画笔--<span class="token operator">&gt;</span>覆写onDraw方法,绘制相关内容
-  --<span class="token operator">&gt;</span>定义功能接口--<span class="token operator">&gt;</span>处理相关事件和数据<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="自定义控件"><a href="#自定义控件" class="headerlink" title="自定义控件"></a>自定义控件</h2><pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">$ 自定义组合控件
+  继承自ViewGroup,比如说LinearLayout/RealativeLayout/FrameLayout--&gt;定义相关属性,获取相关属性
+  --&gt;加载组合的View/根据属性调整UI--&gt;处理相关事件/根据属性去处理数据--&gt;定义功能接口,对外暴露接口方法
+  --&gt;处理事件/数据<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">$ 自定义ViewGroup
+  继承自ViewGroup--&gt;定义相关属性,获取相关属性--&gt;把子View添加进来--&gt;测量:测量孩子,测量自己(覆写onMeasure方法)
+  --&gt;布局Layout--&gt;定义功能接口--&gt;处理事件和数据<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">$ 自定义view
+  继承自View--&gt;定义相关属性,获取相关属性--&gt;测量自己--&gt;创建相关画笔--&gt;覆写onDraw方法,绘制相关内容
+  --&gt;定义功能接口--&gt;处理相关事件和数据<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 
-<h2 id="声明属性名称和值的类型"><a href="#声明属性名称和值的类型" class="headerlink" title="声明属性名称和值的类型"></a>声明属性名称和值的类型</h2><p>Integer，比如说行数，TextView的maxLine，就是Integer类型<br>enum，枚举类型，比如说left,top,bottom,center,right这些是枚举类型<br>boolean，布尔类型，比如说layout_alignParentRight<br>dimension，尺寸比如说size,margin_left这些，单位为px,dp,sp这些<br>color，颜色，比如说background，比如说textColor<br>flags，标记，比如说activity声明周期时的configChanges，gravity<br>float，浮点数，也就是小数，比如说透明度alpha<br>fraction，百分数，比如说动画的开始位置，fromDx<br>refrence，引用，比如说background，src，但background可以是color又可以是refrence，其实是可以多个，比如说：name=”switch_time” format=”integer|float”，可以是Integer类型，或者float类型<br>string，比如说text</p>
-<h2 id="获取属性值"><a href="#获取属性值" class="headerlink" title="获取属性值"></a>获取属性值</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$  TypedArray a <span class="token operator">=</span> context.obtainStyledAttributes<span class="token punctuation">(</span>attrs,R.styleable.looper_style<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<h3 id="属性添加"><a href="#属性添加" class="headerlink" title="属性添加"></a>属性添加</h3><p>1.声明属性名称和值的类型<br>在res/values文件下新建一个属性xml文件,如attrs.xml,然后在属性文件里添加<declare-styleable>标签,并声明属性</declare-styleable></p>
+<pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">&lt;declare-styleable name="InputNumberView"&gt;
+    &lt;attr name="max" format="integer" /&gt;
+    &lt;attr name="min" format="integer" /&gt;
+    &lt;attr name="step" format="integer" /&gt;
+    &lt;attr name="defaultValue" format="integer" /&gt;
+    &lt;attr name="disable" format="boolean" /&gt;
+    &lt;attr name="btnBackground" format="reference" /&gt;
+    &lt;attr name="valueSize" format="dimension" /&gt;
+    &lt;attr name="function" format="flags"&gt;
+        &lt;flag name="delete" value="0x30"/&gt;
+        &lt;flag name="read" value="0x50"/&gt;
+        &lt;flag name="top" value="0x03"/&gt;
+    &lt;/attr&gt;
+&lt;/declare-styleable&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Integer，比如说行数，TextView的maxLine，就是Integer类型<br>enum，枚举类型，比如说left,top,bottom,center,right这些是枚举类型<br>boolean，布尔类型，比如说layout_alignParentRight<br>dimension，尺寸比如说size,margin_left这些，单位为px,dp,sp这些<br>color，颜色，比如说background，比如说textColor<br>flags，标记，比如说activity声明周期时的configChanges，gravity<br>float，浮点数，也就是小数，比如说透明度alpha<br>fraction，百分数，比如说动画的开始位置，fromDx<br>refrence，引用，比如说background，src，但background可以是color又可以是refrence，其实是可以多个，比如说：name=”switch_time” format=”integer|float”，可以是Integer类型，或者float类型<br>string，比如说text</p>
+<p>2.获取属性值</p>
+<pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">$  TypedArray a = context.obtainStyledAttributes(attrs,R.styleable.looper_style);
    //从TypedArray中读取属性值
-   //<span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span>
-   //如：a.getColor<span class="token punctuation">(</span>R.styleable.KeypadView_numberColor, context.getResources<span class="token punctuation">(</span><span class="token punctuation">)</span>.getColor<span class="token punctuation">(</span>R.color.white<span class="token punctuation">))</span><span class="token punctuation">;</span>
-   a.recycle<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+   //......
+   //如：a.getColor(R.styleable.KeypadView_numberColor, context.getResources().getColor(R.color.white));
+   a.recycle();<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="属性的获取"><a href="#属性的获取" class="headerlink" title="属性的获取"></a>属性的获取</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ app:itemMargin<span class="token operator">=</span><span class="token string">"4dp"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>3.属性的获取</p>
+<pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">$ app:itemMargin="4dp"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
+<h3 id="自定义控件基本绘制原理"><a href="#自定义控件基本绘制原理" class="headerlink" title="自定义控件基本绘制原理"></a>自定义控件基本绘制原理</h3><p>View的绘制基本上由measure()、layout()、draw()三个函数完成<br>1.测量-Measure过程是计算视图大小，View measure过程相关方法主要有三个:</p>
+<pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">public final void measure(int widthMeasureSpec, int heightMeasureSpec)  
+protected final void setMeasuredDimension(int measuredWidth, int measuredHeight)  
+protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>measure调用onMeasure,onMeasure测量宽度、高度然后调用setMeasureDimension保存测量结果,measure,setMeasureDimension是final类型,view的子类不需要重写,onMeasure在view的子类中重写.<br>关于MeasureSpec的三个值：</p>
+<p>(1) UPSPECIFIED ：未指定模式，父容器对于子容器没有任何限制,子容器想要多大就多大，通常在绘制自定义View时才会用</p>
+<p>(2) EXACTLY：精确值模式，父容器已经为子容器设置了尺寸,子容器应当服从这些边界,不论子容器想要多大的空间，当控件的layout_width和layout_height属性指定为具体数值或match_parent时为该模式。</p>
+<p>(3) AT_MOST：最大值模式，子容器可以是声明大小内的任意大小，当空间的宽高设置为wrap_content时为该模式</p>
+<p>2.布局-Layout过程用于设置视图在屏幕中显示的位置，View layout过程相关方法主要要三个:</p>
+<pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">public void layout(int l, int t, int r, int b)
+protected boolean setFrame(int left, int top, int right, int bottom)
+protected void onLayout(boolean changed, int left, int top, int right, int bottom)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>layout通过调用setFrame（l,t,r,b），l,t,r,b即子视图在父视图中的具体位置，onLayout一般只会在自定义ViewGroup中才会使用</p>
+<p>3.绘制-draw过程主要用于利用前两步得到的参数，将视图显示在屏幕上，到这里也就完成了整个的视图绘制工作:</p>
+<pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">public void draw(Canvas canvas)
+protected void onDraw(Canvas canvas)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>通过调用draw函数进行视图绘制,在View类中onDraw函数是个空函数,最终的绘制需求需要在自定义的onDraw函数中进行实现,比如ImageView完成图片的绘制,如果自定义ViewGroup这个函数则不需要重载.</p>
+<h3 id="给自定义控件添加事件"><a href="#给自定义控件添加事件" class="headerlink" title="给自定义控件添加事件"></a>给自定义控件添加事件</h3><p>1.获取自定义控件坐标<br>1.view获取自身坐标：getLeft(),getTop(),getRight(),getBottom()<br>getTop：获取到的是view自身的顶边到其父布局顶边的距离<br>getLeft：获取到的是view自身的左边到其父布局左边的距离<br>getRight：获取到的是view自身的右边到其父布局左边的距离<br>getBottom：获取到的是view自身的底边到其父布局顶边的距离<br>2.view获取自身宽高：getHeight(),getWidth()<br>3.motionEvent获取坐标：getX(),getY(),getRawX(),getRawY()<br>getX()：获取点击事件相对控件左边的x轴坐标，即点击事件距离控件左边的距离<br>getY()：获取点击事件相对控件顶边的y轴坐标，即点击事件距离控件顶边的距离<br>getRawX()：获取点击事件相对整个屏幕左边的x轴坐标，即点击事件距离整个屏幕左边的距离<br>getRawY()：获取点击事件相对整个屏幕顶边的y轴坐标，即点击事件距离整个屏幕顶边的距离</p>
+<p>2.计算控件左上角坐标,当按下控件移动的时候,计算偏移距离,重新绘制</p>
+<pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">public class SimpleView extends View {
+    //画笔
+    private Paint mPaint;
+    private RectF oval;
+    //事件处理
+    private EventHandle mEventHandle;
+    //鼠标按下位置
+    private int startX,startY;
+    //按下鼠标时控件的位置
+    private int startLeft,startTop;
+    //状态栏高度
+    int statusHeight = 0;
+    public SimpleView(Context context) {
+        this(context,null);
+        //统一入口
+    }
+ 
+    public SimpleView(Context context, @Nullable AttributeSet attrs) {
+        this(context, attrs,0);
+        //统一入口
+    }
+ 
+    public SimpleView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        init();
+    }
+ 
+    private void init(){
+        mPaint = new Paint();
+        //设置是否使用抗锯齿功能，会消耗较大资源，绘制图形速度会变慢。
+        mPaint.setAntiAlias(true);
+        mPaint.setTextSize(30.0f);
+        oval=new RectF();
+        mEventHandle=null;
+        startY=startX=0;
+        int resourceId = this.getResources().getIdentifier("status_bar_height", "dimen", "android");
+        if (resourceId &gt; 0) {
+            statusHeight = this.getResources().getDimensionPixelSize(resourceId);
+        }
+    }
+ 
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        int widthMode = MeasureSpec.getMode(widthMeasureSpec);
+        int widthSize = MeasureSpec.getSize(widthMeasureSpec);
+        int heightMode = MeasureSpec.getMode(heightMeasureSpec);
+        int heightSize = MeasureSpec.getSize(heightMeasureSpec);
+        switch (widthMode) {
+            case MeasureSpec.EXACTLY:
+                //精确值模式，当控件的layout_width和layout_height属性指定为具体数值或match_parent时。
+                break;
+            case MeasureSpec.AT_MOST:
+                //最大值模式，当空间的宽高设置为wrap_content时。
+                break;
+            case MeasureSpec.UNSPECIFIED:
+                //未指定模式，View想多大就多大，通常在绘制自定义View时才会用。
+                break;
+        }
+        //取最小边为控件的宽高的最小值
+        int minWidth=widthSize&gt;heightSize?heightSize:widthSize;
+        setMeasuredDimension(minWidth,minWidth);
+    }
+ 
+ 
+    @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+        mPaint.setColor(Color.GRAY);
+        // FILL填充, STROKE描边,FILL_AND_STROKE填充和描边
+        mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
+        int with = getWidth();
+        int height = getHeight();
+        float radius = with / 2-5;
+        canvas.drawCircle(with / 2, with / 2, radius, mPaint);
+        mPaint.setColor(Color.RED);
+        oval.set(with / 2 - radius, with / 2 - radius, with / 2
+                + radius, with / 2 + radius);//用于定义的圆弧的形状和大小的界限
+        int sweepAngle=120;
+        canvas.drawArc(oval, 0, -sweepAngle, true, mPaint);  //根据进度画圆弧
+        double percent=sweepAngle/360.0;
+        //设置文本颜色
+        mPaint.setColor(Color.WHITE);
+        //绘制文本百分比数据
+        canvas.drawText(String.format("%.2f",percent)+"%",(float)(with/2+radius*Math.cos(sweepAngle*Math.PI/360)/4)
+                ,(float)(with/2-radius*Math.sin(sweepAngle*Math.PI/360)/3),mPaint);
+        canvas.drawText(String.format("%.2f",1-percent)+"%",(float)(with/2-radius*Math.cos(sweepAngle*Math.PI/360))
+                ,(float)(with/2+radius*Math.sin(sweepAngle*Math.PI/360)/3),mPaint);
+    }
+ 
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        switch (event.getAction())
+        {
+            case MotionEvent.ACTION_DOWN:
+ 
+                startX=(int)event.getRawX();
+                startY=(int)event.getRawY();
+                startLeft=(int)(startX-event.getX());
+                /**
+                 * 这里startTop计算有些偏离，原因在于计算时加入了标题栏和状态栏的高度
+                 * 注意：要是你的Activity没有去掉标题栏，这里还要去掉标题栏的高度
+                 */
+                startTop= (int)(startY-event.getY())-statusHeight;//减去状态栏高度
+                break;
+            case MotionEvent.ACTION_MOVE:
+                if(mEventHandle!=null)
+                {
+                    mEventHandle.onTouchEvent(event);
+                }else{
+                    int disX=(int)event.getRawX()-startX;//计算偏移的X坐标
+                    int disY=(int)event.getRawY()-startY;//计算偏移的Y坐标;
+                    int left=startLeft+disX;
+                    int top=startTop+disY;
+                    //更新控件位置
+                    layout(left,top,left+getWidth(),top+getHeight());
+                }
+                break;
+            case MotionEvent.ACTION_UP:
+                break;
+        }
+        //返回true表示不消耗此事件，事件继续传递，返回flase表示事件消耗
+        return true;
+    }
+ 
+    public void setmEventHandle(EventHandle mEventHandle) {
+        this.mEventHandle = mEventHandle;
+    }
+ 
+    interface EventHandle{
+        public void onTouchEvent(MotionEvent event);
+    }
+}
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>XML文件中添加:</p>
+<pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">&lt;com.example.myapplication.SimpleView
+  android:layout_width="150dp"
+  android:layout_height="150dp"/&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>注意:MainActivity需要将标题栏去掉,否则拖动的时候会出现偏差,在onCreate中添加</p>
+<pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">requestWindowFeature(Window.FEATURE_NO_TITLE);//去掉标题栏
+/*
+  requestWindowFeature(Window.FEATURE_NO_TITLE)无效解决方法：
+  正常情况下requestWindowFeature(Window.FEATURE_NO_TITLE)是可以生效的，
+  但是当Activity继承子AppCompatActivity的时候,这个就失效了 
+  解决办法：
+  1、手动在oncreate里调用hide()
+  if (getSupportActionBar() != null){
+     getSupportActionBar().hide();
+  }
+*/
+if (getSupportActionBar() != null){
+    getSupportActionBar().hide();
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-
-<h1 id="手机号码正则表达式"><a href="#手机号码正则表达式" class="headerlink" title="手机号码正则表达式"></a>手机号码正则表达式</h1><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ public static final String REGEX_MOBILE_EXACT <span class="token operator">=</span> 
-  <span class="token string">"^<span class="token variable"><span class="token punctuation">((</span><span class="token number">13</span>[<span class="token number">0</span><span class="token operator">-</span><span class="token number">9</span>]<span class="token punctuation">)</span><span class="token operator">|</span><span class="token punctuation">(</span><span class="token number">14</span>[<span class="token number">5</span><span class="token punctuation">,</span><span class="token number">7</span>]<span class="token punctuation">)</span><span class="token operator">|</span><span class="token punctuation">(</span><span class="token number">15</span>[<span class="token number">0</span><span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token operator">-</span><span class="token number">9</span>]<span class="token punctuation">)</span><span class="token operator">|</span><span class="token punctuation">(</span><span class="token number">17</span>[<span class="token number">0</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token operator">-</span><span class="token number">8</span>]<span class="token punctuation">)</span><span class="token operator">|</span><span class="token punctuation">(</span><span class="token number">18</span>[<span class="token number">0</span><span class="token operator">-</span><span class="token number">9</span>]<span class="token punctuation">)</span><span class="token operator">|</span><span class="token number">166</span><span class="token operator">|</span><span class="token number">198</span><span class="token operator">|</span><span class="token number">199</span><span class="token operator">|</span><span class="token punctuation">(</span><span class="token number">147</span><span class="token punctuation">))</span></span><span class="token entity" title="\\">\\</span>d{8}$"</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h1 id="手机号码正则表达式"><a href="#手机号码正则表达式" class="headerlink" title="手机号码正则表达式"></a>手机号码正则表达式</h1><pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">$ public static final String REGEX_MOBILE_EXACT = 
+  "^((13[0-9])|(14[5,7])|(15[0-3,5-9])|(17[0,3,5-8])|(18[0-9])|166|198|199|(147))\\d{8}$";<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <h1 id="Android单位转换工具类"><a href="#Android单位转换工具类" class="headerlink" title="Android单位转换工具类"></a>Android单位转换工具类</h1><p>如果要在代码里直接填写尺寸，一般是px，如果要做好屏幕适配，我们通常使用dp作为单位</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ public class SizeUtils <span class="token punctuation">{</span>
-    public static int dip2px<span class="token punctuation">(</span>Context context,float dpValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        float scale <span class="token operator">=</span> context.getResources<span class="token punctuation">(</span><span class="token punctuation">)</span>.getDisplayMetrics<span class="token punctuation">(</span><span class="token punctuation">)</span>.density<span class="token punctuation">;</span>
-        <span class="token builtin class-name">return</span> <span class="token punctuation">(</span>int<span class="token punctuation">)</span> <span class="token punctuation">(</span>dpValue * scale + <span class="token number">0</span>.5f<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">$ public class SizeUtils {
+    public static int dip2px(Context context,float dpValue) {
+        float scale = context.getResources().getDisplayMetrics().density;
+        return (int) (dpValue * scale + 0.5f);
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -959,7 +1148,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">991</span>&nbsp;字
+                class="white-color">2.7k</span>&nbsp;字
             
             
             

@@ -429,7 +429,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    387
+                    397
                 </div>
                 
 
@@ -460,62 +460,62 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>Welcome to Lj’Blog! In this page,we will learn Android together.<br>If you have some trouble, you can send me an e-mail. I will try my best to help you.<br>This is my <a target="_blank" rel="noopener" href="https://github.com/liaojie1314">github website</a>. </p>
-<h3 id="Jetpack"><a href="#Jetpack" class="headerlink" title="Jetpack"></a>Jetpack</h3><p>优点:<br>1.体现了单一原则<br>2.分层清晰<br>3.不需要非常依赖Activity<br>4.旋转数据不会丢失<br>…</p>
-<h2 id="ViewModel"><a href="#ViewModel" class="headerlink" title="ViewModel"></a>ViewModel</h2><p>以注重生命周期的方式管理界面相关的数据(管理UI数据)</p>
-<h2 id="LiveData"><a href="#LiveData" class="headerlink" title="LiveData"></a>LiveData</h2><p>source:<br>1.首先定义一个LiveData实例<br>2.观察LiveData数据变化,变化时将数据展示到TextView上<br>3.改变LiveData里面的数据,数据变化时会回调onChanged()方法</p>
+<h2 id="Jetpack"><a href="#Jetpack" class="headerlink" title="Jetpack"></a>Jetpack</h2><p>Jetpack+MVVM : Google标准化Jetpack架构模式<br>优点:<br>1.体现了单一原则<br>2.分层清晰<br>3.不需要非常依赖Activity<br>4.旋转数据不会丢失<br>…</p>
+<h3 id="ViewModel"><a href="#ViewModel" class="headerlink" title="ViewModel"></a>ViewModel</h3><p>以注重生命周期的方式管理界面相关的数据(管理UI数据)</p>
+<h3 id="LiveData"><a href="#LiveData" class="headerlink" title="LiveData"></a>LiveData</h3><p>source:<br>1.首先定义一个LiveData实例<br>2.观察LiveData数据变化,变化时将数据展示到TextView上<br>3.改变LiveData里面的数据,数据变化时会回调onChanged()方法</p>
 <p>在底层数据库更改时通知视图(感应改变数据),UI刷新(LiveData+DataBinding)</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">public class MainViewModel extend /*ViewModel*/AndroidViewModel<span class="token punctuation">{</span>
+<pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">public class MainViewModel extend /*ViewModel*/AndroidViewModel{
   //ViewModel 无环境
   //AndroidViewModel 有环境 需重写构造函数
-  private Context context<span class="token punctuation">;</span>
-  public MainViewModel<span class="token punctuation">(</span>@NonNull Application application<span class="token punctuation">)</span>
-  <span class="token punctuation">{</span>
-    super<span class="token punctuation">(</span>application<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    context <span class="token operator">=</span> application<span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-	private MutableLiveData<span class="token operator">&lt;</span>String<span class="token operator">&gt;</span><span class="token function-name function">info</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-		info.setValue<span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>//默认值
-		<span class="token builtin class-name">return</span> info<span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
+  private Context context;
+  public MainViewModel(@NonNull Application application)
+  {
+    super(application);
+    context = application;
+  }
+	private MutableLiveData&lt;String&gt;info(){
+		info.setValue("");//默认值
+		return info;
+	}
+}
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="DataBinding"><a href="#DataBinding" class="headerlink" title="DataBinding"></a>DataBinding</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">//DataBinding的引入<span class="token punctuation">(</span>在build.gradle<span class="token punctuation">(</span>:app<span class="token punctuation">)</span>中添加<span class="token punctuation">)</span>:
-方式一:
-  dataBinding<span class="token punctuation">{</span>
-  	enabled <span class="token boolean">true</span>
-  <span class="token punctuation">}</span>
+<h3 id="DataBinding"><a href="#DataBinding" class="headerlink" title="DataBinding"></a>DataBinding</h3><p>//DataBinding的引入(在build.gradle(:app)中添加):</p>
+<pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">方式一:
+  dataBinding{
+  	enabled true
+  }
 方式二:
-  dataBinding.enabled<span class="token operator">=</span>true
-//添加后同步
-//使用:<span class="token punctuation">(</span>整个布局交给DataBinding管理<span class="token punctuation">)</span>
-<span class="token operator">&lt;</span>Layout xmlns:android<span class="token operator">=</span><span class="token string">"http://schemas.android.com/apk/res/android"</span><span class="token operator">&gt;</span>
-    <span class="token operator">&lt;</span><span class="token operator">!</span>-- 和类交互 --<span class="token operator">&gt;</span>
-    <span class="token operator">&lt;</span>data<span class="token operator">&gt;</span>
-          <span class="token operator">&lt;</span>variable
-               <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">"name"</span>
-               <span class="token assign-left variable">type</span><span class="token operator">=</span><span class="token string">"包名+类名"</span>/<span class="token operator">&gt;</span>
-    <span class="token operator">&lt;</span>/data<span class="token operator">&gt;</span>  
-    //使用:android:text<span class="token operator">=</span><span class="token string">"@{name.info}"</span>  
-    //android:onClick<span class="token operator">=</span><span class="token string">"@{()-&gt;name.function(value)}"</span>       
-    所有布局<span class="token punctuation">..</span>.
-<span class="token operator">&lt;</span>/Layout<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+  dataBinding.enabled=true
+//添加后需同步
+//使用:(整个布局交给DataBinding管理)
+&lt;Layout xmlns:android="http://schemas.android.com/apk/res/android"&gt;
+    &lt;!-- 和类交互 --&gt;
+    &lt;data&gt;
+          &lt;variable
+               name="name"
+               type="包名+类名"/&gt;
+    &lt;/data&gt;  
+    //使用:android:text="@{name.info}"  
+    //android:onClick="@{()-&gt;name.function(value)}"       
+    所有布局...
+&lt;/Layout&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>MainActivity需要做绑定工作</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">private ActivityMainBinding binding<span class="token punctuation">;</span>
-private MainViewModel mainViewModel<span class="token punctuation">;</span>
+<pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">private ActivityMainBinding binding;
+private MainViewModel mainViewModel;
 //onCreate中添加
-binding <span class="token operator">=</span> DataBindingUtil.setContentView<span class="token punctuation">(</span>this,R.layout.activity_main<span class="token punctuation">)</span><span class="token punctuation">;</span>
+binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
 //AndroidViewModel
-mainViewModel <span class="token operator">=</span> new ViewModelProvider<span class="token punctuation">(</span>this,new ViewModelProvider.AndroidViewModelFactory<span class="token punctuation">(</span>getApplication<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">)</span>.get<span class="token punctuation">(</span>MainViewModel.class<span class="token punctuation">)</span><span class="token punctuation">;</span>
+mainViewModel = new ViewModelProvider(this,new ViewModelProvider.AndroidViewModelFactory(getApplication())).get(MainViewModel.class);
 //ViewModel
-mainViewModel <span class="token operator">=</span> new ViewModelProvider<span class="token punctuation">(</span>this,new ViewModelProvider.NewInstanceFactory<span class="token punctuation">(</span><span class="token punctuation">))</span>.get<span class="token punctuation">(</span>MainViewModel.class<span class="token punctuation">)</span><span class="token punctuation">;</span>
+mainViewModel = new ViewModelProvider(this,new ViewModelProvider.NewInstanceFactory()).get(MainViewModel.class);
 //绑定工作
-binding.setName<span class="token punctuation">(</span>mainViewModel<span class="token punctuation">)</span><span class="token punctuation">;</span>
+binding.setName(mainViewModel);
 //建立感应
-binding.setLifecycleOwner<span class="token punctuation">(</span>this<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+binding.setLifecycleOwner(this);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>注意：非Activity启动需要加标记.</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">Intent intent <span class="token operator">=</span> new Intent<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-intent.setFlags<span class="token punctuation">(</span>Intent.FLAG_ACTIVITY_NEW_TASK<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">Intent intent = new Intent();
+intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -995,7 +995,7 @@ intent.setFlags<span class="token punctuation">(</span>Intent.FLAG_ACTIVITY_NEW_
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">991</span>&nbsp;字
+                class="white-color">2.7k</span>&nbsp;字
             
             
             
