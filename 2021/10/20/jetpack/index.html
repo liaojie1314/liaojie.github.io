@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Android开源库之Jetpack, Hexo">
-    <meta name="description" content="">
+    <meta name="keywords" content="Android开源库之Jetpack, Android,Java,Python,C language,C#,C++,HTML,CSS,JavaScript,JQuery,Vue.js等">
+    <meta name="description" content="今古诸事,激荡中流,宏图待看新秀">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -163,7 +163,7 @@
         <div class="logo-name">Hexo</div>
         <div class="logo-desc">
             
-            Never really desperate, only the lost of the soul.
+            今古诸事,激荡中流,宏图待看新秀
             
         </div>
     </div>
@@ -422,14 +422,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-10-21
+                    2021-10-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    401
+                    403
                 </div>
                 
 
@@ -460,12 +460,16 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>Welcome to Lj’Blog! In this page,we will learn Android together.<br>If you have some trouble, you can send me an e-mail. I will try my best to help you.<br>This is my <a target="_blank" rel="noopener" href="https://github.com/liaojie1314">github website</a>. </p>
-<h2 id="Jetpack"><a href="#Jetpack" class="headerlink" title="Jetpack"></a>Jetpack</h2><p>Jetpack+MVVM : Google标准化Jetpack架构模式<br>优点:<br>1.体现了单一原则<br>2.分层清晰<br>3.不需要非常依赖Activity<br>4.旋转数据不会丢失<br>…</p>
+<h2 id="Jetpack"><a href="#Jetpack" class="headerlink" title="Jetpack"></a>Jetpack</h2><p>Jetpack+MVVM : Google标准化Jetpack架构模式</p>
+<p>优点:<br>1.体现了单一原则<br>2.分层清晰<br>3.不需要非常依赖Activity<br>4.旋转数据不会丢失<br>…</p>
 <p><a target="_blank" rel="noopener" href="https://developer.android.google.cn/jetpack">官方文档</a></p>
 <h3 id="ViewModel"><a href="#ViewModel" class="headerlink" title="ViewModel"></a>ViewModel</h3><p>以注重生命周期的方式管理界面相关的数据(管理UI数据)</p>
-<h3 id="LiveData"><a href="#LiveData" class="headerlink" title="LiveData"></a>LiveData</h3><p>source:<br>1.首先定义一个LiveData实例<br>2.观察LiveData数据变化,变化时将数据展示到TextView上<br>3.改变LiveData里面的数据,数据变化时会回调onChanged()方法</p>
+<h3 id="LiveData"><a href="#LiveData" class="headerlink" title="LiveData"></a>LiveData</h3><p>source:</p>
+<p>1.首先定义一个LiveData实例</p>
+<p>2.观察LiveData数据变化,变化时将数据展示到TextView上</p>
+<p>3.改变LiveData里面的数据,数据变化时会回调onChanged()方法</p>
 <p>在底层数据库更改时通知视图(感应改变数据),UI刷新(LiveData+DataBinding)</p>
-<pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">public class MainViewModel extend /*ViewModel*/AndroidViewModel{
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">public class MainViewModel extend /*ViewModel*/AndroidViewModel{
   //ViewModel 无环境
   //AndroidViewModel 有环境 需重写构造函数
   private Context context;
@@ -482,15 +486,15 @@
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h3 id="DataBinding"><a href="#DataBinding" class="headerlink" title="DataBinding"></a>DataBinding</h3><p>//DataBinding的引入(在build.gradle(:app)中添加):</p>
-<pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">方式一:
+<pre class="line-numbers language-gradle(:app)" data-language="gradle(:app)"><code class="language-gradle(:app)">方式一:
   dataBinding{
   	enabled true
   }
 方式二:
-  dataBinding.enabled=true
-//添加后需同步
-//使用:(整个布局交给DataBinding管理)
-&lt;Layout xmlns:android="http://schemas.android.com/apk/res/android"&gt;
+  dataBinding.enabled=true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>添加后需同步<br>使用:(整个布局交给DataBinding管理)</p>
+<pre class="line-numbers language-XML" data-language="XML"><code class="language-XML">&lt;Layout xmlns:android="http://schemas.android.com/apk/res/android"&gt;
     &lt;!-- 和类交互 --&gt;
     &lt;data&gt;
           &lt;variable
@@ -500,9 +504,10 @@
     //使用:android:text="@{name.info}"  
     //android:onClick="@{()-&gt;name.function(value)}"       
     所有布局...
-&lt;/Layout&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&lt;/Layout&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 <p>MainActivity需要做绑定工作</p>
-<pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">private ActivityMainBinding binding;
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">private ActivityMainBinding binding;
 private MainViewModel mainViewModel;
 //onCreate中添加
 binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
@@ -514,8 +519,9 @@ mainViewModel = new ViewModelProvider(this,new ViewModelProvider.NewInstanceFact
 binding.setName(mainViewModel);
 //建立感应
 binding.setLifecycleOwner(this);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 <p>注意：非Activity启动需要加标记.</p>
-<pre class="line-numbers language-Android" data-language="Android"><code class="language-Android">Intent intent = new Intent();
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">Intent intent = new Intent();
 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
                 
             </div>
@@ -742,6 +748,28 @@ intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);<span aria-hidden="true" class="l
 
     
 
+    
+    <div class="livere-card card" data-aos="fade-up">
+    <!-- 来必力City版安装代码 -->
+    <div id="lv-container" class="card-content" data-id="city" data-uid="MTAyMC81NDUzMy8zMTAwNA==">
+        <script type="text/javascript">
+            (function (d, s) {
+                let j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') {
+                    return;
+                }
+
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript。</noscript>
+    </div>
+    <!-- City版安装代码已完成 -->
+</div>
     
 
     
@@ -1216,6 +1244,12 @@ $(function () {
     <script src="/liaojie.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
     <script src="/liaojie.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/liaojie.github.io/js/matery.js"></script>
+    <script type="text/javascript">
+    var OriginTitile=document.title,st;
+    document.addEventListener("visibilitychange",function(){
+        document.hidden?(document.title="ヽ(●-`Д´-)ノ你要玩捉迷藏嘛",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3))
+    })
+    </script>
 
     <!-- Baidu Analytics -->
 
