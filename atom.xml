@@ -6,7 +6,7 @@
   <link href="https://liaojie.github.io.git/atom.xml" rel="self"/>
   
   <link href="https://liaojie.github.io.git/"/>
-  <updated>2021-10-23T16:24:50.060Z</updated>
+  <updated>2021-10-24T10:37:01.415Z</updated>
   <id>https://liaojie.github.io.git/</id>
   
   <author>
@@ -21,8 +21,16 @@
     <link href="https://liaojie.github.io.git/2021/10/24/android-si-da-zu-jian-zhi-fu-wu/"/>
     <id>https://liaojie.github.io.git/2021/10/24/android-si-da-zu-jian-zhi-fu-wu/</id>
     <published>2021-10-23T16:23:07.659Z</published>
-    <updated>2021-10-23T16:24:50.060Z</updated>
+    <updated>2021-10-24T10:37:01.415Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Service是Android</summary>
+        
+      
     
     
     
@@ -38,8 +46,16 @@
     <link href="https://liaojie.github.io.git/2021/10/24/android-si-da-zu-jian-zhi-activity/"/>
     <id>https://liaojie.github.io.git/2021/10/24/android-si-da-zu-jian-zhi-activity/</id>
     <published>2021-10-23T16:22:52.954Z</published>
-    <updated>2021-10-23T16:24:47.352Z</updated>
+    <updated>2021-10-24T11:19:02.392Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Activity是Android的四大组件之一.是用户操作的可视化界面,它为用户提供了一个完成操作指令的窗口.当我们创建完毕Activity之后,需要调用setContentView()方法来完成界面的显示以此来为用户提供交互的入口.在Android</summary>
+        
+      
     
     
     
@@ -55,8 +71,16 @@
     <link href="https://liaojie.github.io.git/2021/10/24/android-si-da-zu-jian-zhi-guang-bo/"/>
     <id>https://liaojie.github.io.git/2021/10/24/android-si-da-zu-jian-zhi-guang-bo/</id>
     <published>2021-10-23T16:21:56.993Z</published>
-    <updated>2021-10-23T16:24:52.018Z</updated>
+    <updated>2021-10-24T10:33:26.370Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在Android中,Broadcast是一种广泛运用的在应用程序之间传输信息的机制.我们拿广播电台来做个比方.我们平常使用收音机收音是这样的:许许多多不同的广播电台通过特定的频率来发送他们的内容,而我们用户只需要将频率调成和广播电台的一样就可以收听他们的内容了.Androi</summary>
+        
+      
     
     
     
@@ -72,8 +96,16 @@
     <link href="https://liaojie.github.io.git/2021/10/23/android-si-da-zu-jian-zhi-nei-rong-ti-gong-zhe/"/>
     <id>https://liaojie.github.io.git/2021/10/23/android-si-da-zu-jian-zhi-nei-rong-ti-gong-zhe/</id>
     <published>2021-10-23T15:18:13.357Z</published>
-    <updated>2021-10-23T15:20:03.959Z</updated>
+    <updated>2021-10-24T11:18:39.992Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;ContentProvider(内容提供者)作为Android中的四大组件之一,但是在一般的开发中,使用比较少.ContentProvider为不同的软件之间数据共享提供统一的接口.而且ContentProvider是以类似数据库中表的方式将数据暴露,也就是说Content</summary>
+        
+      
     
     
     
@@ -89,14 +121,14 @@
     <link href="https://liaojie.github.io.git/2021/10/20/jetpack/"/>
     <id>https://liaojie.github.io.git/2021/10/20/jetpack/</id>
     <published>2021-10-20T09:44:23.234Z</published>
-    <updated>2021-10-23T15:52:24.124Z</updated>
+    <updated>2021-10-24T11:18:49.674Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to Lj’Blog! In this page,we will learn Android together.&lt;br&gt;If you have some trouble, you can send me an e-mail. I will try my</summary>
+    <summary type="html">&lt;h5 id=&quot;什么是Jetpack&quot;&gt;&lt;a href=&quot;#什么是Jetpack&quot; class=&quot;headerlink&quot; title=&quot;什么是Jetpack?&quot;&gt;&lt;/a&gt;什么是Jetpack?&lt;/h5&gt;&lt;p&gt;Jetpack 是一个丰富的组件库,它的组件库按类别分为 4</summary>
         
       
     
@@ -116,14 +148,14 @@
     <link href="https://liaojie.github.io.git/2021/10/19/c/"/>
     <id>https://liaojie.github.io.git/2021/10/19/c/</id>
     <published>2021-10-19T14:27:17.429Z</published>
-    <updated>2021-10-20T15:03:22.277Z</updated>
+    <updated>2021-10-24T11:17:48.628Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to Lj’Blog! In this page,we will learn C language together.&lt;br&gt;If you have some trouble, you can send me an e-mail. I will try</summary>
+    <summary type="html">&lt;p&gt;C语言是一种计算机程序设计语言.它既具有高级语言的特点.又具有汇编语言的特点,它由美国贝尔研究所的D.M.Ritchie于1972年推出.1978后,C语言已先后被移植到大、中、小及微型机上.它可以作为工作系统设计语言,编写系统应用程序,也可以作为应用程序设计语言,编写不依</summary>
         
       
     
@@ -141,14 +173,14 @@
     <link href="https://liaojie.github.io.git/2021/10/11/android/"/>
     <id>https://liaojie.github.io.git/2021/10/11/android/</id>
     <published>2021-10-11T15:33:03.028Z</published>
-    <updated>2021-10-23T15:22:23.917Z</updated>
+    <updated>2021-10-24T11:18:11.700Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to Lj’Blog! In this page,we will learn Android together.&lt;br&gt;If you have some trouble, you can send me an e-mail. I will try my</summary>
+    <summary type="html">&lt;p&gt;自定义控件概念:Android中组件必须是View的直接子类或间接的子类,其中View有一个ViewGroup的子类,用于定义容器,(FrameLayout,LinearLayout,都是ViewGroup的子类).如果组件中还有子组件,就是从ViewGroup类继承,否则</summary>
         
       
     
