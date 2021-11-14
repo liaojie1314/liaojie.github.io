@@ -6,7 +6,7 @@
   <link href="https://liaojie.github.io.git/atom.xml" rel="self"/>
   
   <link href="https://liaojie.github.io.git/"/>
-  <updated>2021-11-12T12:17:28.071Z</updated>
+  <updated>2021-11-14T11:06:17.413Z</updated>
   <id>https://liaojie.github.io.git/</id>
   
   <author>
@@ -17,15 +17,76 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>SpringCloud</title>
+    <title>launchMode</title>
+    <link href="https://liaojie.github.io.git/2021/11/14/launchmode/"/>
+    <id>https://liaojie.github.io.git/2021/11/14/launchmode/</id>
+    <published>2021-11-14T11:00:00.000Z</published>
+    <updated>2021-11-14T11:06:17.413Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;activity&gt; 的</summary>
+        
+      
+    
+    
+    
+    <category term="Android" scheme="https://liaojie.github.io.git/categories/Android/"/>
+    
+    
+    <category term="Android" scheme="https://liaojie.github.io.git/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Quartus</title>
+    <link href="https://liaojie.github.io.git/2021/11/14/quartus/"/>
+    <id>https://liaojie.github.io.git/2021/11/14/quartus/</id>
+    <published>2021-11-14T09:42:43.000Z</published>
+    <updated>2021-11-14T09:43:02.949Z</updated>
+    
+    
+    
+    
+    
+    <category term="Quartus" scheme="https://liaojie.github.io.git/tags/Quartus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Machine Learning</title>
+    <link href="https://liaojie.github.io.git/2021/11/14/machinelearning/"/>
+    <id>https://liaojie.github.io.git/2021/11/14/machinelearning/</id>
+    <published>2021-11-14T09:36:12.000Z</published>
+    <updated>2021-11-14T09:44:01.634Z</updated>
+    
+    
+    
+    
+    <category term="Python" scheme="https://liaojie.github.io.git/categories/Python/"/>
+    
+    
+    <category term="Python" scheme="https://liaojie.github.io.git/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java学习之SpringCloud</title>
     <link href="https://liaojie.github.io.git/2021/11/12/springcloud/"/>
     <id>https://liaojie.github.io.git/2021/11/12/springcloud/</id>
     <published>2021-11-12T12:17:27.000Z</published>
-    <updated>2021-11-12T12:17:28.071Z</updated>
+    <updated>2021-11-14T09:41:22.247Z</updated>
     
     
     
     
+    <category term="Java" scheme="https://liaojie.github.io.git/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="https://liaojie.github.io.git/tags/Java/"/>
     
   </entry>
   
@@ -34,7 +95,7 @@
     <link href="https://liaojie.github.io.git/2021/11/10/android-qi-dong-ye/"/>
     <id>https://liaojie.github.io.git/2021/11/10/android-qi-dong-ye/</id>
     <published>2021-11-10T04:35:00.000Z</published>
-    <updated>2021-11-12T16:05:55.696Z</updated>
+    <updated>2021-11-14T09:38:32.347Z</updated>
     
     
       
@@ -60,8 +121,8 @@
     <title>Android四大组件之服务</title>
     <link href="https://liaojie.github.io.git/2021/10/24/android-si-da-zu-jian-zhi-fu-wu/"/>
     <id>https://liaojie.github.io.git/2021/10/24/android-si-da-zu-jian-zhi-fu-wu/</id>
-    <published>2021-10-23T16:23:07.659Z</published>
-    <updated>2021-10-29T12:29:16.281Z</updated>
+    <published>2021-10-24T15:00:00.000Z</published>
+    <updated>2021-11-14T09:39:46.724Z</updated>
     
     
       
@@ -82,36 +143,11 @@
   </entry>
   
   <entry>
-    <title>Android四大组件之Activity</title>
-    <link href="https://liaojie.github.io.git/2021/10/24/android-si-da-zu-jian-zhi-activity/"/>
-    <id>https://liaojie.github.io.git/2021/10/24/android-si-da-zu-jian-zhi-activity/</id>
-    <published>2021-10-23T16:22:52.954Z</published>
-    <updated>2021-11-07T14:20:41.575Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Activity是Android的四大组件之一.是用户操作的可视化界面,它为用户提供了一个完成操作指令的窗口.当我们创建完毕Activity之后,需要调用setContentView()方法来完成界面的显示以此来为用户提供交互的入口.在Android</summary>
-        
-      
-    
-    
-    
-    <category term="Android" scheme="https://liaojie.github.io.git/categories/Android/"/>
-    
-    
-    <category term="Android" scheme="https://liaojie.github.io.git/tags/Android/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Android四大组件之广播</title>
     <link href="https://liaojie.github.io.git/2021/10/24/android-si-da-zu-jian-zhi-guang-bo/"/>
     <id>https://liaojie.github.io.git/2021/10/24/android-si-da-zu-jian-zhi-guang-bo/</id>
-    <published>2021-10-23T16:21:56.993Z</published>
-    <updated>2021-11-10T09:58:33.104Z</updated>
+    <published>2021-10-24T13:00:00.000Z</published>
+    <updated>2021-11-14T09:39:30.693Z</updated>
     
     
       
@@ -132,11 +168,36 @@
   </entry>
   
   <entry>
+    <title>Android四大组件之Activity</title>
+    <link href="https://liaojie.github.io.git/2021/10/24/android-si-da-zu-jian-zhi-activity/"/>
+    <id>https://liaojie.github.io.git/2021/10/24/android-si-da-zu-jian-zhi-activity/</id>
+    <published>2021-10-24T02:30:00.000Z</published>
+    <updated>2021-11-14T09:38:52.318Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Activity是Android的四大组件之一.是用户操作的可视化界面,它为用户提供了一个完成操作指令的窗口.当我们创建完毕Activity之后,需要调用setContentView()方法来完成界面的显示以此来为用户提供交互的入口.在Android</summary>
+        
+      
+    
+    
+    
+    <category term="Android" scheme="https://liaojie.github.io.git/categories/Android/"/>
+    
+    
+    <category term="Android" scheme="https://liaojie.github.io.git/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Android四大组件之内容提供者</title>
     <link href="https://liaojie.github.io.git/2021/10/23/android-si-da-zu-jian-zhi-nei-rong-ti-gong-zhe/"/>
     <id>https://liaojie.github.io.git/2021/10/23/android-si-da-zu-jian-zhi-nei-rong-ti-gong-zhe/</id>
-    <published>2021-10-23T15:18:13.357Z</published>
-    <updated>2021-11-10T09:57:06.403Z</updated>
+    <published>2021-10-23T12:35:00.000Z</published>
+    <updated>2021-11-14T09:39:09.771Z</updated>
     
     
       
@@ -160,8 +221,8 @@
     <title>Android开源库之Jetpack</title>
     <link href="https://liaojie.github.io.git/2021/10/20/jetpack/"/>
     <id>https://liaojie.github.io.git/2021/10/20/jetpack/</id>
-    <published>2021-10-20T09:44:23.234Z</published>
-    <updated>2021-11-03T09:34:30.443Z</updated>
+    <published>2021-10-20T02:10:00.000Z</published>
+    <updated>2021-11-14T09:40:11.982Z</updated>
     
     
       
@@ -187,8 +248,8 @@
     <title>C language</title>
     <link href="https://liaojie.github.io.git/2021/10/19/c/"/>
     <id>https://liaojie.github.io.git/2021/10/19/c/</id>
-    <published>2021-10-19T14:27:17.429Z</published>
-    <updated>2021-10-29T12:29:33.025Z</updated>
+    <published>2021-10-19T10:10:00.000Z</published>
+    <updated>2021-11-14T09:39:59.745Z</updated>
     
     
       
@@ -212,8 +273,8 @@
     <title>Android开发之自定义控件</title>
     <link href="https://liaojie.github.io.git/2021/10/11/android/"/>
     <id>https://liaojie.github.io.git/2021/10/11/android/</id>
-    <published>2021-10-11T15:33:03.028Z</published>
-    <updated>2021-10-29T12:34:54.363Z</updated>
+    <published>2021-10-11T04:10:00.000Z</published>
+    <updated>2021-11-14T09:37:40.734Z</updated>
     
     
       
