@@ -6,7 +6,7 @@
   <link href="https://liaojie.github.io.git/atom.xml" rel="self"/>
   
   <link href="https://liaojie.github.io.git/"/>
-  <updated>2021-11-21T14:10:09.878Z</updated>
+  <updated>2021-12-03T15:04:55.916Z</updated>
   <id>https://liaojie.github.io.git/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DataStructure</title>
+    <link href="https://liaojie.github.io.git/2021/11/29/datastructure/"/>
+    <id>https://liaojie.github.io.git/2021/11/29/datastructure/</id>
+    <published>2021-11-29T15:01:00.000Z</published>
+    <updated>2021-12-03T15:04:55.916Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;什么是数据结构？&quot;&gt;&lt;a href=&quot;#什么是数据结构？&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="C" scheme="https://liaojie.github.io.git/categories/C/"/>
+    
+    
+    <category term="数据结构" scheme="https://liaojie.github.io.git/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="C" scheme="https://liaojie.github.io.git/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>python</title>
@@ -76,7 +103,7 @@
     <link href="https://liaojie.github.io.git/2021/11/17/quartus/"/>
     <id>https://liaojie.github.io.git/2021/11/17/quartus/</id>
     <published>2021-11-17T13:45:00.000Z</published>
-    <updated>2021-11-20T07:24:06.605Z</updated>
+    <updated>2021-11-24T14:47:25.966Z</updated>
     
     
       
@@ -124,16 +151,14 @@
     <link href="https://liaojie.github.io.git/2021/11/14/machinelearning/"/>
     <id>https://liaojie.github.io.git/2021/11/14/machinelearning/</id>
     <published>2021-11-14T09:36:12.000Z</published>
-    <updated>2021-11-24T07:50:14.598Z</updated>
+    <updated>2021-11-29T15:06:26.436Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Arthur Samuel对机器学习的定义:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;在没有明确设置的情况下使计算机具有学习能力的研究领域&lt;br&gt;Tom</summary>
+    <summary type="html">&lt;h1 id=&quot;机器学习概述&quot;&gt;&lt;a href=&quot;#机器学习概述&quot; class=&quot;headerlink&quot; title=&quot;机器学习概述&quot;&gt;&lt;/a&gt;机器学习概述&lt;/h1&gt;&lt;h2 id=&quot;什么是机器学习&quot;&gt;&lt;a href=&quot;#什么是机器学习&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -143,6 +168,8 @@
     
     
     <category term="Python" scheme="https://liaojie.github.io.git/tags/Python/"/>
+    
+    <category term="机器学习" scheme="https://liaojie.github.io.git/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -322,7 +349,7 @@
     <link href="https://liaojie.github.io.git/2021/10/19/c/"/>
     <id>https://liaojie.github.io.git/2021/10/19/c/</id>
     <published>2021-10-19T10:10:00.000Z</published>
-    <updated>2021-11-14T09:39:59.745Z</updated>
+    <updated>2021-12-03T06:50:19.655Z</updated>
     
     
       
@@ -335,10 +362,10 @@
     
     
     
-    <category term="C language" scheme="https://liaojie.github.io.git/categories/C-language/"/>
+    <category term="C" scheme="https://liaojie.github.io.git/categories/C/"/>
     
     
-    <category term="C language" scheme="https://liaojie.github.io.git/tags/C-language/"/>
+    <category term="C" scheme="https://liaojie.github.io.git/tags/C/"/>
     
   </entry>
   
