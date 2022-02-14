@@ -6,7 +6,7 @@
   <link href="https://liaojie.github.io.git/atom.xml" rel="self"/>
   
   <link href="https://liaojie.github.io.git/"/>
-  <updated>2021-12-12T12:00:14.929Z</updated>
+  <updated>2022-02-12T14:57:24.472Z</updated>
   <id>https://liaojie.github.io.git/</id>
   
   <author>
@@ -17,148 +17,311 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>TensorFlow</title>
-    <link href="https://liaojie.github.io.git/2021/12/12/tensorflow/"/>
-    <id>https://liaojie.github.io.git/2021/12/12/tensorflow/</id>
-    <published>2021-12-12T11:57:32.000Z</published>
-    <updated>2021-12-12T12:00:14.929Z</updated>
+    <title>AOSP</title>
+    <link href="https://liaojie.github.io.git/2022/02/18/aosp/"/>
+    <id>https://liaojie.github.io.git/2022/02/18/aosp/</id>
+    <published>2022-02-18T02:00:00.000Z</published>
+    <updated>2022-02-12T14:57:24.472Z</updated>
     
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;AOSP&lt;br&gt;相关网站&lt;/p&gt;
+&lt;p&gt;官方地址&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Android" scheme="https://liaojie.github.io.git/categories/Android/"/>
+    
+    
+    <category term="AOSP" scheme="https://liaojie.github.io.git/tags/AOSP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jQuery</title>
+    <link href="https://liaojie.github.io.git/2022/02/12/jquery/"/>
+    <id>https://liaojie.github.io.git/2022/02/12/jquery/</id>
+    <published>2022-02-11T16:11:51.000Z</published>
+    <updated>2022-02-11T16:11:51.617Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>WebAPI</title>
+    <link href="https://liaojie.github.io.git/2022/02/12/webapi/"/>
+    <id>https://liaojie.github.io.git/2022/02/12/webapi/</id>
+    <published>2022-02-11T16:10:00.000Z</published>
+    <updated>2022-02-12T08:48:02.290Z</updated>
+    
+    
+    
+    
+    <category term="web前端" scheme="https://liaojie.github.io.git/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="WebAPI" scheme="https://liaojie.github.io.git/tags/WebAPI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>移动web开发</title>
+    <link href="https://liaojie.github.io.git/2022/02/12/yi-dong-web-kai-fa/"/>
+    <id>https://liaojie.github.io.git/2022/02/12/yi-dong-web-kai-fa/</id>
+    <published>2022-02-11T16:09:39.000Z</published>
+    <updated>2022-02-13T15:01:42.313Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;移动web开发之rem布局&quot;&gt;&lt;a href=&quot;#移动web开发之rem布局&quot; class=&quot;headerlink&quot; title=&quot;移动web开发之rem布局&quot;&gt;&lt;/a&gt;移动web开发之rem布局&lt;/h1&gt;&lt;h3 id=&quot;rem基础&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="web前端" scheme="https://liaojie.github.io.git/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="移动web" scheme="https://liaojie.github.io.git/tags/%E7%A7%BB%E5%8A%A8web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Flex伸缩布局</title>
+    <link href="https://liaojie.github.io.git/2022/02/12/flex-shen-suo-bu-ju/"/>
+    <id>https://liaojie.github.io.git/2022/02/12/flex-shen-suo-bu-ju/</id>
+    <published>2022-02-11T16:09:09.000Z</published>
+    <updated>2022-02-13T13:49:55.538Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;移动web开发流式布局&quot;&gt;&lt;a href=&quot;#移动web开发流式布局&quot; class=&quot;headerlink&quot; title=&quot;移动web开发流式布局&quot;&gt;&lt;/a&gt;移动web开发流式布局&lt;/h1&gt;&lt;h2 id=&quot;1-移动端基础&quot;&gt;&lt;a href=&quot;#1-移动端基础&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="web前端" scheme="https://liaojie.github.io.git/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="Flex伸缩布局" scheme="https://liaojie.github.io.git/tags/Flex%E4%BC%B8%E7%BC%A9%E5%B8%83%E5%B1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Matplotlib</title>
+    <link href="https://liaojie.github.io.git/2022/02/12/matplotlib/"/>
+    <id>https://liaojie.github.io.git/2022/02/12/matplotlib/</id>
+    <published>2022-02-11T16:06:12.000Z</published>
+    <updated>2022-02-14T10:51:52.820Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Matplotlib&quot;&gt;&lt;a href=&quot;#Matplotlib&quot; class=&quot;headerlink&quot; title=&quot;Matplotlib&quot;&gt;&lt;/a&gt;Matplotlib&lt;/h1&gt;&lt;h2 id=&quot;Matplotlib之HelloWorld&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>RL</title>
+    <link href="https://liaojie.github.io.git/2022/02/12/rl/"/>
+    <id>https://liaojie.github.io.git/2022/02/12/rl/</id>
+    <published>2022-02-11T16:05:37.000Z</published>
+    <updated>2022-02-11T16:05:37.082Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Theano</title>
+    <link href="https://liaojie.github.io.git/2022/02/12/theano/"/>
+    <id>https://liaojie.github.io.git/2022/02/12/theano/</id>
+    <published>2022-02-11T16:05:09.000Z</published>
+    <updated>2022-02-11T16:05:09.459Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>tkinter</title>
+    <link href="https://liaojie.github.io.git/2022/02/12/tkinter/"/>
+    <id>https://liaojie.github.io.git/2022/02/12/tkinter/</id>
+    <published>2022-02-11T16:04:20.000Z</published>
+    <updated>2022-02-13T16:06:48.935Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;什么是-Tkinter&quot;&gt;&lt;a href=&quot;#什么是-Tkinter&quot; class=&quot;headerlink&quot; title=&quot;什么是 Tkinter&quot;&gt;&lt;/a&gt;什么是 Tkinter&lt;/h1&gt;&lt;h2 id=&quot;简单介绍&quot;&gt;&lt;a href=&quot;#简单介绍&quot;</summary>
+        
+      
     
     
     
     <category term="Python" scheme="https://liaojie.github.io.git/categories/Python/"/>
     
     
-    <category term="Python" scheme="https://liaojie.github.io.git/tags/Python/"/>
-    
-    <category term="机器学习" scheme="https://liaojie.github.io.git/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="TensorFlow" scheme="https://liaojie.github.io.git/tags/TensorFlow/"/>
+    <category term="tkinter" scheme="https://liaojie.github.io.git/tags/tkinter/"/>
     
   </entry>
   
   <entry>
-    <title>Keras</title>
-    <link href="https://liaojie.github.io.git/2021/12/12/keras/"/>
-    <id>https://liaojie.github.io.git/2021/12/12/keras/</id>
-    <published>2021-12-12T11:56:42.000Z</published>
-    <updated>2021-12-12T11:59:35.547Z</updated>
+    <title>Threading</title>
+    <link href="https://liaojie.github.io.git/2022/02/12/threading/"/>
+    <id>https://liaojie.github.io.git/2022/02/12/threading/</id>
+    <published>2022-02-11T16:03:32.000Z</published>
+    <updated>2022-02-11T16:03:32.433Z</updated>
     
     
     
     
-    <category term="Python" scheme="https://liaojie.github.io.git/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://liaojie.github.io.git/tags/Python/"/>
-    
-    <category term="机器学习" scheme="https://liaojie.github.io.git/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="Keras" scheme="https://liaojie.github.io.git/tags/Keras/"/>
     
   </entry>
   
   <entry>
-    <title>Scikit-Learn</title>
-    <link href="https://liaojie.github.io.git/2021/12/12/scikit-learn/"/>
-    <id>https://liaojie.github.io.git/2021/12/12/scikit-learn/</id>
-    <published>2021-12-12T11:55:51.000Z</published>
-    <updated>2021-12-12T14:39:10.536Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;多种多样的机器学习&quot;&gt;&lt;a href=&quot;#多种多样的机器学习&quot; class=&quot;headerlink&quot; title=&quot;多种多样的机器学习&quot;&gt;&lt;/a&gt;多种多样的机器学习&lt;/h2&gt;&lt;p&gt;通常来说, 机器学习的方法包括:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;监督学习</summary>
-        
-      
+    <title>python爬虫</title>
+    <link href="https://liaojie.github.io.git/2022/02/12/python-pa-chong/"/>
+    <id>https://liaojie.github.io.git/2022/02/12/python-pa-chong/</id>
+    <published>2022-02-11T16:03:03.000Z</published>
+    <updated>2022-02-11T16:03:03.204Z</updated>
     
     
     
-    <category term="Python" scheme="https://liaojie.github.io.git/categories/Python/"/>
     
-    
-    <category term="Python" scheme="https://liaojie.github.io.git/tags/Python/"/>
-    
-    <category term="机器学习" scheme="https://liaojie.github.io.git/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="Scikit-Learn" scheme="https://liaojie.github.io.git/tags/Scikit-Learn/"/>
     
   </entry>
   
   <entry>
-    <title>DataStructure</title>
-    <link href="https://liaojie.github.io.git/2021/11/29/datastructure/"/>
-    <id>https://liaojie.github.io.git/2021/11/29/datastructure/</id>
-    <published>2021-11-29T15:01:00.000Z</published>
-    <updated>2021-12-12T09:22:33.772Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;什么是数据结构？&quot;&gt;&lt;a href=&quot;#什么是数据结构？&quot; class=&quot;headerlink&quot;</summary>
-        
-      
+    <title>NLP</title>
+    <link href="https://liaojie.github.io.git/2022/02/12/nlp/"/>
+    <id>https://liaojie.github.io.git/2022/02/12/nlp/</id>
+    <published>2022-02-11T16:02:27.000Z</published>
+    <updated>2022-02-11T16:02:27.932Z</updated>
     
     
     
-    <category term="C" scheme="https://liaojie.github.io.git/categories/C/"/>
     
-    
-    <category term="数据结构" scheme="https://liaojie.github.io.git/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-    <category term="C" scheme="https://liaojie.github.io.git/tags/C/"/>
     
   </entry>
   
   <entry>
-    <title>python</title>
-    <link href="https://liaojie.github.io.git/2021/11/21/python/"/>
-    <id>https://liaojie.github.io.git/2021/11/21/python/</id>
-    <published>2021-11-21T14:03:12.000Z</published>
-    <updated>2021-11-21T14:10:09.878Z</updated>
+    <title>H5C3进阶</title>
+    <link href="https://liaojie.github.io.git/2022/02/12/h5c3-jin-jie/"/>
+    <id>https://liaojie.github.io.git/2022/02/12/h5c3-jin-jie/</id>
+    <published>2022-02-11T16:00:00.000Z</published>
+    <updated>2022-02-12T08:47:02.397Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/liaojie1314/PicGo/images/python1.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img</summary>
+    <summary type="html">&lt;h2 id=&quot;part-1&quot;&gt;&lt;a href=&quot;#part-1&quot; class=&quot;headerlink&quot; title=&quot;part 1&quot;&gt;&lt;/a&gt;part 1&lt;/h2&gt;&lt;h3 id=&quot;一、什么是HTML5&quot;&gt;&lt;a href=&quot;#一、什么是HTML5&quot;</summary>
         
       
     
     
     
-    <category term="Python" scheme="https://liaojie.github.io.git/categories/Python/"/>
+    <category term="web前端" scheme="https://liaojie.github.io.git/categories/web%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="Python" scheme="https://liaojie.github.io.git/tags/Python/"/>
+    <category term="HTML5" scheme="https://liaojie.github.io.git/tags/HTML5/"/>
+    
+    <category term="CSS3" scheme="https://liaojie.github.io.git/tags/CSS3/"/>
     
   </entry>
   
   <entry>
-    <title>Android网络编程</title>
-    <link href="https://liaojie.github.io.git/2021/11/20/android-wang-luo-bian-cheng/"/>
-    <id>https://liaojie.github.io.git/2021/11/20/android-wang-luo-bian-cheng/</id>
-    <published>2021-11-20T07:27:51.000Z</published>
-    <updated>2021-11-24T08:03:25.782Z</updated>
+    <title>github</title>
+    <link href="https://liaojie.github.io.git/2022/02/08/github/"/>
+    <id>https://liaojie.github.io.git/2022/02/08/github/</id>
+    <published>2022-02-08T06:33:03.000Z</published>
+    <updated>2022-02-11T07:13:02.050Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;什么是网络编程?&lt;/p&gt;
-&lt;p&gt;网络编程从大的方面就是说对信息的发送接收。&lt;/p&gt;
-&lt;p&gt;通过操作相应API调度计算机资源硬件，并且利用管道(网线)进行数据交互的过程。&lt;/p&gt;
-&lt;p&gt;更为具体的涉及：网络模型、套接字、数据包&lt;/p&gt;
-&lt;h2 id=&quot;文件下载&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;h2 id=&quot;github&quot;&gt;&lt;a href=&quot;#github&quot; class=&quot;headerlink&quot; title=&quot;github&quot;&gt;&lt;/a&gt;github&lt;/h2&gt;&lt;h3 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="github" scheme="https://liaojie.github.io.git/categories/github/"/>
+    
+    
+    <category term="github" scheme="https://liaojie.github.io.git/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AndroidStudio技巧</title>
+    <link href="https://liaojie.github.io.git/2022/01/26/androidstudio-ji-qiao/"/>
+    <id>https://liaojie.github.io.git/2022/01/26/androidstudio-ji-qiao/</id>
+    <published>2022-01-26T15:47:26.000Z</published>
+    <updated>2022-02-12T10:04:42.328Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;代码管理&quot;&gt;&lt;a href=&quot;#代码管理&quot; class=&quot;headerlink&quot; title=&quot;代码管理&quot;&gt;&lt;/a&gt;代码管理&lt;/h2&gt;&lt;p&gt;代码管理的话，要先安装git&lt;/p&gt;
+&lt;h3 id=&quot;Android-Studio开启版本管理&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Android数据库</title>
+    <link href="https://liaojie.github.io.git/2022/01/26/android-shu-ju-ku/"/>
+    <id>https://liaojie.github.io.git/2022/01/26/android-shu-ju-ku/</id>
+    <published>2022-01-26T15:46:29.000Z</published>
+    <updated>2022-02-05T16:47:24.294Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;创建数据库&quot;&gt;&lt;a href=&quot;#创建数据库&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -169,133 +332,43 @@
     
     <category term="Android" scheme="https://liaojie.github.io.git/tags/Android/"/>
     
-  </entry>
-  
-  <entry>
-    <title>Quartus</title>
-    <link href="https://liaojie.github.io.git/2021/11/17/quartus/"/>
-    <id>https://liaojie.github.io.git/2021/11/17/quartus/</id>
-    <published>2021-11-17T13:45:00.000Z</published>
-    <updated>2021-11-24T14:47:25.966Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot; title=&quot;下载&quot;&gt;&lt;/a&gt;下载&lt;/h2&gt;&lt;p&gt;一、官网下载(可下载Windows,linux版本. 需注册):&lt;br&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-    <category term="Quartus" scheme="https://liaojie.github.io.git/tags/Quartus/"/>
+    <category term="SQL" scheme="https://liaojie.github.io.git/tags/SQL/"/>
     
   </entry>
   
   <entry>
-    <title>launchMode</title>
-    <link href="https://liaojie.github.io.git/2021/11/14/launchmode/"/>
-    <id>https://liaojie.github.io.git/2021/11/14/launchmode/</id>
-    <published>2021-11-14T11:00:00.000Z</published>
-    <updated>2021-11-14T11:12:58.530Z</updated>
+    <title>adb</title>
+    <link href="https://liaojie.github.io.git/2022/01/26/adb/"/>
+    <id>https://liaojie.github.io.git/2022/01/26/adb/</id>
+    <published>2022-01-26T15:45:57.000Z</published>
+    <updated>2022-02-05T16:56:16.833Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;activity 的</summary>
+    <summary type="html">&lt;p&gt;ADB是什么？&lt;/p&gt;
+&lt;p&gt;ADB是android debug bridge–&amp;gt; 安卓调试桥&lt;/p&gt;
+&lt;h2 id=&quot;下载&quot;&gt;&lt;a href=&quot;#下载&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
     
-    <category term="Android" scheme="https://liaojie.github.io.git/categories/Android/"/>
+    <category term="adb" scheme="https://liaojie.github.io.git/categories/adb/"/>
     
     
-    <category term="Android" scheme="https://liaojie.github.io.git/tags/Android/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Machine Learning</title>
-    <link href="https://liaojie.github.io.git/2021/11/14/machinelearning/"/>
-    <id>https://liaojie.github.io.git/2021/11/14/machinelearning/</id>
-    <published>2021-11-14T09:36:12.000Z</published>
-    <updated>2021-12-11T10:29:26.127Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;机器学习概述&quot;&gt;&lt;a href=&quot;#机器学习概述&quot; class=&quot;headerlink&quot; title=&quot;机器学习概述&quot;&gt;&lt;/a&gt;机器学习概述&lt;/h1&gt;&lt;h2 id=&quot;什么是机器学习&quot;&gt;&lt;a href=&quot;#什么是机器学习&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Python" scheme="https://liaojie.github.io.git/categories/Python/"/>
-    
-    
-    <category term="Python" scheme="https://liaojie.github.io.git/tags/Python/"/>
-    
-    <category term="机器学习" scheme="https://liaojie.github.io.git/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java学习之SpringCloud</title>
-    <link href="https://liaojie.github.io.git/2021/11/12/springcloud/"/>
-    <id>https://liaojie.github.io.git/2021/11/12/springcloud/</id>
-    <published>2021-11-12T12:17:27.000Z</published>
-    <updated>2021-11-14T09:41:22.247Z</updated>
-    
-    
-    
-    
-    <category term="Java" scheme="https://liaojie.github.io.git/categories/Java/"/>
-    
-    
-    <category term="Java" scheme="https://liaojie.github.io.git/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android启动页</title>
-    <link href="https://liaojie.github.io.git/2021/11/10/android-qi-dong-ye/"/>
-    <id>https://liaojie.github.io.git/2021/11/10/android-qi-dong-ye/</id>
-    <published>2021-11-10T04:35:00.000Z</published>
-    <updated>2021-11-14T09:38:32.347Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Android中几乎所有app都有启动页这一基本功能,但是用途都不相同。&lt;br&gt;有的app的启动页用于加载广告,有的启动页用于加载后台,一旦后台数据加载好了才把启动页去了,不过想来很多app是两者兼顾的。&lt;br&gt;需求:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;展示 logo</summary>
-        
-      
-    
-    
-    
-    <category term="Android" scheme="https://liaojie.github.io.git/categories/Android/"/>
-    
-    
-    <category term="Android" scheme="https://liaojie.github.io.git/tags/Android/"/>
+    <category term="adb" scheme="https://liaojie.github.io.git/tags/adb/"/>
     
   </entry>
   
   <entry>
     <title>Android四大组件之服务</title>
-    <link href="https://liaojie.github.io.git/2021/10/24/android-si-da-zu-jian-zhi-fu-wu/"/>
-    <id>https://liaojie.github.io.git/2021/10/24/android-si-da-zu-jian-zhi-fu-wu/</id>
-    <published>2021-10-24T15:00:00.000Z</published>
-    <updated>2021-11-14T09:39:46.724Z</updated>
+    <link href="https://liaojie.github.io.git/2022/01/25/android-si-da-zu-jian-zhi-fu-wu/"/>
+    <id>https://liaojie.github.io.git/2022/01/25/android-si-da-zu-jian-zhi-fu-wu/</id>
+    <published>2022-01-24T17:00:00.000Z</published>
+    <updated>2022-01-24T17:21:31.815Z</updated>
     
     
       
@@ -316,154 +389,41 @@
   </entry>
   
   <entry>
-    <title>Android四大组件之广播</title>
-    <link href="https://liaojie.github.io.git/2021/10/24/android-si-da-zu-jian-zhi-guang-bo/"/>
-    <id>https://liaojie.github.io.git/2021/10/24/android-si-da-zu-jian-zhi-guang-bo/</id>
-    <published>2021-10-24T13:00:00.000Z</published>
-    <updated>2021-11-14T09:39:30.693Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;在Android中,Broadcast是一种广泛运用的在应用程序之间传输信息的机制.我们拿广播电台来做个比方.我们平常使用收音机收音是这样的:许许多多不同的广播电台通过特定的频率来发送他们的内容,而我们用户只需要将频率调成和广播电台的一样就可以收听他们的内容了.Androi</summary>
-        
-      
+    <title>微信小程序</title>
+    <link href="https://liaojie.github.io.git/2022/01/22/wei-xin-xiao-cheng-xu/"/>
+    <id>https://liaojie.github.io.git/2022/01/22/wei-xin-xiao-cheng-xu/</id>
+    <published>2022-01-22T04:05:15.000Z</published>
+    <updated>2022-01-22T04:05:15.693Z</updated>
     
     
     
-    <category term="Android" scheme="https://liaojie.github.io.git/categories/Android/"/>
     
-    
-    <category term="Android" scheme="https://liaojie.github.io.git/tags/Android/"/>
     
   </entry>
   
   <entry>
-    <title>Android四大组件之Activity</title>
-    <link href="https://liaojie.github.io.git/2021/10/24/android-si-da-zu-jian-zhi-activity/"/>
-    <id>https://liaojie.github.io.git/2021/10/24/android-si-da-zu-jian-zhi-activity/</id>
-    <published>2021-10-24T02:30:00.000Z</published>
-    <updated>2021-11-14T09:38:52.318Z</updated>
+    <title>微信公众号</title>
+    <link href="https://liaojie.github.io.git/2022/01/22/wei-xin-gong-zhong-hao/"/>
+    <id>https://liaojie.github.io.git/2022/01/22/wei-xin-gong-zhong-hao/</id>
+    <published>2022-01-22T04:04:53.000Z</published>
+    <updated>2022-02-10T15:52:02.566Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Activity是Android的四大组件之一.是用户操作的可视化界面,它为用户提供了一个完成操作指令的窗口.当我们创建完毕Activity之后,需要调用setContentView()方法来完成界面的显示以此来为用户提供交互的入口.在Android</summary>
+    <summary type="html">&lt;p&gt;订阅号开发(服务号需要企业认证,不适合个人开发)&lt;/p&gt;
+&lt;h2 id=&quot;1-注册微信公众号&quot;&gt;&lt;a href=&quot;#1-注册微信公众号&quot; class=&quot;headerlink&quot; title=&quot;1 注册微信公众号&quot;&gt;&lt;/a&gt;1</summary>
         
       
     
     
     
-    <category term="Android" scheme="https://liaojie.github.io.git/categories/Android/"/>
+    <category term="微信公众号" scheme="https://liaojie.github.io.git/categories/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/"/>
     
     
-    <category term="Android" scheme="https://liaojie.github.io.git/tags/Android/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android四大组件之内容提供者</title>
-    <link href="https://liaojie.github.io.git/2021/10/23/android-si-da-zu-jian-zhi-nei-rong-ti-gong-zhe/"/>
-    <id>https://liaojie.github.io.git/2021/10/23/android-si-da-zu-jian-zhi-nei-rong-ti-gong-zhe/</id>
-    <published>2021-10-23T12:35:00.000Z</published>
-    <updated>2021-11-14T09:39:09.771Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;ContentProvider(内容提供者)作为Android中的四大组件之一,但是在一般的开发中,使用比较少.ContentProvider为不同的软件之间数据共享提供统一的接口.而且ContentProvider是以类似数据库中表的方式将数据暴露,也就是说Content</summary>
-        
-      
-    
-    
-    
-    <category term="Android" scheme="https://liaojie.github.io.git/categories/Android/"/>
-    
-    
-    <category term="Android" scheme="https://liaojie.github.io.git/tags/Android/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android开源库之Jetpack</title>
-    <link href="https://liaojie.github.io.git/2021/10/20/jetpack/"/>
-    <id>https://liaojie.github.io.git/2021/10/20/jetpack/</id>
-    <published>2021-10-20T02:10:00.000Z</published>
-    <updated>2021-11-14T09:40:11.982Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h5 id=&quot;什么是Jetpack&quot;&gt;&lt;a href=&quot;#什么是Jetpack&quot; class=&quot;headerlink&quot; title=&quot;什么是Jetpack?&quot;&gt;&lt;/a&gt;什么是Jetpack?&lt;/h5&gt;&lt;p&gt;Jetpack 是一个丰富的组件库,它的组件库按类别分为 4</summary>
-        
-      
-    
-    
-    
-    <category term="Android" scheme="https://liaojie.github.io.git/categories/Android/"/>
-    
-    
-    <category term="Android" scheme="https://liaojie.github.io.git/tags/Android/"/>
-    
-    <category term="Jetpack" scheme="https://liaojie.github.io.git/tags/Jetpack/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C language</title>
-    <link href="https://liaojie.github.io.git/2021/10/19/c/"/>
-    <id>https://liaojie.github.io.git/2021/10/19/c/</id>
-    <published>2021-10-19T10:10:00.000Z</published>
-    <updated>2021-12-03T06:50:19.655Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;C语言是一种计算机程序设计语言.它既具有高级语言的特点.又具有汇编语言的特点,它由美国贝尔研究所的D.M.Ritchie于1972年推出.1978后,C语言已先后被移植到大、中、小及微型机上.它可以作为工作系统设计语言,编写系统应用程序,也可以作为应用程序设计语言,编写不依</summary>
-        
-      
-    
-    
-    
-    <category term="C" scheme="https://liaojie.github.io.git/categories/C/"/>
-    
-    
-    <category term="C" scheme="https://liaojie.github.io.git/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android开发之自定义控件</title>
-    <link href="https://liaojie.github.io.git/2021/10/11/android/"/>
-    <id>https://liaojie.github.io.git/2021/10/11/android/</id>
-    <published>2021-10-11T04:10:00.000Z</published>
-    <updated>2021-11-24T07:45:51.043Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;自定义控件概念:Android中组件必须是View的直接子类或间接的子类,其中View有一个ViewGroup的子类,用于定义容器,(FrameLayout,LinearLayout,都是ViewGroup的子类).如果组件中还有子组件,就是从ViewGroup类继承,否则</summary>
-        
-      
-    
-    
-    
-    <category term="Android" scheme="https://liaojie.github.io.git/categories/Android/"/>
-    
-    
-    <category term="Android" scheme="https://liaojie.github.io.git/tags/Android/"/>
+    <category term="微信公众号" scheme="https://liaojie.github.io.git/tags/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/"/>
     
   </entry>
   

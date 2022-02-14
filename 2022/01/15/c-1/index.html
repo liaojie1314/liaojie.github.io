@@ -1,0 +1,2759 @@
+<!DOCTYPE HTML><html lang="zh-CN"><head><meta charset="utf-8"><meta name="keywords" content="C#, Android,Java,Python,C language,C#,C++,HTML,CSS,JavaScript,JQuery,Vue.js等"><meta name="description" content="成功的信念在人脑中的作用就如闹钟,会在你需要时将你唤醒"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="renderer" content="webkit|ie-stand|ie-comp"><meta name="mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>C# | Lj&#39;blog</title><link rel="icon" type="image/png" href="/liaojie.github.io/medias/dog.png"><link rel="stylesheet" type="text/css" href="/liaojie.github.io/libs/awesome/css/all.css"><link rel="stylesheet" type="text/css" href="/liaojie.github.io/libs/materialize/materialize.min.css"><link rel="stylesheet" type="text/css" href="/liaojie.github.io/libs/aos/aos.css"><link rel="stylesheet" type="text/css" href="/liaojie.github.io/libs/animate/animate.min.css"><link rel="stylesheet" type="text/css" href="/liaojie.github.io/libs/lightGallery/css/lightgallery.min.css"><link rel="stylesheet" type="text/css" href="/liaojie.github.io/css/matery.css"><link rel="stylesheet" type="text/css" href="/liaojie.github.io/css/my.css"><script src="/liaojie.github.io/libs/jquery/jquery.min.js"></script><meta name="generator" content="Hexo 5.4.0"><style>.github-emoji{position:relative;display:inline-block;width:1.2em;min-height:1.2em;overflow:hidden;vertical-align:top;color:transparent}.github-emoji>span{position:relative;z-index:10}.github-emoji .fancybox,.github-emoji img{margin:0!important;padding:0!important;border:none!important;outline:0!important;text-decoration:none!important;user-select:none!important;cursor:auto!important}.github-emoji img{height:1.2em!important;width:1.2em!important;position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;user-select:none!important;cursor:auto!important}.github-emoji-fallback{color:inherit}.github-emoji-fallback img{opacity:0!important}</style><link rel="alternate" href="/liaojie.github.io/atom.xml" title="Lj'blog" type="application/atom+xml"></head><script type="text/javascript">WIDGET={FID:"1tFpFZ5Mtj"}</script><script type="text/javascript">var windowWidth=$(window).width();768<windowWidth&&document.write('<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"><\/script>')</script><body><header class="navbar-fixed"><nav id="headNav" class="bg-color nav-transparent"><div id="navContainer" class="nav-wrapper container"><div class="brand-logo"><a href="/liaojie.github.io/" class="waves-effect waves-light"><div><img src="/liaojie.github.io/medias/loading.gif" data-original="/liaojie.github.io/medias/ljlogo.png" class="logo-img" alt="LOGO"> <span class="logo-span">Lj'blog</span></div></a></div><a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a><ul class="right nav-menu"><li class="hide-on-med-and-down nav-item"><a href="/liaojie.github.io/" class="waves-effect waves-light"><i class="fas fa-home" style="zoom:.6"></i> <span>首页</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/liaojie.github.io/tags" class="waves-effect waves-light"><i class="fas fa-tags" style="zoom:.6"></i> <span>标签</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/liaojie.github.io/categories" class="waves-effect waves-light"><i class="fas fa-bookmark" style="zoom:.6"></i> <span>分类</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/liaojie.github.io/archives" class="waves-effect waves-light"><i class="fas fa-archive" style="zoom:.6"></i> <span>归档</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/liaojie.github.io/about" class="waves-effect waves-light"><i class="fas fa-user-circle" style="zoom:.6"></i> <span>关于</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/liaojie.github.io/contact" class="waves-effect waves-light"><i class="fas fa-comments" style="zoom:.6"></i> <span>留言板</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/liaojie.github.io/friends" class="waves-effect waves-light"><i class="fas fa-address-book" style="zoom:.6"></i> <span>友情链接</span></a></li><li><a href="#searchModal" class="modal-trigger waves-effect waves-light"><i id="searchIcon" class="fas fa-search" title="搜索" style="zoom:.85"></i></a></li></ul><div id="mobile-nav" class="side-nav sidenav"><div class="mobile-head bg-color"><img src="/liaojie.github.io/medias/loading.gif" data-original="/liaojie.github.io/liaojie.github.io/medias/ljlogo.png" class="logo-img circle responsive-img"><div class="logo-name">Lj&#39;blog</div><div class="logo-desc">成功的信念在人脑中的作用就如闹钟,会在你需要时将你唤醒</div></div><ul class="menu-list mobile-menu-list"><li class="m-nav-item"><a href="/liaojie.github.io/" class="waves-effect waves-light"><i class="fa-fw fas fa-home"></i> 首页</a></li><li class="m-nav-item"><a href="/liaojie.github.io/tags" class="waves-effect waves-light"><i class="fa-fw fas fa-tags"></i> 标签</a></li><li class="m-nav-item"><a href="/liaojie.github.io/categories" class="waves-effect waves-light"><i class="fa-fw fas fa-bookmark"></i> 分类</a></li><li class="m-nav-item"><a href="/liaojie.github.io/archives" class="waves-effect waves-light"><i class="fa-fw fas fa-archive"></i> 归档</a></li><li class="m-nav-item"><a href="/liaojie.github.io/about" class="waves-effect waves-light"><i class="fa-fw fas fa-user-circle"></i> 关于</a></li><li class="m-nav-item"><a href="/liaojie.github.io/contact" class="waves-effect waves-light"><i class="fa-fw fas fa-comments"></i> 留言板</a></li><li class="m-nav-item"><a href="/liaojie.github.io/friends" class="waves-effect waves-light"><i class="fa-fw fas fa-address-book"></i> 友情链接</a></li></ul></div></div></nav></header><div class="bg-cover pd-header post-cover" style="background-image:url(/liaojie.github.io/medias/featureimages/0.jpg)"><div class="container" style="right:0;left:0"><div class="row"><div class="col s12 m12 l12"><div class="brand"><h1 class="description center-align post-title">C#</h1></div></div></div></div></div><main class="post-container content"><link rel="stylesheet" href="/liaojie.github.io/libs/tocbot/tocbot.css"><style>#articleContent h1::before,#articleContent h2::before,#articleContent h3::before,#articleContent h4::before,#articleContent h5::before,#articleContent h6::before{display:block;content:" ";height:100px;margin-top:-100px;visibility:hidden}#articleContent :focus{outline:0}.toc-fixed{position:fixed;top:64px}.toc-widget{width:345px;padding-left:20px}.toc-widget .toc-title{padding:35px 0 15px 17px;font-size:1.5rem;font-weight:700;line-height:1.5rem}.toc-widget ol{padding:0;list-style:none}#toc-content{padding-bottom:30px;overflow:auto}#toc-content ol{padding-left:10px}#toc-content ol li{padding-left:10px}#toc-content .toc-link:hover{color:#42b983;font-weight:700;text-decoration:underline}#toc-content .toc-link::before{background-color:transparent;max-height:25px;position:absolute;right:23.5vw;display:block}#toc-content .is-active-link{color:#42b983}#floating-toc-btn{position:fixed;right:15px;bottom:76px;padding-top:15px;margin-bottom:0;z-index:998}#floating-toc-btn .btn-floating{width:48px;height:48px}#floating-toc-btn .btn-floating i{line-height:48px;font-size:1.4rem}</style><div class="row"><div id="main-content" class="col s12 m12 l9"><div id="artDetail"><div class="card"><div class="card-content article-info"><div class="row tag-cate"><div class="col s7"><div class="article-tag"><a href="/liaojie.github.io/tags/C/"><span class="chip bg-color">C#</span></a></div></div><div class="col s5 right-align"><div class="post-cate"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/liaojie.github.io/categories/C/" class="post-category">C#</a></div></div></div><div class="post-info"><div class="post-date info-break-policy"><i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp; 2022-01-15</div><div class="post-date info-break-policy"><i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp; 2022-02-09</div><div class="info-break-policy"><i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp; 18.3k</div><div class="info-break-policy"><i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp; 82 分</div><div id="busuanzi_container_page_pv" class="info-break-policy"><i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp; <span id="busuanzi_value_page_pv"></span></div></div></div><hr class="clearfix"><link rel="stylesheet" href="/liaojie.github.io/libs/prism/prism.css"><div class="card-content article-card-content"><div id="articleContent"><p>.net/dotnet:一般指.Net Framework框架.一种平台,一种技术</p><p>C#(sharp):一种编程语言,可以开发基于.net平台的应用</p><p>.net都能干什么?</p><ul><li>桌面应用程序 Winform</li><li>Internet应用程序 ASP.NET</li><li>手机开发 wp8</li><li>Unity3D游戏开发或者虚拟现实</li></ul><p>.NET俩种交互模式</p><ul><li>C/S:客户机(Client)/服务器模式(Server) winform应用程序</li><li>B/S:浏览器(Browser)/服务器模式(Server) Internet应用程序</li></ul><h3 id="1-1-开发工具-Visual-Studio"><a href="#1-1-开发工具-Visual-Studio" class="headerlink" title="1.1 开发工具:Visual Studio"></a>1.1 开发工具:Visual Studio</h3><p>新建项目:选择Visual C#-&gt;Windows-&gt;控制台应用程序,起一个英文名称(最好见名知意)<br>一个解决方案下可以有多个项目:解决方案右键-&gt;添加-&gt;新建项目</p><p>.cs结尾的称为类文件</p><p>解决方案资源管理器(视图里找)</p><p>Program组成部分</p><ul><li>命名空间</li><li>方法或函数(Main函数为程序的入口)</li></ul><p>.sln: 解决方案文件,里面包含整个解决方案的信息,可以双击运行</p><p>.csproj: 项目文件,里面包含项目的信息,可以双击运行</p><h3 id="1-2-C-基础"><a href="#1-2-C-基础" class="headerlink" title="1.2 C#基础"></a>1.2 C#基础</h3><p>C#中,每行代码都以<code>;</code>结束.</p><p>输出: <code>Console.WriteLine("输出内容");</code></p><p><code>Console.ReadKey();</code> 作用:暂停当前程序,等待用户按下任意键继续,按下的任意键将显示在控制台当中</p><p>vs快捷键：</p><ul><li>Ctrl+K+D 快速对齐</li><li>Ctrl+S 保存</li><li>Ctrl+Z 撤销</li><li>Ctrl+J 提示</li><li>Ctrl+K+C 注释</li><li>Ctrl+K+U 取消注释</li><li>#region…#endregion 折叠代码</li></ul><p>vs设置: 工具-&gt;选项(推荐将字体(环境-&gt;字体和颜色)改为Consolas)</p><p>启动项目设置: 解决方案右键-&gt;属性-&gt;启动项目改为当前选定内容</p><p>项目的加载与卸载: 右键需要修改的项目-&gt;移除/卸载(不可用,当需要时可以右键重新加载)</p><h3 id="1-3-注释符"><a href="#1-3-注释符" class="headerlink" title="1.3 注释符"></a>1.3 注释符</h3><p>作用:<br>1.注销<br>2.解释</p><p>单行注释: <code>//</code><br>多行注释: <code>/* 注释内容 */</code><br>文档注释: <code>///</code> 多用来解释类或者方法</p><h3 id="1-4-变量"><a href="#1-4-变量" class="headerlink" title="1.4 变量"></a>1.4 变量</h3><p>在计算机中存储数据</p><p>语法: <code>变量类型 变量名 = 值;</code></p><p>整数类型: int 只能存整数,不能存储小数</p><p>小数类型: double 既能存整数,也能存小数,小数点后位数 15 ~ 16位</p><p>字符类型不能为空,并且只能有一个 字符: <code>char ch = 'a';</code></p><p>字符串类型可以存空,字符串: <code>string name = "张三";</code></p><p>存钱: <code>decimal money = 5000m;</code> 后面需加上一个m</p><p>变量命名规则:</p><ul><li>必须以字母下划线或”@”符号开头,不能以数字开头</li><li>后面可以跟任意字母、数字、下划线</li><li>不能更C#关键字重复</li><li>区分大小写</li><li>同一变量名不允许重复定义</li><li>变量命名必须有意义</li><li>Camel命名规则:除第一个单词第一个字母小写,其他每一个单词第一个字母大写(变量命名)</li><li>Pascal命名规则:每一个单词第一个字母大写(类或者方法命名)</li></ul><p>变量必须先声明,再赋值,最后再使用</p><h3 id="1-5-赋值运算符"><a href="#1-5-赋值运算符" class="headerlink" title="1.5 赋值运算符 ="></a>1.5 赋值运算符 =</h3><p>意义: 表示把等号右边的值赋值给等号左边的变量</p><p>“+”号作用:<br>1.连接俩个字符串<br>2.相加(俩个数字)</p><h4 id="占位符"><a href="#占位符" class="headerlink" title="占位符"></a>占位符</h4><p>使用方法: 先挖个坑,再填</p><p>多填:没效果<br>少填:抛异常</p><p>输出顺序:按照挖坑的顺序</p><p>保留小数:</p><p>{:0.00}//保留俩位小数</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">int n1 = 10;
+int n2 = 20;
+int n3 = 30;
+//占位符
+Console.WriteLine("第一个数字：{0},第二个数字：{1},第三个数字：{2}", n1, n2, n3);
+Console.ReadKey();<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="交换变量"><a href="#交换变量" class="headerlink" title="交换变量"></a>交换变量</h4><p>交换变量:<br>1.设置中间变量temp<br>2.交换俩整型变量：n1=n1-n2;n2=n1+n2;n1=n2-n1;</p><h3 id="1-6-输入"><a href="#1-6-输入" class="headerlink" title="1.6 输入"></a>1.6 输入</h3><p><code>string str = Console.ReadLine();</code></p><h3 id="1-7转义符"><a href="#1-7转义符" class="headerlink" title="1.7转义符"></a>1.7转义符</h3><p>转义符指的是一个’'+一个特殊字符组成一个具有特殊意义的字符</p><p>\n:表示换行<br>\“:表示一个英文半角的双引号<br>\t:表示一个Tab键的空格<br>\b:表示退格键，放字符串俩边无用<br>@:<br>1.取消\转义作用<br>2.将字符串按照原格式输出<br>\r\n:windows操作系统不认识\n,只认识\r\n<br>\\:表示一个\</p><h3 id="1-8-算术运算符-二元运算符"><a href="#1-8-算术运算符-二元运算符" class="headerlink" title="1.8 算术运算符 (二元运算符)"></a>1.8 算术运算符 (二元运算符)</h3><p>加(+)、减(-)、乘( * )、除(/)、取余(%)</p><h3 id="1-9-显式类型转换和隐式类型转换"><a href="#1-9-显式类型转换和隐式类型转换" class="headerlink" title="1.9 显式类型转换和隐式类型转换"></a>1.9 显式类型转换和隐式类型转换</h3><p>要求等号俩边参与运算的操作数的类型必须一致,如果不一致,满足下列条件会发生自动类型转换,或者称之为隐式类型转换</p><ul><li>俩种类型兼容</li><li>目标类型大于原类型(eg:double&gt;int) int — double</li></ul><p>强制类型转换 double — int 显式类型转换 (eg:(int)double值)</p><ul><li>俩种类型相兼容</li><li>大的转换为小的</li></ul><p>语法: (待转换的类型)要转换的值</p><h3 id="1-10-Convert类型转换"><a href="#1-10-Convert类型转换" class="headerlink" title="1.10 Convert类型转换"></a>1.10 Convert类型转换</h3><p>条件:</p><ul><li>面上必须要过得去</li></ul><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">string s = "123";
+double d = Convert.ToDouble(s);
+int n = Convert.ToInt32(s);
+Console.WriteLine(d);
+Console.WriteLine(n);
+Console.ReadKey();<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="1-11-加加减减-一元运算符"><a href="#1-11-加加减减-一元运算符" class="headerlink" title="1.11 加加减减 (一元运算符)"></a>1.11 加加减减 (一元运算符)</h3><p>++: 分为前++、后++,最终结果都为变量+1,不同的是前++是先+1再用+1后的值去运算,后++是先用原先的值参与运算再将这个变量+1<br>–: 同上</p><blockquote><p>一元运算符优先级高于二元运算符</p></blockquote><h3 id="1-12-关系运算符和逻辑运算符"><a href="#1-12-关系运算符和逻辑运算符" class="headerlink" title="1.12 关系运算符和逻辑运算符"></a>1.12 关系运算符和逻辑运算符</h3><p>关系运算符:<br>大于(&gt;)、小于(&lt;)、大于等于(&gt;=)、小于等于(&lt;=)、等于(==)、不等于(!=)</p><p>bool类型:</p><ul><li>True</li><li>False</li></ul><p>逻辑运算符:<br>逻辑与(&amp;&amp;)全真才真,一假就假、逻辑或(||)全假才假,一真就真、逻辑非(!)</p><p>&amp;&amp;优先级高于||</p><h3 id="1-13-复合赋值运算符"><a href="#1-13-复合赋值运算符" class="headerlink" title="1.13 复合赋值运算符"></a>1.13 复合赋值运算符</h3><p>+=、-=、*=、/=、%=</p><h5 id="异常捕获："><a href="#异常捕获：" class="headerlink" title="异常捕获："></a>异常捕获：</h5><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">try
+{
+  可能出异常的代码
+   }catch{
+     出异常执行代码
+   }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="2-流程控制"><a href="#2-流程控制" class="headerlink" title="2 流程控制"></a>2 流程控制</h2><p>循环结构:程序从Main函数进入,从上到下一行一行的执行,不会落下任意一行<br>分支结构:if if-else<br>选择结构:if else-if switch-case<br>循环结构:while do-while for foreach</p><h3 id="2-1-if"><a href="#2-1-if" class="headerlink" title="2.1 if"></a>2.1 if</h3><p>if:<br>语法:<br>if(判断条件)<br>{<br>要执行的代码;<br>}</p><p>判断条件:一般为关系表达式或者bool类型的值</p><p>if-else:<br>语法:<br>if(判断条件)<br>{<br>条件成立执行的代码;<br>}else{<br>条件不成立执行代码;<br>}</p><p>if else-if:<br>语法:<br>if(判断条件1)<br>{<br>条件1成立执行的代码;<br>}else if(判断条件2)<br>{<br>条件2成立执行的代码;<br>}…<br>else{<br>条件都不成立执行代码;<br>}</p><h3 id="2-2-switch-case"><a href="#2-2-switch-case" class="headerlink" title="2.2 switch-case"></a>2.2 switch-case</h3><p>作用: 用于处理多条件的定值的判断</p><p>语法:<br>switch(变量或者表达式的值)<br>{<br>case 值1:要执行的代码;<br>break;<br>case 值2:要执行的代码;<br>break;<br>case 值3:要执行的代码;<br>break;<br>…<br>default:要执行的代码;<br>break;<br>}</p><h5 id="案例-判断年份"><a href="#案例-判断年份" class="headerlink" title="案例: 判断年份"></a>案例: 判断年份</h5><p>案例描述: 输入年份和月份,输出对应的天数</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace 判断闰年
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("请输入一个年份");
+            try
+            {
+                int year = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("请输入一个月份");
+                try
+                {
+
+
+                    int month = Convert.ToInt32(Console.ReadLine());//1~12
+                    if (month &gt;= 1 &amp;&amp; month &lt;= 12)
+                    {
+                        int day = 0;//声明一个变量用来存储天数
+                        switch (month)
+                        {
+                            case 1:
+                            case 3:
+                            case 5:
+                            case 7:
+                            case 8:
+                            case 10:
+                            case 12:
+                                day = 31;
+                                break;
+                            case 2:
+                                //有平年和润年的不同
+                                if ((year % 400 == 0) || (year % 4 == 0 &amp;&amp; year % 100 != 0))
+                                {
+                                    day = 29;
+                                }
+                                else
+                                {
+                                    day = 28;
+                                }
+                                break;
+                            default://4,6,9,11
+                                day = 30;
+                                break;
+                        }
+                        Console.WriteLine("{0}年{1}月有{2}天", year, month, day);
+                    }//if判断
+                    else
+                    {
+                        Console.WriteLine("输入的月份不符合要求,程序退出");
+                    }
+                }
+                catch//月份
+                {
+                    Console.WriteLine("输入的月份有误,程序退出");
+                }
+            }
+            catch//年份
+            {
+                Console.WriteLine("输入的年份有误,程序退出");
+            }
+            Console.ReadKey();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="2-3-while"><a href="#2-3-while" class="headerlink" title="2.3 while"></a>2.3 while</h3><p>语法:<br>while(循环条件)<br>{<br>循环体;<br>}</p><p>break用法:<br>1.跳出switch-case结构<br>2.跳出当前循环<br>一般不单独使用,而是跟着if判断一起使用</p><p>特点:先判断,再执行,有可以一遍循环都不执行</p><h3 id="2-4-do-while循环"><a href="#2-4-do-while循环" class="headerlink" title="2.4 do-while循环"></a>2.4 do-while循环</h3><p>语法:<br>do<br>{<br>循环体;<br>}while(循环条件);</p><p>特点:先执行,再判断,至少执行一遍</p><h5 id="断点调试"><a href="#断点调试" class="headerlink" title="断点调试"></a>断点调试</h5><ul><li>设置断点(在行号前点击空白处)</li><li>单步运行(F11逐语句调试)</li><li>观察变量(鼠标放在变量名上观察)</li><li>F10逐过程调试</li></ul><h3 id="2-5-for循环"><a href="#2-5-for循环" class="headerlink" title="2.5 for循环"></a>2.5 for循环</h3><p>语法:<br>for(表达式1;表达式2;表达式3)<br>{<br>循环体4;<br>}</p><p>表达式1:一般为声明循环变量,记录循环的次数(int i = 0;)<br>表达式2:一般为循环条件<br>表达式3:一般为改变循环条件的代码,使循环条件终会不成立,否则就是死循环</p><p>顺序:1-&gt;2-&gt;4-&gt;3-&gt;2-&gt;4-&gt;3-&gt;…</p><p>代码提示: 输入for,再按俩下Tab键</p><h5 id="案例-水仙花数"><a href="#案例-水仙花数" class="headerlink" title="案例: 水仙花数"></a>案例: 水仙花数</h5><p>案例描述:输出三位数的水仙花数(水仙花数:每位数字的三次方的和等于原数字)</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace 水仙花数
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 100; i &lt;= 999; i++)
+            {
+                int bai = i / 100;
+                int shi = i % 100 / 10;
+                int ge = i % 10;
+                if (bai*bai*bai+shi*shi*shi+ge*ge*ge==i)
+                {
+                    Console.WriteLine("{0}\t", i);
+                }
+            }
+            Console.ReadKey();
+        }
+    }
+}
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="2-6-for循环嵌套"><a href="#2-6-for循环嵌套" class="headerlink" title="2.6 for循环嵌套"></a>2.6 for循环嵌套</h3><h5 id="案例-九九乘法表"><a href="#案例-九九乘法表" class="headerlink" title="案例: 九九乘法表"></a>案例: 九九乘法表</h5><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace 九九乘法表
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 1; i &lt;=9; i++)
+            {
+                for(int j=1;j&lt;=i;j++)
+                {
+                    Console.Write("{0}x{1}={2}\t", j, i, i * j);
+                }
+                Console.WriteLine();//换行
+            }
+            Console.ReadKey();
+        }
+    }
+}
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="2-7-类型转换"><a href="#2-7-类型转换" class="headerlink" title="2.7 类型转换"></a>2.7 类型转换</h3><p>int.TryParse:尝试将一个字符串转换成int类型</p><p>eg:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">int number = 0;
+//参数 返回值
+bool b = int.TryParse("123",out number);
+Console.WriteLine(b);
+Console.WriteLine(number);
+//转换成功:b = True number = 123
+//转换失败:b = False number = 0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h5 id="案例-质数"><a href="#案例-质数" class="headerlink" title="案例: 质数"></a>案例: 质数</h5><p>案例描述:<br>找出100以内的所有质数(质数/素数:只能被1和本身整除的数字,比如:2)</p><p>提示:<br>continue用法:<br>结束本次循环,判断循环条件,如果成立则进入下一次循环,否则退出循环</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace 质数
+{
+    class Program
+    {
+        static void Main(string[] args)//计算质数
+        {
+            for(int i=2;i&lt;=100;i++)
+            {
+                bool b = true;
+                for(int j=2;j&lt;i;j++)
+                {
+                    if(i%j==0)
+                    {
+                        b = false;
+                        break;
+                    }
+                }
+                if(b)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            Console.ReadKey();
+        }
+    }
+}
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="2-8-三元表达式"><a href="#2-8-三元表达式" class="headerlink" title="2.8 三元表达式"></a>2.8 三元表达式</h3><p>语法: <code>表达式1?表达式2:表达式3;</code></p><p>表达式1一般为一个关系表达式<br>如果1为True,结果为2的值;如果1为False,结果为3的值<br>2与3与整个三元表达式类型须一致</p><h5 id="案例-随机数"><a href="#案例-随机数" class="headerlink" title="案例: 随机数"></a>案例: 随机数</h5><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace 随机数
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            while(true)
+            {
+                //产生随机数
+                //1.创建产生随机数的对象
+                Random r = new Random();
+                //2.让产生随机数的对象调用方法来产生随机数
+                int rNumber = r.Next(1, 11);//产生1~10的随机数
+                Console.WriteLine(rNumber);
+                Console.ReadKey();
+            }
+        }
+    }
+}
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="3-复杂数据类型"><a href="#3-复杂数据类型" class="headerlink" title="3 复杂数据类型"></a>3 复杂数据类型</h2><h3 id="3-1-常量"><a href="#3-1-常量" class="headerlink" title="3.1 常量"></a>3.1 常量</h3><p>不能被重新赋值</p><p>语法: <code>const 变量类型 变量名 = 值;</code></p><h3 id="3-2-枚举"><a href="#3-2-枚举" class="headerlink" title="3.2 枚举"></a>3.2 枚举</h3><p>语法: <code>[public] enum 枚举名 { 值1, 值2, 值3, ... }</code></p><p>public: 访问修饰符,公开的,哪都可以访问<br>enum: 声明枚举的关键字<br>枚举名: Pascal命名规范</p><blockquote><p>枚举就是一个变量类型,只是枚举声明、赋值、使用的方式与普通变量类型不同</p></blockquote><p>枚举类型和string、int类型之间转换:</p><ul><li>枚举类型与int类型是兼容的(枚举从0开始),可以使用强制类型转换相互转换</li><li>int类型转枚举:超出枚举范围直接输出int值</li><li>Enum.Parse(typeof(要转换的枚举类型即枚举名),”要转换的字符串”)字符串转换为枚举类型<ul><li>如果转换的字符串是数字且枚举中没有,不会抛异常</li><li>如果转换的是文本且枚举中没有,会抛异常</li></ul></li><li>所有类型都可以转换为string类型 调用ToString()</li></ul><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace 枚举
+{
+    public enum Gender
+    {
+        男,
+        女
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Enum.Parse(typeof(要转换的枚举类型),"要转换的字符串")转换为枚举类型
+            //所有类型都可以转换为string类型 调用ToString()
+            Gender gender = Gender.男;
+            Console.ReadKey();
+        }
+    }
+}
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="3-3-结构"><a href="#3-3-结构" class="headerlink" title="3.3 结构"></a>3.3 结构</h3><p>作用: 一次性声明多个不同类型的变量</p><p>语法: <code>[public] struct 结构名 { 成员;//字段 }</code></p><p>字段可以存储多个值,规范上每个字段前加一个下划线<code>_</code></p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace 结构
+{
+    public struct Person
+    {
+        public string _name;//字段
+        public int _age;
+        public Gender _gender;
+    }
+    public enum Gender
+    {
+        男,
+        女
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Person zsPerson;
+            zsPerson._name = "张三";
+            zsPerson._age = 11;
+            zsPerson._gender = Gender.男;
+            Console.WriteLine(zsPerson._name);
+            Console.WriteLine(zsPerson._age);
+            Console.WriteLine(zsPerson._gender);
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="3-4-数组"><a href="#3-4-数组" class="headerlink" title="3.4 数组"></a>3.4 数组</h3><p>一次性存储多个相同类型的变量</p><p>语法: <code>数组类型[] 数组名=new 数组类型[数组长度];</code></p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace 数组
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] nums = new int[10];
+            int[] numsTwo = { 1, 2,7, 4, 5 };
+            Array.Sort(numsTwo);//升序排列
+            Array.Reverse(numsTwo);//反转数组
+            for(int i=0;i&lt;nums.Length;i++)
+            {
+                nums[i] = i;
+            }
+            for (int i = 0; i &lt; nums.Length; i++)
+            {
+                Console.WriteLine(nums[i]);
+            }
+            Console.ReadKey();
+        }
+    }
+}
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h5 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h5><p>将数组中的元素从大到小或者从小到大进行排序</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace 冒泡排序
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] number = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
+            for (int i = 0; i &lt; number.Length-1; i++)
+            {
+                for(int j=0;j&lt;number.Length-i-1;j++)
+                {
+                    if(number[j]&gt;number[j+1])
+                    {
+                        int temp = number[j + 1];
+                        number[j + 1] = number[j];
+                        number[j] = temp;
+                    }
+                }
+            }
+            for (int i = 0; i &lt; number.Length; i++)
+            {
+                Console.WriteLine(number[i]);
+            }
+            Console.ReadKey();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="3-5-方法-函数"><a href="#3-5-方法-函数" class="headerlink" title="3.5 方法(函数)"></a>3.5 方法(函数)</h3><p>函数就是将一堆代码进行重用的一种机制</p><p>语法:<br><code>[public] static 返回值类型 方法名 ([参数列表]) { 方法体; }</code></p><p>static: 静态的<br>方法名: Pascal命名规则</p><p>方法写好后需在Main()函数中调用<br>调用语法:<code>类名.方法名([参数]);</code></p><blockquote><p>如果你写的方法跟Main()函数同在一个类(Program)中,类名可以省略</p></blockquote><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace 方法
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int max=Program.GetMax(1, 3);
+            Console.WriteLine(max);
+            Console.ReadKey();
+        }
+        /// &lt;summary&gt;
+        /// 求俩个数最大值并返回
+        /// &lt;/summary&gt;
+        /// &lt;param name="n1"&gt;第一个整数&lt;/param&gt;
+        /// &lt;param name="n2"&gt;第二个整数&lt;/param&gt;
+        /// &lt;returns&gt;最大值&lt;/returns&gt;
+        public static int GetMax(int n1,int n2)
+        {
+            return n1 &gt; n2 ? n1 : n1;
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>return作用:<br>1.在方法中返回要返回的函数值<br>2.立即结束本方法</p><p>调用者:Main()函数中调用其他方法;被调用者:其他方法</p><p>如果被调用者要使用调用者的值:</p><ul><li>传递参数</li><li>使用静态字段来模拟全局变量 <code>public static int _number = 10;</code>(函数外,Program类中)</li></ul><p>如果调用者要得到被调用者的值:</p><ul><li>返回值</li></ul><p>不管是实参还是形参都是在内存中开辟了空间的</p><p>方法的功能一定是单一的,方法中最忌讳的就是出现提示用户输入的字眼</p><h4 id="3-5-1-out参数"><a href="#3-5-1-out参数" class="headerlink" title="3.5.1 out参数"></a>3.5.1 out参数</h4><p>返回多个类型相同的值的时候,可以考虑返回一个数组<br>返回对个不同类型的值的时候,可以考虑使用out参数</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+//out 参数：可以返回多个不同的值
+namespace out参数
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            int[] res = GetMaxMinSumAvg(numbers);
+            Console.WriteLine("最大值是{0}，最小值是{1}，总和是{2}，平均值是{3}",res[0],res[1],res[2],res[3]);
+
+            int max;
+            int min;
+            int sum;
+            int avg;
+            bool b;
+            string s;
+            double d;
+            Test(numbers, out max, out min, out sum, out avg,out b,out s,out d);
+            Console.WriteLine(max);
+            Console.WriteLine(min);
+            Console.WriteLine(sum);
+            Console.WriteLine(avg);
+            Console.WriteLine(b);
+            Console.WriteLine(s);
+            Console.WriteLine(d);
+            Console.ReadKey();
+
+        }
+        /// &lt;summary&gt;
+        /// 求数组最大最小总和平均值
+        /// &lt;/summary&gt;
+        /// &lt;param name="nums"&gt;传入数据数组&lt;/param&gt;
+        /// &lt;returns&gt;返回的数组&lt;/returns&gt;
+        public static int[] GetMaxMinSumAvg(int[] nums)
+        {
+            int[] res = new int[4];
+            res[0] = nums[0];//max
+            res[1] = nums[0];//min
+            res[2] = 0;//sum
+            for(int i=0;i&lt;nums.Length;i++)
+            {
+                if(nums[i]&gt;res[0])
+                {
+                    res[0] = nums[i];
+                }
+                if(nums[i]&lt;res[1])
+                {
+                    res[1] = nums[i];
+                }
+                res[2] += nums[i];
+            }
+            //平均值
+            res[3] = res[2] / nums.Length;
+            return res;
+        }
+        /// &lt;summary&gt;
+        /// 求数组最大最小总和平均值
+        /// &lt;/summary&gt;
+        /// &lt;param name="nums"&gt;传入数组&lt;/param&gt;
+        /// &lt;param name="max"&gt;多余返回的最大值&lt;/param&gt;
+        /// &lt;param name="min"&gt;多余返回的最小值&lt;/param&gt;
+        /// &lt;param name="sum"&gt;多余返回的总和&lt;/param&gt;
+        /// &lt;param name="avg"&gt;多余返回的平均值&lt;/param&gt;
+        public static void Test(int[] nums, out int max, out int min, out int sum, out int avg, out bool b, out string s, out double d)
+        {
+            //out 参数要求在方法内给初值
+            max = nums[0];//max
+            min = nums[0];//min
+            sum = 0;//sum
+            for (int i = 0; i &lt; nums.Length; i++)
+            {
+                if (nums[i] &gt; max)
+                {
+                    max = nums[i];
+                }
+                if (nums[i] &lt; min)
+                {
+                    min = nums[i];
+                }
+                sum += nums[i];
+            }
+            //平均值
+            avg = sum / nums.Length;
+            b = true;
+            s = "123";
+            d = 3.14;
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="3-5-2-ref参数"><a href="#3-5-2-ref参数" class="headerlink" title="3.5.2 ref参数"></a>3.5.2 ref参数</h4><p>能够将一个变量带入一个方法中进行改变,改变完成后,再将改变后的值带出方法</p><p>要求:在方法外必须赋初值</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace ref参数
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double salary = 5000;
+            JiangJin(ref salary);
+            Console.WriteLine(salary);
+            Console.ReadKey();
+        }
+        public static void JiangJin(ref double s)
+        {
+            s += 500;
+        }
+        public static void FaKuan(double s)
+        {
+            s -= 500;
+        }
+    }
+}
+//5500<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="3-5-3-params可变参数"><a href="#3-5-3-params可变参数" class="headerlink" title="3.5.3 params可变参数"></a>3.5.3 params可变参数</h4><p>将实参列表中跟可变参数数组类型一致的元素都当做数组的元素去处理</p><p>params可变参数只能做最后一个参数且只能有一个</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace params参数//可变参数params 只能做成最后一个参数且只能有一个
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] score = { 98,78,90 };
+            Test("张三", 360,98, 78, 90);
+            Console.ReadKey();
+        }
+        public static void Test(string name, int id,params int[] score)
+        {
+            int sum = 0;
+            for(int i=0;i&lt;score.Length;i++)
+            {
+                sum += score[i];
+            }
+            Console.WriteLine("{0}这次考试的总成绩是{1}，学号为{2}", name, sum,id);
+        }
+    }
+}
+//张三这次考试的总成绩是266，学号为360<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="3-5-4-方法的重载"><a href="#3-5-4-方法的重载" class="headerlink" title="3.5.4 方法的重载"></a>3.5.4 方法的重载</h4><p>方法的重载指的是方法的名称相同、参数不同</p><ul><li>参数个数相同,类型就不能相同</li><li>参数类型相同,个数就不能相同</li></ul><h4 id="3-5-5-方法的递归"><a href="#3-5-5-方法的递归" class="headerlink" title="3.5.5 方法的递归"></a>3.5.5 方法的递归</h4><p>递归:方法自己调用自己</p><h5 id="案例-飞行棋"><a href="#案例-飞行棋" class="headerlink" title="案例: 飞行棋"></a>案例: 飞行棋</h5><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+//保留俩位小数(会四舍五入)
+//double num=0.12453;
+//string s=num.ToString("0.00");
+//num=Convert.ToDouble(s);
+namespace 飞行棋项目
+{
+    class Program
+    {
+        public static int[] Maps = new int[100];//静态字段模拟全局变量
+        public static int[] PlayerPos = new int[2];//声明一个静态数组存储玩家坐标
+        public static string[] PlayerNames = new string[2];//存储玩家姓名
+        public static bool[] Flags = new bool[2];//Flags[0]=false,Flags[1]=false;
+        static void Main(string[] args)
+        {
+            GameShow();
+            #region 输入姓名
+            Console.WriteLine("请输入玩家A的姓名:");
+            PlayerNames[0] = Console.ReadLine();
+            while(PlayerNames[0]=="")
+            {
+                Console.WriteLine("玩家A的姓名不能为空");
+                PlayerNames[0] = Console.ReadLine();
+            }
+            Console.WriteLine("请输入玩家B的姓名:");
+            PlayerNames[1] = Console.ReadLine();
+            while (PlayerNames[1] == ""||PlayerNames[1]==PlayerNames[0])
+            {
+                if(PlayerNames[1]=="")
+                {
+                    Console.WriteLine("玩家A的姓名不能为空");
+                    PlayerNames[1] = Console.ReadLine();
+                }else
+                {
+                    Console.WriteLine("玩家B的姓名不能跟A的相同，请重新输入");
+                    PlayerNames[1] = Console.ReadLine();
+                }
+                
+            }
+            #endregion
+            //玩家姓名输入完成后首先清屏
+            Console.Clear();
+            GameShow();
+            Console.WriteLine("{0}的士兵用A表示",PlayerNames[0]);
+            Console.WriteLine("{0}的士兵用B表示",PlayerNames[1]);
+            InitailMap();
+            DrawMap();
+
+            while(PlayerPos[0]&lt;99&amp;&amp;PlayerPos[1]&lt;99)
+            {
+                if(Flags[0]==false)
+                {
+                    PlayGame(0);
+                }
+                else
+                {
+                    Flags[0] = false;
+                }
+                if(PlayerPos[0]&gt;=99)
+                {
+                    Console.WriteLine("玩家{0}胜利",PlayerNames[0]);
+                    break;
+                }
+                if (Flags[1] == false)
+                {
+                    PlayGame(1);
+                }
+                else
+                {
+                    Flags[1] = false;
+                }
+                if (PlayerPos[1] &gt;= 99)
+                {
+                    Console.WriteLine("玩家{0}胜利", PlayerNames[1]);
+                    break;
+                }
+            }//while
+            Console.ReadKey();
+        }
+        /// &lt;summary&gt;
+        /// 游戏头
+        /// &lt;/summary&gt;
+        public static void GameShow()
+        {
+            Console.ForegroundColor = ConsoleColor.Blue;//添加颜色
+            Console.WriteLine("************************");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("************************");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("*******飞行棋项目*******");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("************************");
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.WriteLine("************************");
+        }
+        /// &lt;summary&gt;
+        /// 初始化地图
+        /// &lt;/summary&gt;
+        public static void InitailMap()
+        {
+            int[] luckyturn = { 6, 23, 40, 55, 69, 83 };//幸运圆盘◎
+            for(int i=0;i&lt;luckyturn.Length;i++)
+            {
+                //int index = luckyturn[i];
+                Maps[luckyturn[i]] = 1;
+            }
+            int[] landMine = { 5, 13, 17, 33, 38, 50, 64, 80, 94 };//地雷☆
+            for (int i = 0; i &lt; landMine.Length; i++)
+            {
+                Maps[landMine[i]] = 2;
+            }
+            int[] pause = { 9, 27, 60, 93 };//暂停▲
+            for (int i = 0; i &lt; pause.Length; i++)
+            {
+                Maps[pause[i]] = 3;
+            }
+            int[] timeTunnel = { 20, 25, 45, 63, 72, 88, 90 };//时空隧道卐
+            for (int i = 0; i &lt; timeTunnel.Length; i++)
+            {
+                Maps[timeTunnel[i]] = 4;
+            }
+        }
+
+        /// &lt;summary&gt;
+        /// 画地图
+        /// &lt;/summary&gt;
+        public static void DrawMap()
+        {
+            Console.WriteLine("图例：幸运圆盘：◎  地雷：☆  暂停：▲  时空隧道：卐 ");
+            #region 第一横行
+            for (int i=0;i&lt;30;i++)
+            {
+                Console.Write(DrawStringMap(i));
+            }//for
+            #endregion
+            //画完第一行需换行
+            Console.WriteLine();
+            #region 第一竖行
+            for (int i=30;i&lt;35;i++)
+            {
+                for(int j=0;j&lt;=28;j++)
+                {
+                    Console.Write("  ");
+                }
+                Console.Write(DrawStringMap(i));
+                Console.WriteLine();
+            }
+            #endregion
+
+            #region 第二横行
+            for(int i=64;i&gt;=35;i--)
+            {
+                Console.Write(DrawStringMap(i));
+            }
+            #endregion
+            Console.WriteLine();
+            #region 第二竖行
+            for (int i=65;i&lt;=69;i++)
+            {
+                Console.WriteLine(DrawStringMap(i));
+            }
+            #endregion
+
+            #region 第三横行
+            for(int i=70;i&lt;=99;i++)
+            {
+                Console.Write(DrawStringMap(i));
+            }
+            #endregion
+            Console.WriteLine();
+        }//DrawMap
+        /// &lt;summary&gt;
+        /// 从画地图方法中抽象出来的一个方法
+        /// &lt;/summary&gt;
+        /// &lt;param name="i"&gt;位置坐标&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        public static string DrawStringMap(int i)
+        {
+            string str="";
+            #region 画图
+            if (PlayerPos[0] == PlayerPos[1] &amp;&amp; PlayerPos[1] == i)
+            {
+                str="&lt;&gt;";//玩家坐标相同并且都在地图上
+            }
+            else if (PlayerPos[0] == i)
+            {
+                str="Ａ";//shift+空格 切全角
+            }
+            else if (PlayerPos[1] == i)
+            {
+                str="Ｂ";//shift+空格 切全角
+            }
+            else
+            {
+                switch (Maps[i])
+                {
+                    case 0:
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        str = "□";
+                        break;
+                    case 1:
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        str = "◎";
+                        break;
+                    case 2:
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                        str = "☆";
+                        break;
+                    case 3:
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        str = "▲";
+                        break;
+                    case 4:
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        str="卐";
+                        break;
+                }//switch
+            }//else
+            return str;
+            #endregion
+        }
+
+        /// &lt;summary&gt;
+        /// 玩游戏
+        /// &lt;/summary&gt;
+        public static void PlayGame(int playerNumber)
+        {
+            Random r = new Random();
+            int rNumber = r.Next(1, 7);
+            Console.WriteLine("{0}按任意键开始掷骰子", PlayerNames[playerNumber]);
+            Console.ReadKey(true);
+            Console.WriteLine("{0}掷出了{1}", PlayerNames[playerNumber],rNumber);
+            PlayerPos[playerNumber] += rNumber;
+            ChangePos();
+            Console.ReadKey(true);
+            Console.WriteLine("{0}按任意键继续行动", PlayerNames[playerNumber]);
+            Console.ReadKey(true);
+            Console.WriteLine("{0}行动完了", PlayerNames[playerNumber]);
+            Console.ReadKey(true);
+            if (PlayerPos[playerNumber] == PlayerPos[1- playerNumber])
+            {
+                Console.WriteLine("玩家{0}踩到玩家{1}，玩家{2}退6格", PlayerNames[playerNumber], PlayerNames[1- playerNumber], PlayerNames[1- playerNumber]);
+                PlayerPos[1- playerNumber] -= 6;
+                ChangePos();
+                Console.ReadKey(true);
+            }
+            else//关卡
+            {
+                //玩家坐标
+                switch (Maps[PlayerPos[playerNumber]])//0 1 2 3 4
+                {
+                    case 0:
+                        Console.WriteLine("玩家{0}踩到了方块，安全", PlayerNames[playerNumber]);
+                        Console.ReadKey(true);
+                        break;
+                    case 1:
+                        Console.WriteLine("玩家{0}踩到了幸运圆盘，请选择：1--交换位置，2--轰炸对方", PlayerNames[playerNumber]);
+                        string input = Console.ReadLine();
+                        while (true)
+                        {
+                            if (input == "1")
+                            {
+                                Console.WriteLine("玩家{0}与玩家{1}交换位置", PlayerNames[playerNumber], PlayerNames[1- playerNumber]);
+                                Console.ReadKey(true);
+                                int temp = PlayerPos[playerNumber];
+                                PlayerPos[playerNumber] = PlayerPos[1- playerNumber];
+                                PlayerPos[1- playerNumber] = temp;
+                                Console.WriteLine("交换完成，按任意键继续!!!");
+                                Console.ReadKey(true);
+                                break;
+                            }
+                            else if (input == "2")
+                            {
+                                Console.WriteLine("玩家{0}轰炸玩家{1}，玩家{2}退6格", PlayerNames[playerNumber], PlayerNames[1- playerNumber], PlayerNames[1- playerNumber]);
+                                Console.ReadKey(true);
+                                PlayerPos[1- playerNumber] -= 6;
+                                ChangePos();
+                                Console.WriteLine("玩家{0}退了6格", PlayerNames[1- playerNumber]);
+                                Console.ReadKey(true);
+                                break;
+                            }
+                            else
+                            {
+                                Console.WriteLine("只能输入1或者2 :1--交换位置，2--轰炸对方");
+                                input = Console.ReadLine();
+                            }
+                        }
+                        break;
+                    case 2:
+                        Console.WriteLine("玩家{0}踩到了地雷，退6格", PlayerNames[playerNumber]);
+                        Console.ReadKey(true);
+                        PlayerPos[playerNumber] -= 6;
+                        ChangePos();
+                        break;
+                    case 3:
+                        Console.WriteLine("玩家{0}踩到了暂停，暂停一回合", PlayerNames[playerNumber]);
+                        Flags[playerNumber] = true;
+                        Console.ReadKey(true);
+                        break;
+                    case 4:
+                        Console.WriteLine("玩家{0}踩到了时空隧道，前进10格", PlayerNames[playerNumber]);
+                        PlayerPos[playerNumber] += 10;
+                        ChangePos();
+                        Console.ReadKey(true);
+                        break;
+                }//switch
+            }//else
+            ChangePos();
+            Console.Clear();
+            DrawMap();
+        }
+
+        /// &lt;summary&gt;
+        /// 玩家坐标发生改变时调用
+        /// &lt;/summary&gt;
+        public static void ChangePos()
+        {
+            if (PlayerPos[0]&lt;0)
+            {
+                PlayerPos[0] = 0;
+            }
+            if (PlayerPos[0] &gt;99)
+            {
+                PlayerPos[0] = 99;
+            }
+            if (PlayerPos[1] &lt; 0)
+            {
+                PlayerPos[1] = 0;
+            }
+            if (PlayerPos[1] &gt; 99)
+            {
+                PlayerPos[1] = 99;
+            }
+        }
+        /// &lt;summary&gt;
+        /// 反转数组内容
+        /// &lt;/summary&gt;
+        /// &lt;param name="names"&gt;传入数组&lt;/param&gt;
+        public static void Test(string[] names)
+        {
+            for (int i = 0; i &lt; names.Length / 2; i++)
+            {
+                string temp = names[i];
+                names[i] = names[names.Length - 1 - i];
+                names[names.Length - 1 - i] = temp;
+            }
+        }
+        
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="4-面向对象"><a href="#4-面向对象" class="headerlink" title="4 面向对象"></a>4 面向对象</h2><p>面向对象意在写出一个通用的代码屏蔽差异</p><p>描述一个对象通常描述这个对象的属性和方法</p><p>类:将具有相同属性和方法的对象进一步封装,抽象出类的概念</p><p>对象是根据类创建出来的</p><h3 id="4-1-类"><a href="#4-1-类" class="headerlink" title="4.1 类"></a>4.1 类</h3><p>语法:<br><code>[public] class 类名 { 字段(Fiels); 属性(Property); 方法(Method); }</code></p><p>添加类:需要添加类的项目-&gt;右键-&gt;添加-&gt;类(.cs)</p><p>写好一个类之后,我们需要创建这个类的对象,我们称创建类的过程称为类的实例化,使用关键字<code>new</code></p><p>类不占内存，对象占内存</p><p>属性的作用就是保护字段、对字段的赋值和取值进行限定。<br>属性的本质就是get(读)和set(写)俩个方法</p><p>访问修饰符:</p><ul><li>public:公开的,在哪都能访问</li><li>private:私有的,只能在当前类的内部进行访问,出了这个类就访问不到</li></ul><p>静态与非静态的区别:<br>1.在非静态类中,既可以有实例成员,也可以有静态成员<br>2.在调用实例成员时,需要使用<code>对象名.实例成员</code><br>在调用静态成员时,需要使用<code>类名.静态成员名</code></p><p>总结:</p><ul><li>静态成员必须使用类名区调用,而实例成员使用对象名区调用</li><li>静态函数中,只能访问静态成员,不允许访问实例成员</li><li>实例函数中,既可以访问静态成员,也可以访问实例成员</li><li>静态类中只允许有静态成员,不允许出现实例成员</li></ul><p>使用:<br>1.如果你需要将你的类当做一个工具类使用时可以考虑将类写成静态的<br>2.静态类在整个项目中资源共享<br>只有在程序全部结束后静态类才会释放资源</p><p>堆、栈 静态存储区域</p><p>释放资源:GC</p><p>构造函数:<br>创建对象时会执行构造函数<br>构造函数可以有重载<br>作用:帮助我们初始化对象<br>构造函数是一个特殊的方法:<br>1.没有返回值,连void也不用写<br>2.名称必须跟类名一样</p><p>类中有一个默认的无参数的构造函数,当你写了一个新的构造函数会替代原先的构造函数</p><p>new关键字帮我们干的3件事:<br>1.在内存中开辟一块空间<br>2.在开辟的空间中创建对象<br>3.调用对象的构造函数进行初始化对象</p><p>this关键字:<br>1.代表当前类的对象<br>2.在类中显示调用本类的构造函数 <code>:this</code></p><p>析构函数:<br>当程序结束时,析构函数才执行<br>作用:帮助我们释放资源</p><p>Person.cs</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace 面向对象初级
+{
+    public class Person//工具类使用静态类,静态类在整个项目中资源共享
+    {
+        //析构函数
+        ~Person()
+        {
+            Console.WriteLine("析构函数调用");//帮助我们释放资源
+        }
+        public Person(string name,int age,char gender)
+        {
+            this._name = name;
+            this._age = age;
+            this._gender = gender;
+            Console.WriteLine("构造函数");
+        }
+        public Person(string name, int age):this(name,age,'男')//this：在类中显示调用本类的构造函数 优点：减少代码重复量
+        {
+            //this._name = name;
+            //this._age = age;
+        }
+        public Person(string name)
+        {
+            this._name = name;
+        }
+        private string _name;
+        //属性 保护字段
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+        private int _age;
+        public int Age
+        { 
+            get{ return _age; }
+            set {
+                if(value&lt;0||value&gt;100)
+                {
+                    value = 0;
+                }
+                _age = value; }
+        }
+        
+        char _gender;
+        public char Gender
+        {
+            get {
+                if(_gender!='男'&amp;&amp;_gender!='女')
+                {
+                    return _gender = '男';
+                }
+                return _gender; }
+            set { _gender = value; }
+        }
+
+
+        public void CHLSS()
+        {
+            Console.WriteLine("{0},{1}岁,{2},会吃喝拉撒睡",this.Name,this.Age,this.Gender);
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>Program.cs</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace 面向对象初级
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //创建类的对象   -&gt; 类的实例化
+            //类不占内存，对象占内存
+            Person sunQuan = new Person("孙权",18,'男');
+            sunQuan.CHLSS();
+            Console.ReadKey();
+        }
+    }
+}
+//构造函数
+//孙权,18岁,男,会吃喝拉撒睡<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="4-2-命名空间"><a href="#4-2-命名空间" class="headerlink" title="4.2 命名空间"></a>4.2 命名空间</h3><p>导入类所在命名空间:<br>1.用鼠标点<br>2.alt+shift+F10<br>3.记住常见类的命名空间,手敲</p><p>一个项目中引用另一个项目的类<br>1.添加引用:引用-&gt;右键-&gt;引用<br>2.引用命名空间 <code>using 命名空间;</code></p><h3 id="4-3-值类型和引用类型"><a href="#4-3-值类型和引用类型" class="headerlink" title="4.3 值类型和引用类型"></a>4.3 值类型和引用类型</h3><p>区别:<br>1.在内存上存储的地方不一样<br>2.在传递值类型和传递引用类型时,传递的方式不同(值传递和引用传递)</p><p>值传递:int、double、bool、char、decimal、struct、enum<br>引用传递:string、自定义类、数组</p><p>存储:<br>值类型的值是存储在内存的栈当中<br>引用类型的值是存储在内存的堆中</p><h3 id="4-4-字符串"><a href="#4-4-字符串" class="headerlink" title="4.4 字符串"></a>4.4 字符串</h3><p>1.字符串的不可变性(当重新给一个字符串赋值后,原来值并没用销毁,而是重新开辟一块内存存储新值)<br>当程序结束后,GC扫描整个内存,如果发现有的空间没有被指向,立即将它销毁</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Diagnostics;
+using System.IO;
+using System.Text;
+
+namespace 字符串
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //字符串的不可变性 
+            string s1 = "张三";
+            string s2 = "张三";
+            Console.ReadKey();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>2.可以将字符串看成是char类型的只读数组,可以通过下标访问字符串中的一个元素</p><ul><li>将字符串转换为char类型数组 <code>字符串.ToCharArray()</code></li><li>将字符数组转换为字符串 <code>new string(字符数组)</code></li></ul><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Diagnostics;
+using System.IO;
+using System.Text;
+
+namespace 字符串
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //可以将字符串看成是char类型的只读数组
+            string s = "abcdef";
+            Console.WriteLine(s[0]);
+            //s[0] = 'b';不能这样做
+            //首先将字符串转换为char类型数组
+            char[] chs = s.ToCharArray();
+            chs[0] = 'b';
+            //将字符数组转换为字符串
+            s = new string(chs);
+            Console.WriteLine(s[0]);
+            Console.WriteLine(s);
+            Console.ReadKey();
+        }
+    }
+}
+//b
+//bbcdef<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>StringBuilder:不开内存空间,比string快<br>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Diagnostics;
+using System.IO;
+using System.Text;
+
+namespace 字符串
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            StringBuilder sb = new StringBuilder();//同一块内存
+            string str = null;
+            //创建计时器,用来记录程序运行的时间
+            Stopwatch sw = new Stopwatch();
+            sw.Start();//开始计时
+            for(int i=0;i&lt;100000;i++)
+            {
+                //str += i;
+                sb.Append(i);
+            }
+            sw.Stop();//结束计时
+            Console.WriteLine(sb.ToString());
+            Console.WriteLine(sw.Elapsed);
+            Console.ReadKey();
+        }
+    }
+}
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>s.ToUpper() 转换为大写<br>s.ToLower() 转换为小写<br>s1.Equals(s1,StringComparison.OrdinalIgnoreCase) 比较 StringComparison.OrdinalIgnoreCase:忽略比较字符串大小写</p><p>**分割字符串:**s.Split(chs,StringSplitOptions.RemoveEmptyEntries) chs:需要移除的字符数组 StringSplitOptions.RemoveEmptyEntries:去除空项<br>返回字符串类型数组</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Diagnostics;
+using System.IO;
+using System.Text;
+
+namespace 字符串
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //字符串分割Split()返回字符串类型数组
+            string s = "a b    dfd    _+   =  ,,, fdf";
+            char[] chs = { ' ', '_', '+', '=', ',' };
+            string[] str = s.Split(chs,StringSplitOptions.RemoveEmptyEntries);
+            Console.ReadKey();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>s1.Contains(s2) s1包含s2<br>s.Replace(要替换的内容,替换成为的内容) 替换</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Diagnostics;
+using System.IO;
+using System.Text;
+
+namespace 字符串
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string str = "国家关键人物老赵";
+            if(str.Contains("老赵"))
+            {
+                str = str.Replace("老赵", "**");
+            }
+            Console.WriteLine(str);
+            Console.ReadKey();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>s.SubString(起始位置0开始,截取个数) 截取字符串</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Diagnostics;
+using System.IO;
+using System.Text;
+
+namespace 字符串
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //SubString 截取字符串
+            string str = "今天天气好晴朗，处处好风光";
+            str = str.Substring(1,2);
+            Console.WriteLine(str);
+            Console.ReadKey();
+        }
+    }
+}
+//天天<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>s.StartsWith(str) 以什么开始,返回bool类型<br>s.EndsWith(str) 以什么结尾,返回bool类型</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Diagnostics;
+using System.IO;
+using System.Text;
+
+namespace 字符串
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string str = "今天天气好晴朗，处处好风光";
+            if(str.StartsWith("今天"))
+            {
+                Console.WriteLine("是");
+            }
+            else
+            {
+                Console.WriteLine("不是");
+            }
+            Console.ReadKey();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>str.IndexOf(字符串,开始查找位置包括当前位置); 判读该字符串第一次出现位置,从0开始<br>str.LastIndexOf(字符串,开始查找位置包括当前位置); 判断该字符串最后出现位置,从0开始</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Diagnostics;
+using System.IO;
+using System.Text;
+
+namespace 字符串
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string str = "今天天气好晴朗，处处好风光";
+            int index = str.IndexOf('天',2);
+            int index1 = str.LastIndexOf('天',2);
+            Console.WriteLine(index);
+            Console.WriteLine(index1);
+            Console.ReadKey();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>str.Trim(); 去空格 返回string类型<br>str.TrimStart(); 去前面空格 返回string类型<br>str.TrimEnd(); 去后面空格 返回string类型</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Diagnostics;
+using System.IO;
+using System.Text;
+
+namespace 字符串
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string str = "      hahaha     ";
+            //str = str.Trim();
+            //str = str.TrimStart();
+            str = str.TrimEnd();
+            Console.Write(str);
+            Console.ReadKey();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>string.IsNullOrEmpty(str) 判断字符串是否为NULL或Empty</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Diagnostics;
+using System.IO;
+using System.Text;
+
+namespace 字符串
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string str = null;
+            if(string.IsNullOrEmpty(str))
+            {
+                Console.WriteLine("是的");
+            }
+            else
+            {
+                Console.WriteLine("不是");
+            }
+            Console.ReadKey();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>string.Join(字符串, 可变数组); 将数组按照指定的字符串连接,返回一个字符串</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Diagnostics;
+using System.IO;
+using System.Text;
+
+namespace 字符串
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] names = { "张三", "李四", "王五", "赵六" };
+            string strNew = string.Join("|", names);
+            Console.WriteLine(strNew);
+            Console.ReadKey();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h5 id="案例-字符串使用"><a href="#案例-字符串使用" class="headerlink" title="案例: 字符串使用"></a>案例: 字符串使用</h5><p>案例描述:<br>文本文件中存储了多个文章标题、作者，<br>标题和作者之间用若干空格(数量不定)隔开，每行一个，<br>标题有的长有的短，输出到控制台的时候最多标题长度10.<br>如果超过10，则截取长度8的子串并且最后添加“…”，加一个竖线后输出作者的名字。</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Diagnostics;
+using System.IO;
+using System.Text;
+
+namespace 字符串
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string path = @"文件路径";
+            string[] contents = File.ReadAllLines(path, Encoding.Default);
+            for(int i=0;i&lt;contents.Length;i++)
+            {
+                string[] strNew = contents[i].Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                Console.WriteLine((strNew[0].Length &gt; 10 ? strNew[0].Substring(0, 8)+"......r": strNew[0]) + "|" + strNew[1]);
+            }
+            Console.ReadKey();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="4-5-继承"><a href="#4-5-继承" class="headerlink" title="4.5 继承"></a>4.5 继承</h3><p>子类 派生类<br>父类 基类<br>子类继承了父类,继承了父类的属性和方法,但是子类没有继承父类的私有字段</p><p>继承的特性:<br>1.单根性:一个子类只能有一个父类<br>2.传递性</p><p>子类并没有继承父类的构造函数,但是子类会默认调用父类无参数的构造函数创建父类对象,让子类可以使用父类中的成员。所以,如果在父类中重新写了一个有参数的构造函数后,那个无参数的就被干掉了,子类就调用不到了,所以子类会报错。<br>解决方法:<br>1.在父类中重新写一个无参数的构造函数<br>2.在子类中显示的调用父类的构造函数,使用关键字<code>:base()</code></p><p>object是所有类的基类</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace 继承
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Reporter rep = new Reporter("狗仔", 34,'男',"偷拍");
+            rep.ReporterSayHello();
+            Programmer pro = new Programmer("程序猿", 23, '男', 3);
+            pro.ProgrammerSayHello();
+            Console.ReadKey();
+         }
+    }
+    public class Person
+    {
+        private string _name;
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
+        private int _age;
+        public int Age
+        {
+            get { return _age; }
+            set { _age = value; }
+        }
+        private char _gender;
+        public char Gender
+        {
+            get { return _gender; }
+            set { _gender = value; }
+        }
+        public Person(string name, int age,char gender)
+        {
+            this.Name = name;
+            this.Age = age;
+            this.Gender = gender;
+        }
+        public void SayHello()
+        {
+            Console.WriteLine("大家好，我是人类");
+        }
+    }
+    public class Reporter : Person
+    {
+        public Reporter(string name,int age,char gender,string hobby)
+            :base(name,age,gender)
+        {
+            this.Hobby = hobby;
+        }
+        private string _hobby;
+        public string Hobby
+        {
+            get { return _hobby; }
+            set { _hobby = value; }
+        }
+
+        public void ReporterSayHello()
+        {
+            Console.WriteLine("我叫{0}，我是一名记者，我的爱好是{1}，我是{2}生，我今年{3}岁", this.Name, this.Hobby, this.Gender, this.Age);
+        }
+        public new void SayHello()
+        {
+            Console.WriteLine("大家好，我是记者");
+        }
+    }
+    public class Programmer : Person
+    {
+        public Programmer(string name, int age, char gender, int workYear)
+            : base(name, age, gender)
+        {
+            this.WorkYear = workYear;
+        }
+        private int _workYear;
+        public int WorkYear
+        {
+            get { return _workYear; }
+            set { _workYear = value; }
+        }
+
+        public void ProgrammerSayHello()
+        {
+            Console.WriteLine("我叫{0}，我是一名程序员，我是{1}生，我今年{2}岁,我的工作年限是{3}年", this.Name,  this.Gender, this.Age,this.WorkYear);
+        }
+        public new void SayHello()//new ：隐藏从父类那里继承来的成员
+        {
+            Console.WriteLine("大家好，我是程序猿");
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>new关键字:<br>1.创建对象<br>2.隐藏从父类继承过来的同名成员 隐藏后果:子类调用不到父类的成员</p><h3 id="4-6-里氏转换"><a href="#4-6-里氏转换" class="headerlink" title="4.6 里氏转换"></a>4.6 里氏转换</h3><p>1.子类可以赋值给父类 如果有一个地方需要父类作为参数,我们可以给一个子类代替<br>2.如果父类中装的是子类对象,那么可以将这个父类强转为子类对象</p><p>子类对象可以调用父类的成员,但是父类对象只能调用自己的成员</p><p>is: 表示类型转换,如果能转换成功,则返回true,不能转换成功返回false<br>as: 表示类型转换,如果能够转换则返回对应的对象,否则返回一个NULL</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace 里氏转换
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //1.子类可以赋值给父类：如果有一个地方需要父类作为参数，我们可以给一个子类代替
+            //Student s = new Student();
+            //Person p = s;
+            Person p = new Student();
+            //2.如果父类中装的是子类对象，那么可以将这个父类强转为子类对象
+            //is用法
+            //if(p is Student)
+            //{
+            //    Student ss = (Student)p;
+            //    ss.StudentSayHello();
+            //}
+            //else
+            //{
+            //    Console.WriteLine("转换失败");
+            //}
+            //as用法
+            Student t = p as Student;
+            t.StudentSayHello();
+            Console.ReadKey();
+        }
+    }
+    public class Person
+    {
+        public void PersonSayHello()
+        {
+            Console.WriteLine("我是父类");
+        }
+    }
+    public class Student:Person
+    {
+        public void StudentSayHello()
+        {
+            Console.WriteLine("我是学生");
+        }
+    }
+    public class Teacher : Person
+    {
+        public void TeacherSayHello()
+        {
+            Console.WriteLine("我是老师");
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h5 id="protected"><a href="#protected" class="headerlink" title="protected"></a>protected</h5><p>受保护的:可以在当前类的内部以及该类的子类中访问</p><h3 id="4-7-ArrayList集合"><a href="#4-7-ArrayList集合" class="headerlink" title="4.7 ArrayList集合"></a>4.7 ArrayList集合</h3><p>集合好处(相对于数组):<br>1.长度可以任意改变<br>2.类型随意</p><p>我们将一个对象输出到控制台,默认情况下就是打印这个对象的命名空间</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Collections;
+
+namespace ArrayList集合
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ArrayList list = new ArrayList();
+            list.Add(1);
+            list.Add(3.14);
+            list.Add(true);
+            list.Add("张三");
+            list.Add('男');
+            list.Add(5000m);
+            list.Add(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+            Person p = new Person();
+            list.Add(p);
+            list.Add(list);
+            list.Remove(true);//删除单个元素
+            list.RemoveAt(0);//根据下标删除元素
+            for(int i=0;i&lt;list.Count;i++)
+            {
+                if(list[i] is Person)
+                {
+                    ((Person)list[i]).SayHello();
+                }else if(list[i] is int[])
+                {
+                    for(int j=0;j&lt;((int[])list[i]).Length;j++)
+                    {
+                        Console.WriteLine(((int[])list[i])[j]);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine(list[i]);
+                }  
+            }
+
+
+            list.Clear();//清除所有元素
+            //添加集合元素 AddRange()
+            list.AddRange(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+            list.AddRange(list);
+            list.RemoveRange(0, 8);//根据下标删除范围元素
+            list.Sort();//升序排列
+            list.Reverse();//反转
+            list.Insert(1, 9);//在位置1插入数字9 InsertRange()在指定位置插入一个集合
+            bool b = list.Contains(1);//判断是否包含指定的内容
+            for(int i=0;i&lt;list.Count;i++)
+            {
+                Console.WriteLine(list[i]);
+            }
+            Console.WriteLine(b);
+            Console.WriteLine(list.Count);
+            Console.WriteLine(list.Capacity);
+            Console.ReadKey();
+            
+        }
+    }
+    public class Person
+    {
+        public void SayHello()
+        {
+            Console.WriteLine("Hello");
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>ArrayList集合长度:</p><ul><li>count 表示这个集合中实际包含的元素个数 没元素:0</li><li>capcity 表示这个集合中可以包含的元素个数 没元素:0<br>当实际包含的元素个数(count)超过了可以包含的元素个数(capcity)时,集合就会向内存中申请多开一倍的空间来保证集合的长度一直够用</li></ul><h3 id="4-8-HashTable集合-键值对集合"><a href="#4-8-HashTable集合-键值对集合" class="headerlink" title="4.8 HashTable集合 (键值对集合)"></a>4.8 HashTable集合 (键值对集合)</h3><p>类似于生活中的字典,<code>键值对对象[键]=值</code></p><p>键值对集合中,键必须是唯一的,值可以是重复的</p><p>使用foreach循环输出,不能使用for循环 var:根据值能够推断出来类型</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace Hashtable集合
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //var:根据值能够推断出来类型
+            //var n = 5;
+            //Console.WriteLine(n.GetType());
+            //创建一个键值对集合对象
+            Hashtable ht = new Hashtable();
+            ht.Add(1,"张三");
+            ht.Add(2, true);
+            ht.Add(3, '男');
+            ht.Add(false, "错误的");
+            //ht.Clear();//清空
+            ht[5] = "new";
+            ht[1] = "换掉张三";
+            //ht.Remove(5);
+            //Console.WriteLine(ht[1]);
+            //不能使用for循环遍历，使用foreach循环
+            foreach (var item in ht.Keys)
+            {
+                Console.WriteLine("键是---{0}，值是---{1}",item,ht[item]);
+            }
+            //for (int i=0;i&lt;ht.Count,;i++)
+            //{
+            //  Console.WriteLine(ht[i]);
+            //}
+            Console.ReadKey();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="4-9-Path类"><a href="#4-9-Path类" class="headerlink" title="4.9 Path类"></a>4.9 Path类</h3><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.IO;
+
+namespace Path类
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string str = @"文件路径";
+            //int index = str.LastIndexOf("\\");
+            //str = str.Substring(index + 1);
+            //Console.WriteLine(str);
+            //快速获得一个路径下文件的名字
+            Console.WriteLine(Path.GetFileName(str));
+            //获得没有扩展名的文件名
+            Console.WriteLine(Path.GetFileNameWithoutExtension(str));
+            //获得文件扩展名
+            Console.WriteLine(Path.GetExtension(str));
+            //获得文件所在文件夹名称
+            Console.WriteLine(Path.GetDirectoryName(str));
+            //获得文件全路径
+            Console.WriteLine(Path.GetFullPath(str));
+            //连接俩个字符串作为路径
+            Console.WriteLine(Path.Combine(@"c:\a\","b.txt"));
+            Console.ReadKey();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="4-10-File类"><a href="#4-10-File类" class="headerlink" title="4.10 File类"></a>4.10 File类</h3><p>File.Exists():判断是否存在<br>File.Copy():复制文件<br>File.Move():剪切,俩个参数,第一个原地址,第二个新地址<br>File.Delete():删除</p><p>读取文件的三个方法:</p><p>1.<code>byte[] buffer = File.ReadAllBytes(@"文件路径"); string str = System.Text.Encoding.Default.GetString(buffer);//将二进制转换为字符串</code></p><p>2.<code>string[] str = File.ReadAllLines(@"文件路径",Encoding.Default);//读取所有行</code></p><p>3.<code>string str = File.ReadAllText(@"文件路径",Encoding.Default);</code></p><p>写入文件:</p><p>1.<code>byte[] buffer = System.Text.Encoding.Default.GetBytes(str);//将字符串转换为字节数组 File.WriteAllBytes(@"文件路径",buffer);</code></p><p>2.<code>File.WriteAllLines(@"文件路径",str数组);</code></p><p>3.<code>File.WriteAllText(@"文件路径",str);</code></p><p>File.AppendAllText(@”文件路径”,str);//追加文字</p><p>多媒体(只能以字节形式)的复制:<br><code>byte[] buffer = File.ReadAllBytes(@"文件路径"); File.WriteAllBytes(@"存放路径",buffer);</code></p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.IO;
+
+namespace File类
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //创建一个文件
+            //File.Create(@"F:\new.txt");
+            //Console.WriteLine("创建成功");
+            //Console.ReadKey();
+            //删除一个文件
+            //File.Delete(@"F:\str.docx");
+            //Console.WriteLine("删除成功");
+            //Console.ReadKey();
+            //赋值一个文件
+            File.Copy(@"F:\new.txt", @"F:\copy.txt");
+            Console.WriteLine("复制成功");
+            Console.ReadKey();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>编码:</p><p>ASC 128<br>ASCII 256</p><p>GB2312 简体字(中国)<br>Big5 繁体字</p><p>unicode 全,但解析慢<br>UTF-8 web</p><p>将字符串以怎样的形式保存为二进制</p><p>乱码:<br>产生原因:保存文件的编码和打开文件的编码格式不同</p><h5 id="Directory操作"><a href="#Directory操作" class="headerlink" title="Directory操作"></a>Directory操作</h5><p>Directory.CreateDirectory():创建文件夹<br>Directory.Delete(@”文件夹路径”,true):删除文件夹 true表示即使该文件夹下不为空也删除<br>Directory.Exists():判断文件夹是否存在<br>Directory.Move():剪切<br>Directory.GetDirectories():得到该路径下所有文件夹路径的字符串数组<br>Directory.GetFiles():得到该路径下所有文件路径的字符串数组 第二个参数为指定文件后缀名 <code>*.avi</code></p><h5 id="FileStream"><a href="#FileStream" class="headerlink" title="FileStream"></a>FileStream</h5><p>操作字节</p><p>File只能操作小文件;操作大文件(字符):StreamReader、StreamWriter</p><p>读:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">//创建FileStream对象
+FileStream fsRead = new FileStream(@"文件路径",FileMode.Open,FileAccess.Read);
+//创建缓冲区的大小
+byte[] buffer = new byte[fsRead.Length];
+//开始读取数据 返回的是这次实际读取到的数据
+int r = fsRead.Read(buffer,0,buffer.Length);
+//将字节数组转换为字符串
+string str = System.Text.Encoding.Default.GetString(buffer);
+fsRead.Close();//关闭流
+fsRead.Dispose();//释放流占用的资源<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>写: 追加:FileMode.Append</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using(FileStream fsWrite = new FileStream(@"文件路径",FileMode.OpenOrCreate,FileAccess.Write)){
+    byte[] buffer = System.Text.Encoding.Default.GetBytes(str);
+    fsWrite.Write(buffer,0,buffer.Length);
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>多媒体文件的复制:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">public static void CopyFile(string source,string target)
+{
+    using(FileStream fsRead = new FileStream(source,FileMode.Open,FileAccess.Read)){
+        using(FileStream fsWrite = new FileStream(target,FileMode.OpenOrCreate,FileAccess.Write)){
+            //创建缓冲区的大小
+            byte[] buffer = new byte[1024*1024*7];
+            //开始读取数据 返回的是这次实际读取到的数据
+            while(true)
+            {
+                int r = fsRead.Read(buffer,0,buffer.Length);
+                if(r==0)//读完了
+                {
+                    return;
+                }else{
+                    fsWrite.Write(buffer,0,r);
+                }
+            }    
+        }
+    }
+}
+//source:原文件路径
+//target:复制到的文件路径<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>StreamReader读数据</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">//使用FileStream来读取数据
+using(FileStream fsRead = new FileStream(@"文件路径",FileMode.Open,FileAccess.Read)){
+    using(StreamReader sr = new StreamReader(fsRead,Encoding.Default)){
+        while(!sr.EndOfStream)
+        {
+            Console.WriteLine(sr.ReadLine());
+        }
+    }
+}
+Console.ReadKey();
+
+//可简写为:
+
+using(StreamReader sr = new StreamReader(@"文件路径"),Encoding.Default){
+    while(!sr.EndOfStream)
+    {
+        Console.WriteLine(sr.ReadLine());
+    }
+}
+Console.ReadKey();<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>StreamReader写数据</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">//使用FileStream来写数据 追加:FileMode.Append
+using(FileStream fsWrite = new FileStream(@"文件路径",FileMode.OpenOrCreate,FileAccess.Write)){
+    using(StreamWriter sw = new StreamWriter(fsWrite,Encoding.Default)){
+        sw.Write("xxx");//俩个字符替换一个字
+    }
+}
+Console.ReadKey();
+
+//可简写为: true:追加
+
+using(StreamWriter sw = new StreamWriter(@"文件路径"),true){
+    sw.Write("xxx");
+}
+Console.ReadKey();<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="4-11-List泛型集合"><a href="#4-11-List泛型集合" class="headerlink" title="4.11 List泛型集合"></a>4.11 List泛型集合</h3><p>方法跟ArrayList差不多</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Collections.Generic;
+
+namespace List泛型集合
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //创建泛型集合对象
+            List&lt;int&gt; list = new List&lt;int&gt;();
+            list.Add(1);
+            list.Add(2);
+            list.Add(3);
+            list.AddRange(new int[] { 1, 2, 3, 4, 5, 6 });
+            list.AddRange(list);
+            //list泛型集合可以转换为数组
+            int[] nums = list.ToArray();
+            for (int i = 0; i &lt; list.Count; i++)
+            {
+                Console.WriteLine(list[i]);
+            }
+            Console.ReadKey();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="4-12-装箱和拆箱"><a href="#4-12-装箱和拆箱" class="headerlink" title="4.12 装箱和拆箱"></a>4.12 装箱和拆箱</h3><p>装箱:就是将值类型转换为引用类型<br>拆箱:就是将引用类型转换为值类型</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">int n=10;
+object o=n;//装箱
+int nn=(int)o;//拆箱<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>装箱会浪费时间,代码中应该避免装箱和拆箱</p><p>注意:Convert.ToInt(str)没有发生任意类型的装箱和拆箱</p><p>发生装箱和拆箱的条件:看是否有继承关系,有继承关系才有可能发生</p><h3 id="4-13-Dictionary集合"><a href="#4-13-Dictionary集合" class="headerlink" title="4.13 Dictionary集合"></a>4.13 Dictionary集合</h3><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Collections.Generic;
+
+namespace Dictionary集合
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Dictionary&lt;int, string&gt; dic = new Dictionary&lt;int, string&gt;();
+            dic.Add(1, "张三");
+            dic.Add(2, "李四");
+            dic.Add(3, "王五");
+            dic[1] = "新来的";
+            //遍历方式
+            //1.foreach
+            //foreach (var item in dic.Keys)
+            //{
+            //    Console.WriteLine("{0}---{1}", item, dic[item]);
+            //}
+            //2.一对数据的遍历
+            foreach (KeyValuePair&lt;int,string&gt; kv in dic)
+            {
+                Console.WriteLine("{0}---{1}", kv.Key, kv.Value);
+            }
+            Console.ReadKey();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="4-14-多态"><a href="#4-14-多态" class="headerlink" title="4.14 多态"></a>4.14 多态</h3><p>多态:<br>概念:让一个对象能够表现出多种状态(类型)<br>实现多态的3种手段:<br>1.虚方法</p><p>将父类方法标记为虚方法,在其返回类型之前加<code>virtual</code>,这个函数子类要重写一遍,在重写方法返回类型前加<code>override</code></p><p>2.抽象类</p><p>当父类中的方法不知道如何去实现时,可以考虑将父类写成抽象类<code>abstract class</code>,将方法写成抽象方法<code>abstract 返回类型</code> 子类也需要重写(在重写方法返回类型前加<code>override</code>),而且子类必须要实现父类中所有的抽象成员<br>实现多态:不能创建父类对象,可以创建子类对象<code>Father f = new Son(); a.Eat();</code></p><p>抽象方法不能有方法体<code>public abstract void func();</code><br>空实现:<code>public abstract void func(){}</code></p><p>抽象类可以有非抽象成员,但是非抽象类中不能有抽象成员</p><p>如果子类也是抽象类,不用重写父类抽象成员</p><p>抽象类是由构造函数的,虽然不能被实例化</p><p>子类重写父类抽象函数时返回值和参数必须一样</p><p>如果父类中的方法有默认的实现,并且父类需要被实例化,这时可以考虑将父类定义成一个普通类,用虚方法来实现多态<br>如果父类中的方法没有默认实现,父类也不需要被实例化,则可以将父类定义为抽象类</p><p>抽象类也可以有虚方法,子类也不是必须要重写虚方法</p><h5 id="案例-使用多态求矩形的面积和周长以及圆形的面积和周长"><a href="#案例-使用多态求矩形的面积和周长以及圆形的面积和周长" class="headerlink" title="案例:使用多态求矩形的面积和周长以及圆形的面积和周长"></a>案例:使用多态求矩形的面积和周长以及圆形的面积和周长</h5><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace 抽象类
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Shape shape = new Circle(5);
+            double area = shape.GetArea();
+            double perimeter = shape.GetPerimeter();
+            Console.WriteLine("面积:{0},周长:{1}", area, perimeter);
+            Console.ReadKey();
+        }
+    }
+    public abstract class Shape
+    {
+        public abstract double GetArea();
+        public abstract double GetPerimeter();
+    }
+    public class Circle : Shape
+    {
+        private double _r;
+        public double R
+        {
+            get { return _r; }
+            set { _r = value; }
+        }
+        public Circle(double r)
+        {
+            this.R = r;
+        }
+        public override double GetArea()
+        {
+            return Math.PI * this.R * this.R;
+        }
+
+        public override double GetPerimeter()
+        {
+            return 2 * Math.PI * this.R;
+        }
+    }
+
+    public class Square : Shape
+    {
+        private double _Height;
+
+        public double Height
+        {
+            get { return _Height; }
+            set { _Height = value; }
+        }
+        private double _Width;
+        public double Width
+        {
+            get { return _Width; }
+            set { _Width = value; }
+        }
+
+        public Square(double height,double width)
+        {
+            this.Height = height;
+            this.Width = width;
+        }
+
+        public override double GetArea()
+        {
+            return this.Height * this.Width;
+        }
+
+        public override double GetPerimeter()
+        {
+            return 2 * (this.Height + this.Width);
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>3.接口</p><p>接口就是一个规范、能力</p><p>语法:<br><code>[public] interface I...able { 成员; }</code></p><p>接口中的成员不允许添加访问修饰符<br>不允许写具有方法体的函数 自动属性<br>不能写字段和构造函数,只能有方法、属性、索引器、事件<br>一个类继承了一个接口就必须实现这个接口中所有成员<br>为了多态,接口不能被实例化,接口不能创建对象<br>接口中的成员不能有任何实现<br>接口与接口间可以继承,并且可以多继承<br>接口只能继承接口<br>类继承类A,继承接口B,写法上A在B前(先继承类)</p><p>显式实现接口就是为了解决方法重名问题</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace 显式实现接口
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //显式实现接口就是为了解决方法重名问题
+            IFlyable fly = new Bird();
+            fly.Fly();
+            Bird bird = new Bird();
+            bird.Fly();
+            Console.ReadKey();
+        }
+    }
+    public class Bird:IFlyable
+    {
+        public void Fly()
+        {
+            Console.WriteLine("鸟会飞");
+        }
+        /// &lt;summary&gt;
+        /// 显式实现接口
+        /// &lt;/summary&gt;
+        void IFlyable.Fly()
+        {
+            Console.WriteLine("我是接口的Fly");
+        }
+    }
+    public interface IFlyable
+    {
+        void Fly();
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h5 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h5><p>public:公开的,公共的<br>private:私有的,只有在当前类的内部访问<br>protected:受保护的,只能在当前类的内部以及该类的子类中访问<br>internal:只能在当前项目中访问,在同一个项目中,与public权限一样<br>protected internal:protected+internal</p><p>1.能够修饰类的修饰符:public、internal(默认)<br>2.可访问性不一致<br>子类访问权限不能高于父类访问权限,因为子类会暴露父类成员</p><h5 id="简单工厂设计模式"><a href="#简单工厂设计模式" class="headerlink" title="简单工厂设计模式"></a>简单工厂设计模式</h5><p>设计模式:设计这个项目的一种方式</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace 简单工厂设计模式
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("请输入你想要的笔记本品牌:");
+            string brand = Console.ReadLine();
+            NoteBook nb = GetNoteBook(brand);
+            nb.SayHello();
+            Console.ReadKey();
+        }
+        /// &lt;summary&gt;
+        /// 简单工厂的核心,根据用户的输入创建对象赋值给父类
+        /// &lt;/summary&gt;
+        /// &lt;param name="brand"&gt;&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        public static NoteBook GetNoteBook(string brand)
+        {
+            NoteBook nb = null;
+
+            switch (brand)
+            {
+                case "Lenovo":nb = new Lenovo();
+                    break;
+                case "IBM":nb = new IBM();
+                    break;
+                case "Acer":nb = new Acer();
+                    break;
+                case "Dell":nb = new Dell();
+                    break;
+                default:
+                    break;
+            }
+
+            return nb;
+        }
+    }
+    public abstract class NoteBook
+    {
+        public abstract void SayHello();
+    }
+    public class Lenovo : NoteBook
+    {
+        public override void SayHello()
+        {
+            Console.WriteLine("我是联想笔记本");
+        }
+    }
+    public class Acer : NoteBook
+    {
+        public override void SayHello()
+        {
+            Console.WriteLine("我是鸿基笔记本");
+        }
+    }
+    public class Dell : NoteBook
+    {
+        public override void SayHello()
+        {
+            Console.WriteLine("我是戴尔笔记本");
+        }
+    }
+    public class IBM : NoteBook
+    {
+        public override void SayHello()
+        {
+            Console.WriteLine("我是IBM笔记本");
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>值类型:int,double,char,decimal,bool,enum,struct<br>复制时,传递的是本身<br>引用类型:string,数组,自定义类,集合,object,接口<br>复制时,传递的是地址 注意:字符串的不可变型</p><p>加ref:值传递-&gt;引用传递</p><p>序列化和反序列化:<br>序列化:就是将对象转换为二进制<br>在类上加<code>[Serializable]</code></p><p>反序列化:就是将二进制转换为对象</p><p>作用:传递数据</p><p>部分类:在类的class前加<code>partial</code>,可以写相同类</p><p>密封类:在类的class前加<code>sealed</code>,不能被继承,但是可以继承其他类</p><p>重写toString方法:</p><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace 重写toString方法
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Person p = new Person();
+            Console.WriteLine(p.ToString());
+            Console.ReadKey();
+        }
+    }
+    public class Person
+    {
+        public override string ToString()
+        {
+            return "Hello World";
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h5 id="案例-超市收银系统"><a href="#案例-超市收银系统" class="headerlink" title="案例: 超市收银系统"></a>案例: 超市收银系统</h5><p>商品类、</p><p>GUID:产生一个不会重复的编号 <code>Guid.NewGuid().toString()</code></p><p>代码:</p><p>ProductFather.cs</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace 超市收银系统
+{
+    class ProductFather
+    {
+        public double Price
+        {
+            get;
+            set;
+        }
+        public string Name
+        {
+            get;
+            set;
+        }
+        public string ID
+        {
+            get;
+            set;
+        }
+        public ProductFather(string id,double price,string name)
+        {
+            this.ID = id;
+            this.Name = name;
+            this.Price = price;
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>Acer.cs</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace 超市收银系统
+{
+    class Acer:ProductFather
+    {
+        public Acer(string id,double price,string name)
+            : base(id, price, name)
+        {
+
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>SamSung.cs</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace 超市收银系统
+{
+    class SamSung:ProductFather
+    {
+        public SamSung(string id,double price,string name)
+            : base(id, price, name)
+        {
+
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>JiangYou.cs</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace 超市收银系统
+{
+    class JiangYou:ProductFather
+    {
+        public JiangYou(string id,double price,string name)
+            : base(id, price, name)
+        {
+
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>Banana.cs</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace 超市收银系统
+{
+    class Banana:ProductFather
+    {
+        public Banana(string id,double price,string name)
+            : base(id, price, name)
+        {
+
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>CangKu.cs</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace 超市收银系统
+{
+    class CangKu
+    {
+        //存储货物 使用父类
+        List&lt;List&lt;ProductFather&gt;&gt; list = new List&lt;List&lt;ProductFather&gt;&gt;();
+
+        /// &lt;summary&gt;
+        /// 向用户展示货物
+        /// &lt;/summary&gt;
+        public void ShowPros()
+        {
+            foreach (var item in list)
+            {
+                Console.WriteLine("仓库有:"+item[0].Name+"\t\t"+"有"+item.Count+"个"+"\t\t每个"+item[0].Price+"元");
+            }
+        }
+        //list[0]存放Acer电脑
+        //list[1]存放三星手机
+        //list[2]存放酱油
+        //list[3]存放酱油
+        /// &lt;summary&gt;
+        /// 在创建仓库对象时 向仓库中添加货架
+        /// &lt;/summary&gt;
+        public CangKu()
+        {
+            list.Add(new List&lt;ProductFather&gt;());
+            list.Add(new List&lt;ProductFather&gt;());
+            list.Add(new List&lt;ProductFather&gt;());
+            list.Add(new List&lt;ProductFather&gt;());
+        }
+        /// &lt;summary&gt;
+        /// 进货
+        /// &lt;/summary&gt;
+        /// &lt;param name="strType"&gt;货物类型&lt;/param&gt;
+        /// &lt;param name="count"&gt;货物数量&lt;/param&gt;
+        public void JinPros(String strType,int count)
+        {
+            for (int i = 0; i &lt; count; i++)
+            {
+                switch(strType)
+                {
+                    case "Acer":
+                        list[0].Add(new Acer(Guid.NewGuid().ToString(),1000,"鸿基笔记本"));
+                        break;
+                    case "SamSung":
+                        list[1].Add(new SamSung(Guid.NewGuid().ToString(), 800, "三星手机"));
+                        break;
+                    case "JiangYou":
+                        list[2].Add(new JiangYou(Guid.NewGuid().ToString(), 8, "酱油"));
+                        break;
+                    case "Banana":
+                        list[3].Add(new Banana(Guid.NewGuid().ToString(), 3, "香蕉"));
+                        break;
+                }
+            }
+        }
+        /// &lt;summary&gt;
+        /// 从仓库中去货物
+        /// &lt;/summary&gt;
+        /// &lt;param name="strType"&gt;&lt;/param&gt;
+        /// &lt;param name="count"&gt;&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        public ProductFather[] QuPros(String strType, int count)
+        {
+            ProductFather[] pros = new ProductFather[count];
+
+            for (int i = 0; i &lt; pros.Length; i++)
+            {
+                switch (strType)
+                {
+                    case "Acer":
+                        pros[i]=list[0][0];
+                        list[0].RemoveAt(0);
+                        break;
+                    case "SamSung":
+                        pros[i] = list[1][0];
+                        list[1].RemoveAt(0);
+                        break;
+                    case "JiangYou":
+                        pros[i] = list[2][0];
+                        list[2].RemoveAt(0);
+                        break;
+                    case "Banana":
+                        pros[i] = list[3][0];
+                        list[3].RemoveAt(0);
+                        break;
+                    default:
+                        break;
+                }
+            }
+            return pros;
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>SupperMarket.cs</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace 超市收银系统
+{
+    class SupperMarket
+    {
+        //创建仓库对象
+        CangKu ck = new CangKu();
+        /// &lt;summary&gt;
+        /// 创建超市对象时给仓库货架上导入货物
+        /// &lt;/summary&gt;
+        public SupperMarket()
+        {
+            ck.JinPros("Acer", 1000);
+            ck.JinPros("SamSung", 1000);
+            ck.JinPros("JiangYou", 1000);
+            ck.JinPros("Banana", 1000);
+
+        }
+        /// &lt;summary&gt;
+        /// 与用户交互
+        /// &lt;/summary&gt;
+        public void AskBuying()
+        {
+            Console.WriteLine("欢迎光临,请问你要什么");
+            Console.WriteLine("我们有Acer、SamSung、JiangYou、Banana");
+            string strType = Console.ReadLine();
+            Console.WriteLine("你需要多少");
+            int count = Convert.ToInt32(Console.ReadLine());
+            //去仓库取货
+            ProductFather[] pros = ck.QuPros(strType, count);
+            double realMoney = GetMoney(pros);
+            Console.WriteLine("你总共消费{0}元", realMoney);
+            Console.WriteLine("请选择打折方式:1--不打折,2--打9折,3--打85折,4--满300减50,5--满500减100");
+            string input = Console.ReadLine();
+            //通过简单工厂设计模式根据用户输入获得一个打折对象
+            CalFather cal = GetCal(input);
+            double totalMoney=cal.GetTotalMoney(realMoney);
+            Console.WriteLine("打折后价钱:{0}", totalMoney);
+            Console.WriteLine("以下是你的小票:");
+            foreach (var item in pros)
+            {
+                Console.WriteLine("货物名称:{0}\t货物单价:{1}\t货物编号:{2}", item.Name, item.Price, item.ID);
+            }
+        }
+        /// &lt;summary&gt;
+        /// 根据用户选择的打折方式返回一个打折对象
+        /// &lt;/summary&gt;
+        /// &lt;param name="input"&gt;用户选择&lt;/param&gt;
+        /// &lt;returns&gt;返回的是父类对象 但是里面装的是子类对象&lt;/returns&gt;
+        public CalFather GetCal(string input)
+        {
+            CalFather cal = null;
+            switch (input)
+            {
+                case "1":
+                    cal=new CalNormal();
+                    break;
+                case "2":
+                    cal = new CalRate(0.9);
+                    break;
+                case "3":
+                    cal = new CalRate(0.85);
+                    break;
+                case "4":
+                    cal = new CalMN(300,50);
+                    break;
+                case "5":
+                    cal = new CalMN(500,100);
+                    break;
+                default:
+                    break;
+            }
+            return cal;
+
+        }
+        /// &lt;summary&gt;
+        /// 根据用户买的货物计算总价钱
+        /// &lt;/summary&gt;
+        /// &lt;param name="pros"&gt;&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        public double GetMoney(ProductFather[] pros)
+        {
+            double realMoney = 0;
+            for (int i = 0; i &lt; pros.Length; i++)
+            {
+                realMoney += pros[i].Price;
+            }
+            return realMoney;
+        }
+        public void ShowPros()
+        {
+            ck.ShowPros();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>CalFather.cs</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace 超市收银系统
+{
+    abstract class CalFather
+    {
+        /// &lt;summary&gt;
+        /// 计算打折后价钱
+        /// &lt;/summary&gt;
+        /// &lt;param name="realMoney"&gt;打折前的价钱&lt;/param&gt;
+        /// &lt;returns&gt;打折后的价钱&lt;/returns&gt;
+        public abstract double GetTotalMoney(double realMoney);
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>CalNormal.cs</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace 超市收银系统
+{
+    class CalNormal : CalFather
+    {
+        /// &lt;summary&gt;
+        /// 不打折
+        /// &lt;/summary&gt;
+        /// &lt;param name="realMoney"&gt;&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        public override double GetTotalMoney(double realMoney)
+        {
+            return realMoney;
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>CalRate.cs</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace 超市收银系统
+{
+    class CalRate : CalFather
+    {
+        /// &lt;summary&gt;
+        /// 折扣率
+        /// &lt;/summary&gt;
+        public double Rate
+        {
+            get;
+            set;
+        }
+        public CalRate(double rate)
+        {
+            this.Rate = rate;
+        }
+        public override double GetTotalMoney(double realMoney)
+        {
+            return realMoney * this.Rate;
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>CalMN.cs</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace 超市收银系统
+{
+    class CalMN : CalFather
+    {
+        public double M
+        {
+            get;
+            set;
+        }
+        public double N
+        {
+            set;
+            get;
+        }
+        public CalMN(double m,double n)
+        {
+            this.M = m;
+            this.N = n;
+        }
+        public override double GetTotalMoney(double realMoney)
+        {
+            if(realMoney&gt;=this.M)
+            {
+                return realMoney - (int)(realMoney / this.M) * this.N;
+            }
+            else
+            {
+                return realMoney;
+            }
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>Main.cs</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace 超市收银系统
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //创建超市对象
+            SupperMarket sm = new SupperMarket();
+            //展示货物
+            sm.ShowPros();
+            //用户交互
+            sm.AskBuying();
+            Console.ReadKey();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h5 id="MD5加密"><a href="#MD5加密" class="headerlink" title="MD5加密"></a>MD5加密</h5><p>代码:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Security.Cryptography;
+using System.Text;
+
+namespace MD5加密
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //"123"  202cb962ac59075b964b07152d234b70
+            string s = GetMD5("123");
+            Console.WriteLine(s);
+            Console.ReadKey();
+        }
+        public static string GetMD5(string str)
+        {
+            //创建MD5对象
+            MD5 md5 = MD5.Create();
+            //加密
+            //将字符串转化为字节数组
+            byte[] buffer = Encoding.Default.GetBytes(str);
+            byte[] MD5Buffer = md5.ComputeHash(buffer);
+            //将字节数组转化为字符串
+            //将字节数组中每一个元素按照指定的编码格式解析成字符串
+            //直接将数组ToString()
+            //将字节数组中每个元素ToString()
+            //return Encoding.Default.GetString(MD5Buffer);
+            string strs = "";
+            for (int i = 0; i &lt; MD5Buffer.Length; i++)
+            {
+                strs += MD5Buffer[i].ToString("x2");//将10进制转化为16进制：x   x2起对齐作用
+            }
+            return strs;
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="5-winform"><a href="#5-winform" class="headerlink" title="5 winform"></a>5 winform</h2><p>winform应用程序是一种智能客户端技术,我们可以使用winform应用程序帮助我们获得信息或者传输信息等</p><p>创建时选择Windows窗体应用(.NET Framework)</p><p>后台切前台:右键-&gt;查看设计器</p><h4 id="Button控件"><a href="#Button控件" class="headerlink" title="Button控件"></a>Button控件</h4><p>属性:<br>1.Name:在后台要获得前台的空间对象时需要使用Name属性<br>2.visible:指示一个控件是否可见<br>3.Enabled:指示一个控件是否可用</p><p>事件:<br>注册事件:双击控件注册的都是控件默认选中的那个事件<br>触发事件:</p><p>在Main函数中创建的窗体对象我们称之为这个窗体应用程序的主窗体</p><p>关闭所有窗体:</p><p>新建一个静态类</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">public static class Test
+{
+    public static Form1 _fr1Test;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>主窗体load加载时发生:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">Test._fr1Test = this;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>需要调用关闭事件的地方:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">Test._fr1Test.Close();<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>Button常用事件:Click、MouseEnter</p><h4 id="TextBox控件"><a href="#TextBox控件" class="headerlink" title="TextBox控件"></a>TextBox控件</h4><p>属性:<br>1.WordWrap:指示文本框是否换行<br>2.PasswordChar:让文本框显示一个单一的字符<br>3.ScollBars:是否显示滚动条<br>事件:TextChanged:当文本框中内容改变时执行这个事件</p><p>Timer<br>在指定的一段时间间隔内<br>事件:Tick:每隔一段时间执行一次事件</p><p>播放音乐:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">SoundPlayer sp = new SoundPlayer();
+sp.SoundLocation = @"音乐文件路径(只支持.wav)";
+sp.play();<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h4 id="CheckBox-复选框"><a href="#CheckBox-复选框" class="headerlink" title="CheckBox 复选框"></a>CheckBox 复选框</h4><p>checked:指示这个空间是否选中</p><h4 id="RadioButton-单选"><a href="#RadioButton-单选" class="headerlink" title="RadioButton 单选"></a>RadioButton 单选</h4><p>默认情况下,在一个窗体中,所有单选按钮只允许选中一个,但可以使用GroupBox容器:用于分组</p><h3 id="MDI窗体设计"><a href="#MDI窗体设计" class="headerlink" title="MDI窗体设计"></a>MDI窗体设计</h3><p>1.首先确定一个父窗体<br>isMdiContainer -&gt; true<br>2.创建子窗体,并且设置他们的父窗体</p><p><a target="_blank" rel="noopener" href="https://github.com/liaojie1314/MDIdesign">代码</a></p><h4 id="PictureBox"><a href="#PictureBox" class="headerlink" title="PictureBox"></a>PictureBox</h4><p>.Image = Image.FromFile(图片全路径);</p><h3 id="Directory-操作文件夹"><a href="#Directory-操作文件夹" class="headerlink" title="Directory 操作文件夹"></a>Directory 操作文件夹</h3><p>CreateDirectory 创建文件夹<br>Delete 删除文件夹<br>Move 剪切文件夹<br>Exist 判断是否存在<br>GetFiles 获得指定目录下所有文件的全路径<br>GetDirectory 获得指定目录下所有文件夹的全路径</p><h4 id="WebBrowser-浏览器控件"><a href="#WebBrowser-浏览器控件" class="headerlink" title="WebBrowser 浏览器控件"></a>WebBrowser 浏览器控件</h4><p>Url:网站网址</p><p>Uri uri = new Uri(“http://“+str);</p><h4 id="ComboBox-下拉框控件"><a href="#ComboBox-下拉框控件" class="headerlink" title="ComboBox 下拉框控件"></a>ComboBox 下拉框控件</h4><p>DropDownStyle:控制下拉框的外观样式</p><p>名字:cbo+…</p><p>.Items.Add()//添加<br>.Items.Clear()//清空<br>.SelectedItem.ToString()//获取当前选择的文本</p><h5 id="案例-日期选择器"><a href="#案例-日期选择器" class="headerlink" title="案例: 日期选择器"></a>案例: 日期选择器</h5><p><a target="_blank" rel="noopener" href="https://github.com/liaojie1314/DatePickers">代码</a></p><h4 id="ListBox控件"><a href="#ListBox控件" class="headerlink" title="ListBox控件"></a>ListBox控件</h4><p>.Items.Add()//添加</p><h5 id="案例-石头剪刀布"><a href="#案例-石头剪刀布" class="headerlink" title="案例: 石头剪刀布"></a>案例: 石头剪刀布</h5><p><a target="_blank" rel="noopener" href="https://github.com/liaojie1314/RockPaperScissors">代码</a></p><h4 id="对话框"><a href="#对话框" class="headerlink" title="对话框"></a>对话框</h4><p>打开对话框</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">OpenFileDialog ofd = new OpenFileDialog();
+//设置对话框标题
+ofd.Title = "";
+//设置对话框可以多选
+ofd.Multiselect = true;
+//设置对话框初始目录
+ofd.InitialDirectory = @"全路径";
+//设置对话框的文件类型
+ofd.Filter = "文本文件|*.txt|媒体文件|*.wmv|图片文件|*.jpg|所有文件|*.*";
+//展示对话框
+ofd.ShowDialog();
+//获得在打开对话框中选中文件的路径
+string path = ofd.FileName;
+if(path=="")
+{
+    return;
+}
+using(FileStream fsRead = new FileStream(path,FileMode.OpenOrCreate,FileAccess.Read))
+{
+    byte[] buffer = new byte[1024*1024*5];
+    int r = fsRead.Read(buffer,0,buffer.Length);
+    textBox.Text = Encoding.Default.GetString(buffer,0,r);
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>保存对话框</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">SaveFileDialog sfd = new SaveFileDialog();
+sfd.Title = "";
+sfd.InitialDirectory = @"全路径";
+sfd.Filter = "文本文件|*.txt|媒体文件|*.wmv|图片文件|*.jpg|所有文件|*.*";
+sfd.ShowDialog();
+string path = sfd.FileName;
+if(path=="")
+{
+    return;
+}
+using(FileStream fsWrite = new FileStream(path,FileMode.OpenOrCreate,FileAccess.Write))
+{
+    byte[] buffer = Encoding.Default.GetBytes(textBox.Text);
+    fsWrite.Write(buffer,0,buffer.Length);
+}
+MessageBox.Show("保存成功");<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>字体和颜色对话框</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">FontDialog fd = new FontDialog();
+fd.ShowDialog();
+textBox.Font = fd.Font;
+
+ColorDialog cd = new ColorDialog();
+cd.ShowDialog();
+textBox.ForeColor = cd.Color;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>panel.Visibel = false;//隐藏</p><h3 id="进程类"><a href="#进程类" class="headerlink" title="进程类"></a>进程类</h3><p>代码</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+using System.Diagnostics;
+
+namespace 进程类
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //获取当前程序所有正在运行的进程
+            /*
+            Process[] pros = Process.GetProcesses();
+            foreach (var item in pros)
+            {
+                Console.WriteLine(item);
+            }
+            */
+            //Process.Start("calc");//打开计算机
+            //打开指定文件
+            ProcessStartInfo psi = new ProcessStartInfo(@"E:\test.txt");
+            //1.创建进程对象
+            Process p = new Process();
+            p.StartInfo = psi;
+            p.Start();
+            Console.ReadKey();
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h3><p>线程分类:</p><ul><li>前台线程:只有所有前台线程都关闭才能完成程序关闭</li><li>后台线程:只要所有前台线程结束,后台线程自动关闭</li></ul><p>单线程问题:</p><ul><li>假死</li><li>耗时</li></ul><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">Thread th;
+
+//创建一个线程
+th = new Thread(Test);
+//将线程设置为后台线程
+th.IsBackground = true;
+//标记这个线程准备就绪,随时可以被执行
+th.Start();<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>.NET下不允许跨线程访问</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">//取消跨线程访问
+Control.CheckForIllegalCrossThreadCalls = false;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>关闭窗体时判断新线程是否为null,避免主线程关闭,新线程未关闭</p><p>Closing</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">if(th != null)
+{
+    //结束这个线程
+    th.Abort();//一旦Abort就不能Start了
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>Thread.Sleep(3000);//休眠3秒</p><h2 id="Socket网络编程"><a href="#Socket网络编程" class="headerlink" title="Socket网络编程"></a>Socket网络编程</h2><p>如果线程执行的方法需要参数,那么要求这个参数必须是object类型</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">Thread th = new Thread(Test);
+th.IsBackground = true;
+th.Start("123");
+
+//下面是Test方法
+private void Test(object s)
+{
+    string ss = (string)s;
+    for(int i = 0;i &lt; 10000;i++)
+    {
+        Console.WriteLine(i);
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>TCP:3次握手 安全、稳定但效率低<br>UDP:快速、效率高,但是不稳定 容易发生数据丢失</p><p>服务器:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">try{
+    //创建一个负责监听的Socket
+    Socket socketWatch = new Socket(AddressFamily.InterNetwork,SocketType.Stream,ProtocolType.Tcp);
+    //创建IP地址和端口号对象
+    IPAddress ip = IPAddress.Any; //IPAddress.Parse(txtServer.Text);
+    IPEndPoint point = new IPEndPoint(ip,Convert.ToInt32(txtPort.Text));//第二个参数为端口号
+    //让负责监听的Socket绑定IP地址的端口号
+    socketWatch.Bind(point);
+    ShowMsg("监听成功");
+    //设置监听队列 在某一个时间点内能够连入这个服务端的最大客户端数量
+    socketWatch.Listen(10);
+    Thread th = new Thread(Listen);
+    th.IsBackground = true;
+    th.Start(socketWatch);
+    }catch
+    {}
+
+Socket socketSend;
+
+//等待客户端的连接 并且创建与之通信的Socket
+void Listen(object o)
+{
+    //负责跟客户端通信的Socket 将远程地址的端口号存在下拉列表中
+    Socket socketWatch = o as Socket;
+    //负责监听的Socket 来接收客户端的连接 创建跟客户端通信的Socket
+    while(true)
+    {
+        try
+        {
+            socketSend = socketWatch.Accept();
+            //将远程连接的客户端的IP地址和Socket存入集合中
+            dicSocket.Add(socketSend.RemoteEndPoint.ToString(),socketSend);
+            //将远程连接的客户端IP地址和端口号存入下拉框中
+            cboUsers.Items.Add(socketSend.RemoteEndPoint.ToString());
+            //RemoteEndPoint 得到远程地址的端口号
+            ShowMsg(socketSend.RemoteEndPoint.ToString()+":"+"连接成功");
+            //开启一个新线程 不同接收客户端发来的消息
+            Thread th = new Thread(Recive);
+            th.IsBackground = true;
+            th.Start(socketSend);
+        }
+        catch
+        {}
+    }
+}
+
+//将远程连接的客户端的IP地址和Socket存入集合中
+Dictionary&lt;string,Socket&gt; dicSocket = new Dictionary&lt;string,Socket&gt;();
+
+//服务器端不停接收客户端发送的消息
+void Recive(object o)
+{
+    Socket socketSend = o as Socket;
+    while(true)
+        {
+            try
+            {
+                //客户端连接成功后 服务器应该接收客户端发来的消息
+                byte[] buffer = new byte[1024*1024*2];
+                //r 实际接收到的有效字节数
+                int r = socketSend.Receive(buffer);
+                if(r==0)
+                {
+                    break;
+                }
+                string str = Encoding.UTF8.GetString(buffer,0,r);
+                ShowMsg(socketSend.RemoteEndPoint+":"+str);
+            }catch
+            {}
+        }
+}
+void ShowMsg(string str)
+{
+    txtLog.AppendText(str + "\r\n");
+}
+
+//服务端个客户端发送消息 点击事件
+string str = txtMsg.Text;
+byte[] buffer = System.Text.Encoding.UTF8.GetBytes(str);
+List&lt;byte&gt; list = new List&lt;byte&gt;();
+list.Add(0);
+list.AddRange(buffer);
+//将泛型集合转化为数组
+byte[] newBuffer = list.ToArray();
+//获得在下拉框中选择的IP地址
+string ip = cboUsers.SelectedItem.ToString();
+dicSocket[ip].Send(newBuffer);
+//socketSend.Send(buffer);
+
+//选择要发送的文件  按钮点击事件
+OpenFileDialog ofd =new OpenFileDialog();
+ofd.InitialDirectory = @"初始目录全路径";
+ofd.Title = "请选择要发送的文件";
+ofd.Filter = "所有文件|*.*";
+ofd.ShowDialog();
+txtPath.Text = ofd.FileName;
+
+//按钮点击事件
+string path = txtPath.Text;
+using(FileStream fsRead = new FileStream(path,FileMode.Open,FileAccess.Read))
+{
+    byte[] buffer = new byte[1024*1024*5];
+    int r = fsRead.Read(buffer,0,buffer.Length);
+    List&lt;byte&gt;list = new List&lt;byte&gt;();
+    list.Add(1);
+    list.AddRange(buffer);
+    byte[] newBuffer = list.ToArray();
+    dicSocket[cboUsers.SelectedItem.ToString()].Send(newBuffer,0,r+1,SocketFlags.None);
+}
+
+//震动 按钮点击事件
+byte[] buffer = new byte[1];
+buffer[0] = 2;
+dicSocket[cboUsers.SelectedItem.ToString()].Send(buffer);
+
+//解决线程间操作不到问题
+//在程序加载时取消跨线程的检查
+Control.CheckForIllegalCrossThreadCalls = false;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>打开Telnet Client:<br>控制面板-&gt;查看方式(类别)-&gt;程序-&gt;程序和功能-&gt;启用或关闭Windows功能(在左边)-&gt;Telnet Client(勾上),点击确认</p><p>客户端:</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">Socket socketSend;
+
+try{
+    //创建负责通讯的Socket
+    socketSend = new Socket(AddressFamily.InterNetwork,SocketType.Stream,ProtocolType.Tcp);
+    IPAddress ip = IPAddress.Parse(txtServer.Text);
+    IPEndPoint point = new IPEndPoint(ip,Convert.ToInt32(txtPort.Text));
+    //获得要连接的远程服务器应用程序的IP地址和端口号
+    socketSend.Connect(point);
+    ShowMsg("连接成功");
+    //开启新线程不停接收服务端发来的消息
+    Thread th = new Thread(Recive);
+    th.IsBackground = true;
+    th.Start();
+    }catch
+    {}
+
+//不停接收服务端发来的消息
+void Recive()
+{
+    try{
+        while(true)
+        {
+            byte[] buffer = new byte[1024*1024*3];
+            int r = socketSend.Receive(buffer);
+            //实际接收到的有效字节数组
+            if(r==0)
+            {
+                break;
+            }
+            if(buffer[0]==0)
+            {
+                //发送文字消息
+                string s = Encoding.UTF8.GetString(buffer,1,r-1);
+                ShowMsg(socketSend.RemoteEndPoint+":"+s);
+            }else if(buffer[0]==1)
+            {
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.InitialDirectory = @"保存默认地址";
+                sfd.Title = "请选择要保存的文件";
+                sfd.Filter = "所有文件|*.*";
+                sfd.ShowDialog(this);
+                string path = sfd.FileName;
+                using(FileStream fsWrite = new FileStream(path,FileMode.OpenOrCreate,FileAccess.Write))
+                {
+                    fsWrite.Write(buffer,1,r-1);
+                }
+                MessageBox.Show("保存成功");
+            }else if(buffer[0]==2)
+            {
+                ZD();
+            }
+        }
+    }catch
+    {}
+}
+
+//震动
+void ZD()
+{
+    for(int i = 0;i &lt; 500;i++)
+    {
+        this.Location = new Point(200,200);
+        this.Location = new Point(280,280);
+    }
+}
+
+//发送消息事件中
+string str = txtMsg.Text.Trim();
+byte[] buffer = System.Text.Encoding.UTF8.GetBytes(str);
+socketSend.Send();
+
+void ShowMsg(string str)
+{
+    txtLog.AppendText(str + "\r\n");
+}
+
+//解决线程间操作不到问题
+//在程序加载时取消跨线程的检查
+Control.CheckForIllegalCrossThreadCalls = false;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>开启多个项目:右键项目-&gt;调试-&gt;启动新实例</p><p>设计”协议”:</p><ul><li>0 文本</li><li>1 文件</li><li>2 震动</li></ul><h2 id="GDI绘图"><a href="#GDI绘图" class="headerlink" title="GDI绘图"></a>GDI绘图</h2><p>保留2位小数: <code>avg = Convert.ToDouble(avg.ToString("0.00"));</code></p><p>窗体事件:Print<br>窗体重新绘制时都会画一遍</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">//创建GDI对象
+Graphics g = this.CreateGraphics();
+//创建画笔对象
+Pen pen = new Pen(Brushes.Red);
+//扇形
+Size sizePie = new System.Drawing.Size(80, 80);
+Rectangle recPie = new Rectangle(new Point(150, 150), sizePie);
+g.DrawPie(pen, recPie, 60, 60);
+//矩形
+Size size = new System.Drawing.Size(80, 80);
+Rectangle rec = new Rectangle(new Point(50,50),size);
+g.DrawRectangle(pen, rec);
+//创建俩个点
+Point p1 = new Point(30, 50);
+Point p2 = new Point(25, 250);
+g.DrawLine(pen, p1, p2);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h5 id="案例-验证码"><a href="#案例-验证码" class="headerlink" title="案例: 验证码"></a>案例: 验证码</h5><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">private void pictureBox1_Click(object sender, EventArgs e)
+{
+Random r = new Random();
+string str = null;
+for (int i = 0; i &lt; 5; i++)
+{
+    int rNumber = r.Next(0, 10);
+    str += rNumber;
+}
+//MessageBox.Show(str);
+//创建GDI对象
+Bitmap bmp = new Bitmap(110,30);
+Graphics g = Graphics.FromImage(bmp);
+for (int i = 0; i &lt; 5; i++)
+{
+    Point p = new Point(i*20,0);
+    string[] fonts = { "微软雅黑", "宋体", "隶书", "黑体", "仿宋" };
+    Color[] colors = { Color.Yellow, Color.Blue, Color.Green, Color.Black, Color.Red };
+    g.DrawString(str[i].ToString(),new Font(fonts[r.Next(0,5)],20,FontStyle.Bold),new SolidBrush(colors[r.Next(0,5)]),p);
+}
+for (int i = 0; i &lt; 20; i++)
+{
+    Point p1 = new Point(r.Next(0,bmp.Width),r.Next(0,bmp.Height));
+    Point p2 = new Point(r.Next(0,bmp.Width),r.Next(0,bmp.Height));
+    g.DrawLine(new Pen(Brushes.Green),p1,p2);
+}
+for (int i = 0; i &lt; 500; i++)
+{
+    Point p = new Point(r.Next(0, bmp.Width), r.Next(0, bmp.Height));
+    bmp.SetPixel(p.X,p.Y,Color.Black);
+}
+//将图片镶嵌到PictureBox中
+pictureBox1.Image = bmp;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><a target="_blank" rel="noopener" href="https://github.com/liaojie1314/VerificationCodeC-">代码</a></p><h5 id="案例-简单播放器"><a href="#案例-简单播放器" class="headerlink" title="案例: 简单播放器"></a>案例: 简单播放器</h5><p>添加<code>Windows Media Player</code>：<br>工具箱里找到组件右键-&gt;选择项-&gt;COM组件-&gt;找到Windows Media Player勾上并确认</p><p><strong>windows media player控件的常用属性和方法</strong></p><p>以下 music player 均为windows media player控件的名字。<br>1.属性<br>1）musicPlayer.settings.autoStart：打开播放器时是否自动播放 。true：自动播放，false：不自动播放，默认自动播放。<br>2）musicPlayer.URL：要播放歌曲的路径。<br>3）musicPlayer.settings.mute：是否静音。true：静音，false：不静音。<br>4）musicPlayer.settings.volume：音量值大小，范围是1 ~ 100。<br>5）musicPlayer.Ctlcontrols.currentPositionString：当前播放时间。返回值是字符串类型，例如：02：23。<br>6）musicPlayer.Ctlcontrols.currentPosition：也是返回当前播放的时间。返回值是 double 类型，例如：133.8。<br>7）musicPlayer.currentMedia.name：返回当前播放歌曲的名字。<br>8）musicPlayer.playState：播放器当前的状态。</p><ul><li>有一个枚举 WMPLib.WMPPlayState 说明了它的取值：<br>0——wmppsUndefined：未知状态<br>1——wmppsStopped：播放停止<br>2——wmppsPaused：播放暂停<br>3——wmppsPlaying：正在播放<br>4——wmppsScanForward：向前搜索<br>5——wmppsScanReverse：向后搜索<br>6——wmppsBuffering ：正在缓冲<br>7——wmppsWaiting：正在等待流开始<br>8——wmppsMediaEnded：播放流已结束<br>9——wmppsTransitioning ：准备新的媒体文件<br>10——wmppsReady：播放准备就绪<br>11——wmppsReconnecting：尝试重新连接流媒体数据<br>12——wmppsLast：上一次状态,状态没有改变</li></ul><p>2.方法<br>1）musicPlayer.Ctlcontrols.play()：播放<br>2）musicPlayer.Ctlcontrols.pause()：暂停<br>3）musicPlayer.Ctlcontrols.stop()：停止</p><p>属性:<br>url:音乐地址</p><p>1.在程序加载时取消播放器自动播放功能<br>2.播放或者暂停按钮<br>3.上一曲、下一曲<br>4.多选删除</p><ul><li>给ListBox添加一个右键菜单</li></ul><p>5.静音和放音<br>6.选择列表中的音乐文件,单击按钮直接播放<br>7.自动播放下一曲</p><p><a href="">代码</a></p><h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>需要安装组件<code>ASP.net 和 Web开发</code>中的<code>其他项目模板(早期版本)</code></p><ul><li>位置:展开最右边的ASP.NET和Web开发下拉菜单</li></ul><p>新建网站项目:<br>选择<code>ASP.NET 空网站</code>这个选项即可<br>添加html页:右键项目-&gt;添加-&gt;添加新项-&gt;HTML页</p><p>HTML:超文本标记语言</p><p>标签:</p><ul><li>p: 段落标签</li><li>&amp;nbsp: 空格</li><li>h#: 标题标签</li><li><code>&lt;!-- 要注释的内容 --&gt;</code>: 注释符</li><li><code>&lt;img/&gt;</code>: 图片标签<ul><li>src: 要显示图片的路径</li><li>height: 图片高度</li><li>width: 图片宽度</li><li>alt: 图片显示失败所显示的文本</li><li>title: 光标移动到图片上所显示的文本</li></ul></li><li><code>&lt;hr/&gt;</code>: 分割线</li><li><code>&lt;font&gt;&lt;/font&gt;</code>: 字体标签<ul><li>size=1 ~ 7 最大:7</li><li>color: 颜色</li><li>face: 字体系列</li></ul></li><li>a标签:<ul><li>href: 要连接的地址</li><li>target: 打开新网页的方式(<code>_blank</code>:打开一个新的页面;<code>_self</code>:当前页面跳转)<br>作用:</li></ul></li></ul><p>1.实现页面内的跳转<br>2.实现页面间的跳转<br>3.发送邮件</p><ul><li>div+span</li><li>frame: 框架标签</li></ul><p>更多请查看HTML</p><h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><p>CSS:控制网页内容的效果</p><p>更多请查看CSS</p><h2 id="委托、XML、播放器项目"><a href="#委托、XML、播放器项目" class="headerlink" title="委托、XML、播放器项目"></a>委托、XML、播放器项目</h2><p>单例模式<br>1.将构造函数私有化<br>2.提供一个静态方法,返回一个对象<br>3.创建一个单例</p><h3 id="XML-可扩展标记语言"><a href="#XML-可扩展标记语言" class="headerlink" title="XML:可扩展标记语言"></a>XML:可扩展标记语言</h3><ul><li>存储数据<br>注意:XML严格区分大小写且也是成对出现<br>XML文档有且只有一个根节点</li></ul><p>节点<br>元素</p><p>通过代码创建XML文档<br>1.引用命名空间</p><ul><li><code>using System.Xml;</code></li></ul><p>2.创建XML文档对象</p><ul><li><code>XmlDocument doc = new XmlDocument();</code><br>追加文档<pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">XmlElement root;
+if(File.Exists("xxx.xml"))
+{
+    //文件存在 加载XML
+    doc.Load("xxx.xml"); 
+    //获取文件根节点
+    root = doc.DocumentElement;
+}
+else
+{
+    //文件不存在
+    //创建第一行描述信息,并添加到文档中
+    XmlDeclaration dec = doc.CreateXmlDeclaration("1.0","utf-8",null);
+    doc.AppendChild(dec);
+    //创建根节点
+    root = doc.CreateElement("xxx");
+    doc.AppendChild(root);
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>读取XML文档<pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">doc.Load("xxx.xml");
+//获取文件根节点
+XmlElement root = doc.DocumentElement;
+//获得子节点 返回结点集合
+XmlNodeList xnl = root.ChildNodes;
+foreach(XmlNode item in xnl)
+{
+    Console.WriteLine(item.InnerText);
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>读取带属性XML文档<pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">doc.Load("xxx.xml");
+XmlNodeList xnl = doc.SelectNodes("/xxx/xxx");//找到节点
+foreach(XmlNode node in xnl)
+{
+    Console.WriteLine(node.Attributes["属性名"].Value);
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>删除节点<pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">doc.Load("xxx.xml");
+XmlNode xn = doc.SelectSingleNode("/xxx/xxx");
+xn.RemoveAll();
+doc.Save("xxx.xml");<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li></ul><p>3.创建第一行描述信息,并添加到文档中</p><ul><li><code>XmlDeclaration dec = doc.CreateXmlDeclaration("1.0","utf-8",null);</code></li><li><code>doc.AppendChild(dec);</code></li></ul><p>4.创建根节点</p><ul><li><code>XmlElement root = doc.CreateElement("xxx");</code></li><li><code>doc.AppendChild(root);</code></li></ul><p>5.创建子节点</p><ul><li><code>XmlElement child = doc.CreateElement("xxxxx");</code></li></ul><p>6.给根节点添加子节点<br><code>child.InnerText = "";</code> 添加文本<br><code>child.InnerXml = "";</code> 添加标签<br><code>child.setAttribute("属性名","属性值");</code> 添加属性</p><ul><li><code>root.AppendChild(child);</code></li><li><code>doc.Save("xxx.xml");</code></li></ul><p>保存的文件放在bin目录下</p><h3 id="委托"><a href="#委托" class="headerlink" title="委托"></a>委托</h3><p>1.为什么使用委托</p><p>将一个方法作为参数传递给另一个方法</p><p>2.委托概念</p><p>声明一个委托类型(命名空间下)<br><code>public delegate void func(参数类型,参数名);</code><br>委托所指向的函数必须跟委托具有相同的签名(参数和返回值)</p><p>3.匿名函数</p><p>没有名字的函数<br>函数只调用一次时建议使用匿名函数<br>匿名函数必须跟委托具有相同的签名(参数和返回值)</p><p>4.练习:使用委托求数组最大值<br>5.练习:使用委托求任意数组最大值</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace 委托求数组最大值
+{
+    class Program
+    {
+        public delegate int DelCompare(object o1,object o2);
+        static void Main(string[] args)
+        {
+            object[] o1 = { 1, 2, 3, 4, 5 };
+            object result1 = GetMax(o1, Compare1);
+            object[] o2 = { "vhgfh","yuewueg","fdg" };
+            //object result2 = GetMax(o2, Compare2);
+            //object result2 = GetMax(o2, delegate(object o1,object o2) {
+            //    string s1 = (string)o1;
+            //    string s2 = (string)o2;
+            //    return s1.Length - s2.Length;
+            //});
+            object result2 = GetMax(o2, (object o1,object o2) =&gt;{
+                string s1 = (string)o1;
+                string s2 = (string)o2;
+                return s1.Length - s2.Length;
+            });
+            Console.WriteLine(result2);
+            Console.ReadKey();
+        }
+        public static object GetMax(object []nums,DelCompare del)
+        {
+            object max = nums[0];
+            for (int i = 0; i &lt; nums.Length; i++)
+            {
+                //要传一个比较方法
+                if(del(max,nums[i])&lt;0)
+                {
+                    max = nums[i];
+                }
+            }
+            return max;
+        }
+        public static int Compare1(object o1,object o2)
+        {
+            int n1 = (int)o1;
+            int n2 = (int)o2;
+            return n1 - n2;
+        }
+        public static int Compare2(object o1, object o2)
+        {
+            string s1 = (string)o1;
+            string s2 = (string)o2;
+            return s1.Length - s2.Length;
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>6.泛型委托</p><pre class="line-numbers language-C#" data-language="C#"><code class="language-C#">using System;
+
+namespace 泛型委托求数组最大值
+{
+    class Program
+    {
+        public delegate int DelCompare&lt;T&gt;(T o1,T o2);
+        static void Main(string[] args)
+        {
+            int[] nums= { 1, 2, 3, 4, 5 };
+            int result1 = GetMax&lt;int&gt;(nums, Compare1);
+            string[] str = { "vhgfh","yuewueg","fdg" };
+            string result2 = GetMax&lt;string&gt;(str, (string s1, string s2) =&gt;
+             {
+                 return s1.Length - s2.Length;
+             });
+            Console.WriteLine(result2);
+            Console.ReadKey();
+        }
+        public static T GetMax&lt;T&gt;(T []nums,DelCompare&lt;T&gt; del)
+        {
+            T max = nums[0];
+            for (int i = 0; i &lt; nums.Length; i++)
+            {
+                //要传一个比较方法
+                if(del(max,nums[i])&lt;0)
+                {
+                    max = nums[i];
+                }
+            }
+            return max;
+        }
+        public static int Compare1(int n1,int n2)
+        {
+            return n1 - n2;
+        }
+        public static int Compare2(string s1, string s2)
+        {
+            return s1.Length - s2.Length;
+        }
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>7.多播委托</p><p>委托可以指向多个函数,但要满足指向的函数必须跟委托具有相同的签名(参数和返回值)<br>可以使用<code>=</code> <code>+=</code> 操作</p><p>8.lambda表达式</p><p>(参数)=&gt;{方法体} =&gt; goes to<br>eg:<br><code>list.RemoveAll(n =&gt; n &gt; 4);</code> //移除大于4的元素</p><p>9.使用委托实现窗体传值</p><p><a target="_blank" rel="noopener" href="https://github.com/liaojie1314/DelegateValueTransfer">代码</a></p></div><hr><div class="reprint" id="reprint-statement"><div class="reprint__author"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-user">文章作者: </i></span><span class="reprint-info"><a href="/liaojie.github.io/about" rel="external nofollow noreferrer">liaojie</a></span></div><div class="reprint__type"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-link">文章链接: </i></span><span class="reprint-info"><a href="https://liaojie.github.io.git/liaojie.github.io/2022/01/15/c-1/">https://liaojie.github.io.git/liaojie.github.io/2022/01/15/c-1/</a></span></div><div class="reprint__notice"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-copyright">版权声明: </i></span><span class="reprint-info">本博客所有文章除特別声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a> 许可协议。转载请注明来源 <a href="/liaojie.github.io/about" target="_blank">liaojie</a> !</span></div></div><script async defer>document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }</script><div class="tag_share" style="display:block"><div class="post-meta__tag-list" style="display:inline-block"><div class="article-tag"><a href="/liaojie.github.io/tags/C/"><span class="chip bg-color">C#</span></a></div></div><div class="post_share" style="zoom:80%;width:fit-content;display:inline-block;float:right;margin:-.15rem 0"><link rel="stylesheet" type="text/css" href="/liaojie.github.io/libs/share/css/share.min.css"><div id="article-share"><div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div><script src="/liaojie.github.io/libs/share/js/social-share.min.js"></script></div></div></div><style>#reward{margin:40px 0;text-align:center}#reward .reward-link{font-size:1.4rem;line-height:38px}#reward .btn-floating:hover{box-shadow:0 6px 12px rgba(0,0,0,.2),0 5px 15px rgba(0,0,0,.2)}#rewardModal{width:320px;height:350px}#rewardModal .reward-title{margin:15px auto;padding-bottom:5px}#rewardModal .modal-content{padding:10px}#rewardModal .close{position:absolute;right:15px;top:15px;color:rgba(0,0,0,.5);font-size:1.3rem;line-height:20px;cursor:pointer}#rewardModal .close:hover{color:#ef5350;transform:scale(1.3);-moz-transform:scale(1.3);-webkit-transform:scale(1.3);-o-transform:scale(1.3)}#rewardModal .reward-tabs{margin:0 auto;width:210px}.reward-tabs .tabs{height:38px;margin:10px auto;padding-left:0}.reward-content ul{padding-left:0!important}.reward-tabs .tabs .tab{height:38px;line-height:38px}.reward-tabs .tab a{color:#fff;background-color:#ccc}.reward-tabs .tab a:hover{background-color:#ccc;color:#fff}.reward-tabs .wechat-tab .active{color:#fff!important;background-color:#22ab38!important}.reward-tabs .alipay-tab .active{color:#fff!important;background-color:#019fe8!important}.reward-tabs .reward-img{width:210px;height:210px}</style><div id="reward"><a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a><div id="rewardModal" class="modal"><div class="modal-content"><a class="close modal-close"><i class="fas fa-times"></i></a><h4 class="reward-title">你的赏识是我前进的动力</h4><div class="reward-content"><div class="reward-tabs"><ul class="tabs row"><li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li><li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li></ul><div id="alipay"><img src="/liaojie.github.io/medias/loading.gif" data-original="/liaojie.github.io/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码"></div><div id="wechat"><img src="/liaojie.github.io/medias/loading.gif" data-original="/liaojie.github.io/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码"></div></div></div></div></div></div><script>$(function(){$(".tabs").tabs()})</script></div></div><link rel="stylesheet" href="/liaojie.github.io/libs/gitalk/gitalk.css"><link rel="stylesheet" href="/liaojie.github.io/css/my-gitalk.css"><div class="card gitalk-card" data-aos="fade-up"><div class="comment_headling" style="font-size:20px;font-weight:700;position:relative;padding-left:20px;top:15px;padding-bottom:5px"><i class="fas fa-comments fa-fw" aria-hidden="true"></i> <span>评论</span></div><div id="gitalk-container" class="card-content"></div></div><script src="/liaojie.github.io/libs/gitalk/gitalk.min.js"></script><script>let gitalk = new Gitalk({
+        clientID: 'eedac85cd6c0645124b2',
+        clientSecret: '0cbb1e584813da4a45008d2c6048fc84846ef93f',
+        repo: 'liaojie1314-gitalk',
+        owner: 'liaojie1314',
+        admin: "liaojie1314",
+        id: '2022-01-15T16-40-03',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');</script><div class="livere-card card" data-aos="fade-up"><div id="lv-container" class="card-content" data-id="city" data-uid="MTAyMC81NDUzMy8zMTAwNA=="><script type="text/javascript">(function (d, s) {
+                let j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') {
+                    return;
+                }
+
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');</script><noscript>为正常使用来必力评论功能请激活JavaScript。</noscript></div></div><article id="prenext-posts" class="prev-next articles"><div class="row article-row"><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="fas fa-chevron-left"></i>&nbsp;上一篇</div><div class="card"><a href="/liaojie.github.io/2022/01/15/cao-zuo-xi-tong/"><div class="card-image"><img src="/liaojie.github.io/medias/loading.gif" data-original="/liaojie.github.io/medias/featureimages/3.jpg" class="responsive-img" alt="操作系统"> <span class="card-title">操作系统</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i>2022-01-15 </span><span class="publish-author"><i class="fas fa-user fa-fw"></i> lj</span></div></div></div></div><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge right-badge text-color">下一篇&nbsp;<i class="fas fa-chevron-right"></i></div><div class="card"><a href="/liaojie.github.io/2022/01/15/c-0/"><div class="card-image"><img src="/liaojie.github.io/medias/loading.gif" data-original="/liaojie.github.io/medias/featureimages/3.jpg" class="responsive-img" alt="C++"> <span class="card-title">C++</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i>2022-01-15 </span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/liaojie.github.io/categories/C/" class="post-category">C++</a></span></div></div><div class="card-action article-tags"><a href="/liaojie.github.io/tags/C/"><span class="chip bg-color">C++</span></a></div></div></div></div></article></div><script type="text/javascript" src="/liaojie.github.io/libs/codeBlock/codeBlockFuction.js"></script><script type="text/javascript" src="/liaojie.github.io/libs/codeBlock/codeLang.js"></script><script type="text/javascript" src="/liaojie.github.io/libs/codeBlock/codeCopy.js"></script><script type="text/javascript" src="/liaojie.github.io/libs/codeBlock/codeShrink.js"></script></div><div id="toc-aside" class="expanded col l3 hide-on-med-and-down"><div class="toc-widget card" style="background-color:#fff"><div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div><div id="toc-content"></div></div></div></div><div id="floating-toc-btn" class="hide-on-med-and-down"><a class="btn-floating btn-large bg-color"><i class="fas fa-list-ul"></i></a></div><script src="/liaojie.github.io/libs/tocbot/tocbot.min.js"></script><script>$(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });</script></main><footer class="page-footer bg-color"><div class="container row center-align" style="margin-bottom:15px!important"><div class="col s12 m8 l8 copy-right">Copyright&nbsp;&copy; <span id="year">2021-2022</span> <span id="year">2021</span> <a href="/liaojie.github.io/about" target="_blank">lj</a><br>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">287.9k</span>&nbsp;字 <span id="busuanzi_container_site_pv">|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv" class="white-color"></span>&nbsp;次 </span><span id="busuanzi_container_site_uv">|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv" class="white-color"></span>&nbsp;人</span><br><span id="sitetime">载入运行时间...</span><script>function siteTime(){var e=36e5,t=24*e,n=new Date,o="2021",r=n.getFullYear(),a=n.getMonth()+1,i=n.getDate(),l=n.getHours(),m=n.getMinutes(),M=n.getSeconds(),g=Date.UTC(o,"10","18","0","0","0"),d=Date.UTC(r,a,i,l,m,M)-g,s=Math.floor(d/31536e6),u=Math.floor(d/t-365*s),T=Math.floor((d-(365*s+u)*t)/e),c=Math.floor((d-(365*s+u)*t-T*e)/6e4),f=Math.floor((d-(365*s+u)*t-T*e-6e4*c)/1e3);o==r?(document.getElementById("year").innerHTML=r,document.getElementById("sitetime").innerHTML="本站已安全运行 "+u+" 天 "+T+" 小时 "+c+" 分钟 "+f+" 秒"):(document.getElementById("year").innerHTML=o+" - "+r,document.getElementById("sitetime").innerHTML="本站已安全运行 "+s+" 年 "+u+" 天 "+T+" 小时 "+c+" 分钟 "+f+" 秒")}setInterval(siteTime,1e3)</script><br></div><div class="col s12 m4 l4 social-link social-statis"><a href="https://github.com/liaojie1314" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"><i class="fab fa-github"></i> </a><a href="mailto:1517438366@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50"><i class="fas fa-envelope-open"></i> </a><a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1517438366" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1517438366" data-position="top" data-delay="50"><i class="fab fa-qq"></i></a></div></div></footer><div class="progress-bar"></div><div id="searchModal" class="modal"><div class="modal-content"><div class="search-header"><span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span> <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input"></div><div id="searchResult"></div></div></div><script type="text/javascript">$(function(){!function(t,i,s){"use strict";$.ajax({url:t,dataType:"xml",success:function(t){var e=$("entry",t).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get(),n=document.getElementById(i),r=document.getElementById(s);n.addEventListener("input",function(){var f='<ul class="search-result-list">',m=this.value.trim().toLowerCase().split(/[\s\-]+/);r.innerHTML="",this.value.trim().length<=0||(e.forEach(function(t){var n,e,r,i,s,l=!0,a=t.title.trim().toLowerCase(),c=t.content.trim().replace(/<[^>]+>/g,"").toLowerCase(),u=0===(u=t.url).indexOf("/")?t.url:"/"+u,o=-1,h=-1;""!==a&&""!==c&&m.forEach(function(t,e){n=a.indexOf(t),o=c.indexOf(t),n<0&&o<0?l=!1:(o<0&&(o=0),0===e&&(h=o))}),l&&(f+="<li><a href='"+u+"' class='search-result-title'>"+a+"</a>",e=t.content.trim().replace(/<[^>]+>/g,""),0<=h&&(i=h+80,(r=h-20)<0&&(r=0),0===r&&(i=100),i>e.length&&(i=e.length),s=e.substr(r,i),m.forEach(function(t){var e=new RegExp(t,"gi");s=s.replace(e,'<em class="search-keyword">'+t+"</em>")}),f+='<p class="search-result">'+s+"...</p>"),f+="</li>")}),f+="</ul>",r.innerHTML=f)})}})}("/liaojie.github.io/search.xml","searchInput","searchResult")})</script><div id="backTop" class="top-scroll"><a class="btn-floating btn-large waves-effect waves-light" href="#!"><i class="fas fa-arrow-up"></i></a></div><script src="/liaojie.github.io/libs/materialize/materialize.min.js"></script><script src="/liaojie.github.io/libs/masonry/masonry.pkgd.min.js"></script><script src="/liaojie.github.io/libs/aos/aos.js"></script><script src="/liaojie.github.io/libs/scrollprogress/scrollProgress.min.js"></script><script src="/liaojie.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script><script src="/liaojie.github.io/js/matery.js"></script><script type="text/javascript" color="122 103 238" opacity="0.7" zindex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script><script type="text/javascript">var st,OriginTitile=document.title;document.addEventListener("visibilitychange",function(){document.hidden?(document.title="ヽ(●-`Д´-)ノ你要玩捉迷藏嘛",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3))})</script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script src="/liaojie.github.io/libs/others/clicklove.js" async></script><script async src="/liaojie.github.io/libs/others/busuanzi.pure.mini.js"></script><script src="/liaojie.github.io/libs/instantpage/instantpage.js" type="module"></script><script>window.imageLazyLoadSetting={isSPA:!1,preloadRatio:1,processImages:null}</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})})</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var e=r[a],t=e,n=function(){r=r.filter(function(t){return e!==t})},i=new Image,o=t.getAttribute("data-original");i.onload=function(){t.src=o,n()},t.src!==o&&(i.src=o)}()}o(),n.addEventListener("scroll",function(){var t=o,e=n;clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this)</script></body></html>

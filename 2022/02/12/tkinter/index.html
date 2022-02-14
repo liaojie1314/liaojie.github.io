@@ -1,0 +1,978 @@
+<!DOCTYPE HTML><html lang="zh-CN"><head><meta charset="utf-8"><meta name="keywords" content="tkinter, Android,Java,Python,C language,C#,C++,HTML,CSS,JavaScript,JQuery,Vue.js等"><meta name="description" content="成功的信念在人脑中的作用就如闹钟,会在你需要时将你唤醒"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="renderer" content="webkit|ie-stand|ie-comp"><meta name="mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>tkinter | Lj&#39;blog</title><link rel="icon" type="image/png" href="/liaojie.github.io/medias/dog.png"><link rel="stylesheet" type="text/css" href="/liaojie.github.io/libs/awesome/css/all.css"><link rel="stylesheet" type="text/css" href="/liaojie.github.io/libs/materialize/materialize.min.css"><link rel="stylesheet" type="text/css" href="/liaojie.github.io/libs/aos/aos.css"><link rel="stylesheet" type="text/css" href="/liaojie.github.io/libs/animate/animate.min.css"><link rel="stylesheet" type="text/css" href="/liaojie.github.io/libs/lightGallery/css/lightgallery.min.css"><link rel="stylesheet" type="text/css" href="/liaojie.github.io/css/matery.css"><link rel="stylesheet" type="text/css" href="/liaojie.github.io/css/my.css"><script src="/liaojie.github.io/libs/jquery/jquery.min.js"></script><meta name="generator" content="Hexo 5.4.0"><style>.github-emoji{position:relative;display:inline-block;width:1.2em;min-height:1.2em;overflow:hidden;vertical-align:top;color:transparent}.github-emoji>span{position:relative;z-index:10}.github-emoji .fancybox,.github-emoji img{margin:0!important;padding:0!important;border:none!important;outline:0!important;text-decoration:none!important;user-select:none!important;cursor:auto!important}.github-emoji img{height:1.2em!important;width:1.2em!important;position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;user-select:none!important;cursor:auto!important}.github-emoji-fallback{color:inherit}.github-emoji-fallback img{opacity:0!important}</style><link rel="alternate" href="/liaojie.github.io/atom.xml" title="Lj'blog" type="application/atom+xml"></head><script type="text/javascript">WIDGET={FID:"1tFpFZ5Mtj"}</script><script type="text/javascript">var windowWidth=$(window).width();768<windowWidth&&document.write('<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"><\/script>')</script><body><header class="navbar-fixed"><nav id="headNav" class="bg-color nav-transparent"><div id="navContainer" class="nav-wrapper container"><div class="brand-logo"><a href="/liaojie.github.io/" class="waves-effect waves-light"><div><img src="/liaojie.github.io/medias/loading.gif" data-original="/liaojie.github.io/medias/ljlogo.png" class="logo-img" alt="LOGO"> <span class="logo-span">Lj'blog</span></div></a></div><a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a><ul class="right nav-menu"><li class="hide-on-med-and-down nav-item"><a href="/liaojie.github.io/" class="waves-effect waves-light"><i class="fas fa-home" style="zoom:.6"></i> <span>首页</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/liaojie.github.io/tags" class="waves-effect waves-light"><i class="fas fa-tags" style="zoom:.6"></i> <span>标签</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/liaojie.github.io/categories" class="waves-effect waves-light"><i class="fas fa-bookmark" style="zoom:.6"></i> <span>分类</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/liaojie.github.io/archives" class="waves-effect waves-light"><i class="fas fa-archive" style="zoom:.6"></i> <span>归档</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/liaojie.github.io/about" class="waves-effect waves-light"><i class="fas fa-user-circle" style="zoom:.6"></i> <span>关于</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/liaojie.github.io/contact" class="waves-effect waves-light"><i class="fas fa-comments" style="zoom:.6"></i> <span>留言板</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/liaojie.github.io/friends" class="waves-effect waves-light"><i class="fas fa-address-book" style="zoom:.6"></i> <span>友情链接</span></a></li><li><a href="#searchModal" class="modal-trigger waves-effect waves-light"><i id="searchIcon" class="fas fa-search" title="搜索" style="zoom:.85"></i></a></li></ul><div id="mobile-nav" class="side-nav sidenav"><div class="mobile-head bg-color"><img src="/liaojie.github.io/medias/loading.gif" data-original="/liaojie.github.io/liaojie.github.io/medias/ljlogo.png" class="logo-img circle responsive-img"><div class="logo-name">Lj&#39;blog</div><div class="logo-desc">成功的信念在人脑中的作用就如闹钟,会在你需要时将你唤醒</div></div><ul class="menu-list mobile-menu-list"><li class="m-nav-item"><a href="/liaojie.github.io/" class="waves-effect waves-light"><i class="fa-fw fas fa-home"></i> 首页</a></li><li class="m-nav-item"><a href="/liaojie.github.io/tags" class="waves-effect waves-light"><i class="fa-fw fas fa-tags"></i> 标签</a></li><li class="m-nav-item"><a href="/liaojie.github.io/categories" class="waves-effect waves-light"><i class="fa-fw fas fa-bookmark"></i> 分类</a></li><li class="m-nav-item"><a href="/liaojie.github.io/archives" class="waves-effect waves-light"><i class="fa-fw fas fa-archive"></i> 归档</a></li><li class="m-nav-item"><a href="/liaojie.github.io/about" class="waves-effect waves-light"><i class="fa-fw fas fa-user-circle"></i> 关于</a></li><li class="m-nav-item"><a href="/liaojie.github.io/contact" class="waves-effect waves-light"><i class="fa-fw fas fa-comments"></i> 留言板</a></li><li class="m-nav-item"><a href="/liaojie.github.io/friends" class="waves-effect waves-light"><i class="fa-fw fas fa-address-book"></i> 友情链接</a></li></ul></div></div></nav></header><div class="bg-cover pd-header post-cover" style="background-image:url(/liaojie.github.io/medias/featureimages/3.jpg)"><div class="container" style="right:0;left:0"><div class="row"><div class="col s12 m12 l12"><div class="brand"><h1 class="description center-align post-title">tkinter</h1></div></div></div></div></div><main class="post-container content"><link rel="stylesheet" href="/liaojie.github.io/libs/tocbot/tocbot.css"><style>#articleContent h1::before,#articleContent h2::before,#articleContent h3::before,#articleContent h4::before,#articleContent h5::before,#articleContent h6::before{display:block;content:" ";height:100px;margin-top:-100px;visibility:hidden}#articleContent :focus{outline:0}.toc-fixed{position:fixed;top:64px}.toc-widget{width:345px;padding-left:20px}.toc-widget .toc-title{padding:35px 0 15px 17px;font-size:1.5rem;font-weight:700;line-height:1.5rem}.toc-widget ol{padding:0;list-style:none}#toc-content{padding-bottom:30px;overflow:auto}#toc-content ol{padding-left:10px}#toc-content ol li{padding-left:10px}#toc-content .toc-link:hover{color:#42b983;font-weight:700;text-decoration:underline}#toc-content .toc-link::before{background-color:transparent;max-height:25px;position:absolute;right:23.5vw;display:block}#toc-content .is-active-link{color:#42b983}#floating-toc-btn{position:fixed;right:15px;bottom:76px;padding-top:15px;margin-bottom:0;z-index:998}#floating-toc-btn .btn-floating{width:48px;height:48px}#floating-toc-btn .btn-floating i{line-height:48px;font-size:1.4rem}</style><div class="row"><div id="main-content" class="col s12 m12 l9"><div id="artDetail"><div class="card"><div class="card-content article-info"><div class="row tag-cate"><div class="col s7"><div class="article-tag"><a href="/liaojie.github.io/tags/tkinter/"><span class="chip bg-color">tkinter</span></a></div></div><div class="col s5 right-align"><div class="post-cate"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/liaojie.github.io/categories/Python/" class="post-category">Python</a></div></div></div><div class="post-info"><div class="post-date info-break-policy"><i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp; 2022-02-12</div><div class="post-date info-break-policy"><i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp; 2022-02-14</div><div class="info-break-policy"><i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp; 7.8k</div><div class="info-break-policy"><i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp; 35 分</div><div id="busuanzi_container_page_pv" class="info-break-policy"><i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp; <span id="busuanzi_value_page_pv"></span></div></div></div><hr class="clearfix"><link rel="stylesheet" href="/liaojie.github.io/libs/prism/prism.css"><div class="card-content article-card-content"><div id="articleContent"><h1 id="什么是-Tkinter"><a href="#什么是-Tkinter" class="headerlink" title="什么是 Tkinter"></a>什么是 Tkinter</h1><h2 id="简单介绍"><a href="#简单介绍" class="headerlink" title="简单介绍"></a>简单介绍</h2><p>Tkinter 是使用 python 进行窗口视窗设计的模块. 简单的构造, 多平台, 多系统的兼容性, 能让它成为让你快速入门定制窗口文件的好助手. 它在 python 窗口视窗模块中是一款简单型的. 所以用来入门, 熟悉 窗口视窗的使用, 非常有必要.</p><h1 id="Label-amp-Button-标签和按钮"><a href="#Label-amp-Button-标签和按钮" class="headerlink" title="Label &amp; Button 标签和按钮"></a>Label &amp; Button 标签和按钮</h1><h2 id="窗口主体框架"><a href="#窗口主体框架" class="headerlink" title="窗口主体框架"></a>窗口主体框架</h2><p>每一个 tkinter 应用的主体框架都可以包含下面这部分. 定义 <code>window</code> 窗口 和 <code>window</code>的一些属性, 然后书写窗口内容, 最后执行window.mainloop让窗口活起来.</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> tkinter <span class="token keyword">as</span> tk
+
+window <span class="token operator">=</span> tk<span class="token punctuation">.</span>Tk<span class="token punctuation">(</span><span class="token punctuation">)</span>
+window<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'my window'</span><span class="token punctuation">)</span>
+window<span class="token punctuation">.</span>geometry<span class="token punctuation">(</span><span class="token string">'200x100'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 这里是窗口的内容</span>
+
+window<span class="token punctuation">.</span>mainloop<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="窗口内容"><a href="#窗口内容" class="headerlink" title="窗口内容"></a>窗口内容</h2><p>这次我们会建立一个用来描述的标签 <code>tk.Label</code>, 比如:</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">l <span class="token operator">=</span> tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>window<span class="token punctuation">,</span> 
+    text<span class="token operator">=</span><span class="token string">'OMG! this is TK!'</span><span class="token punctuation">,</span>    <span class="token comment"># 标签的文字</span>
+    bg<span class="token operator">=</span><span class="token string">'green'</span><span class="token punctuation">,</span>     <span class="token comment"># 背景颜色</span>
+    font<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">'Arial'</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">,</span>     <span class="token comment"># 字体和字体大小</span>
+    width<span class="token operator">=</span><span class="token number">15</span><span class="token punctuation">,</span> height<span class="token operator">=</span><span class="token number">2</span>  <span class="token comment"># 标签长宽</span>
+    <span class="token punctuation">)</span>
+l<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span>    <span class="token comment"># 固定窗口位置</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>我们也可以通过变量的形式控制标签的显示, 这时我们引入按钮 <code>tk.Button</code> 的概念, 没点一次按钮, 标签变化一次. 用一下内容替换上面的标签. 并把需要变化的文字存成变量 <code>var</code>:</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">var <span class="token operator">=</span> tk<span class="token punctuation">.</span>StringVar<span class="token punctuation">(</span><span class="token punctuation">)</span>    <span class="token comment"># 这时文字变量储存器</span>
+l <span class="token operator">=</span> tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>window<span class="token punctuation">,</span> 
+    textvariable<span class="token operator">=</span>var<span class="token punctuation">,</span>   <span class="token comment"># 使用 textvariable 替换 text, 因为这个可以变化</span>
+    bg<span class="token operator">=</span><span class="token string">'green'</span><span class="token punctuation">,</span> font<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">'Arial'</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">,</span> width<span class="token operator">=</span><span class="token number">15</span><span class="token punctuation">,</span> height<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span>
+l<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>接着我们来做 按钮 <code>tk.Button</code>:</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">b <span class="token operator">=</span> tk<span class="token punctuation">.</span>Button<span class="token punctuation">(</span>window<span class="token punctuation">,</span> 
+    text<span class="token operator">=</span><span class="token string">'hit me'</span><span class="token punctuation">,</span>      <span class="token comment"># 显示在按钮上的文字</span>
+    width<span class="token operator">=</span><span class="token number">15</span><span class="token punctuation">,</span> height<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span> 
+    command<span class="token operator">=</span>hit_me<span class="token punctuation">)</span>     <span class="token comment"># 点击按钮式执行的命令</span>
+b<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span>    <span class="token comment"># 按钮位置</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>那么点击是的命令我们用 <code>if else</code> 语句来判断. 用 <code>on_hit</code> 来判断当前状态.</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">on_hit <span class="token operator">=</span> <span class="token boolean">False</span>  <span class="token comment"># 默认初始状态为 False</span>
+<span class="token keyword">def</span> <span class="token function">hit_me</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">global</span> on_hit
+    <span class="token keyword">if</span> on_hit <span class="token operator">==</span> <span class="token boolean">False</span><span class="token punctuation">:</span>     <span class="token comment"># 从 False 状态变成 True 状态</span>
+        on_hit <span class="token operator">=</span> <span class="token boolean">True</span>
+        var<span class="token punctuation">.</span><span class="token builtin">set</span><span class="token punctuation">(</span><span class="token string">'you hit me'</span><span class="token punctuation">)</span>   <span class="token comment"># 设置标签的文字为 'you hit me'</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>       <span class="token comment"># 从 True 状态变成 False 状态</span>
+        on_hit <span class="token operator">=</span> <span class="token boolean">False</span>
+        var<span class="token punctuation">.</span><span class="token builtin">set</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span> <span class="token comment"># 设置 文字为空</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h1 id="Entry-amp-Text-输入-文本框"><a href="#Entry-amp-Text-输入-文本框" class="headerlink" title="Entry &amp; Text 输入, 文本框"></a>Entry &amp; Text 输入, 文本框</h1><h2 id="窗口主体框架-1"><a href="#窗口主体框架-1" class="headerlink" title="窗口主体框架"></a>窗口主体框架</h2><p>每一个tkinter应用的主体框架都包含以下几部分：</p><ul><li>主窗口: <code>window</code>，及主窗口的一些基本属性（标题、大小）</li><li>让窗口活起来：<code>window.mainloop()</code></li></ul><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> tkinter <span class="token keyword">as</span> tk
+
+window <span class="token operator">=</span> tk<span class="token punctuation">.</span>Tk<span class="token punctuation">(</span><span class="token punctuation">)</span>
+window<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'my window'</span><span class="token punctuation">)</span>
+
+<span class="token comment">##窗口尺寸</span>
+window<span class="token punctuation">.</span>geometry<span class="token punctuation">(</span><span class="token string">'200x200'</span><span class="token punctuation">)</span>
+
+<span class="token comment">##显示出来</span>
+window<span class="token punctuation">.</span>mainloop<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="窗口内容（窗口上的控件）"><a href="#窗口内容（窗口上的控件）" class="headerlink" title="窗口内容（窗口上的控件）"></a>窗口内容（窗口上的控件）</h2><p>创建按钮分别触发两种情况</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">b1 <span class="token operator">=</span> tk<span class="token punctuation">.</span>Button<span class="token punctuation">(</span>window<span class="token punctuation">,</span>text<span class="token operator">=</span><span class="token string">"insert point"</span><span class="token punctuation">,</span>width<span class="token operator">=</span><span class="token number">15</span><span class="token punctuation">,</span>height<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span>command<span class="token operator">=</span>insert_point<span class="token punctuation">)</span>
+b1<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+b2 <span class="token operator">=</span> tk<span class="token punctuation">.</span>Button<span class="token punctuation">(</span>window<span class="token punctuation">,</span>text<span class="token operator">=</span><span class="token string">"insert end"</span><span class="token punctuation">,</span>command<span class="token operator">=</span>insert_end<span class="token punctuation">)</span>
+b2<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>创建输入框entry，用户输入任何内容都显示为*</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">e <span class="token operator">=</span> tk<span class="token punctuation">.</span>Entry<span class="token punctuation">(</span>window<span class="token punctuation">,</span>show<span class="token operator">=</span><span class="token string">'*'</span><span class="token punctuation">)</span>
+e<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>创建一个文本框用于显示</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">t <span class="token operator">=</span> tk<span class="token punctuation">.</span>Text<span class="token punctuation">(</span>window<span class="token punctuation">,</span>height<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span>
+t<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>定义触发事件时的函数（注意：因为Python的执行顺序是从上往下，所以函数一定要放在按钮的上面）</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">insert_point</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    var <span class="token operator">=</span> e<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    t<span class="token punctuation">.</span>insert<span class="token punctuation">(</span><span class="token string">'insert'</span><span class="token punctuation">,</span>var<span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">insert_end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    var <span class="token operator">=</span> e<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    t<span class="token punctuation">.</span>insert<span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span>var<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h1 id="Listbox-列表部件"><a href="#Listbox-列表部件" class="headerlink" title="Listbox 列表部件"></a>Listbox 列表部件</h1><h2 id="创建主窗口"><a href="#创建主窗口" class="headerlink" title="创建主窗口"></a>创建主窗口</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python">window <span class="token operator">=</span> tk<span class="token punctuation">.</span>Tk<span class="token punctuation">(</span><span class="token punctuation">)</span>
+window<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'my window'</span><span class="token punctuation">)</span>
+window<span class="token punctuation">.</span>geometry<span class="token punctuation">(</span><span class="token string">'200x200'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h2 id="创建一个label用于显示"><a href="#创建一个label用于显示" class="headerlink" title="创建一个label用于显示"></a>创建一个label用于显示</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python">var1 <span class="token operator">=</span> tk<span class="token punctuation">.</span>StringVar<span class="token punctuation">(</span><span class="token punctuation">)</span>    <span class="token comment">#创建变量</span>
+l <span class="token operator">=</span>tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>window<span class="token punctuation">,</span>bg<span class="token operator">=</span><span class="token string">'yellow'</span><span class="token punctuation">,</span>width<span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">,</span>textvariable<span class="token operator">=</span>var1<span class="token punctuation">)</span>
+l<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h2 id="创建一个方法用于按钮的点击事件"><a href="#创建一个方法用于按钮的点击事件" class="headerlink" title="创建一个方法用于按钮的点击事件"></a>创建一个方法用于按钮的点击事件</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">print_selection</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    value <span class="token operator">=</span> lb<span class="token punctuation">.</span>get<span class="token punctuation">(</span>lb<span class="token punctuation">.</span>curselection<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>   <span class="token comment">#获取当前选中的文本</span>
+    var1<span class="token punctuation">.</span><span class="token builtin">set</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span>     <span class="token comment">#为label设置值</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h2 id="创建一个按钮"><a href="#创建一个按钮" class="headerlink" title="创建一个按钮"></a>创建一个按钮</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python">b1 <span class="token operator">=</span> tk<span class="token punctuation">.</span>Button<span class="token punctuation">(</span>window<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'print selection'</span><span class="token punctuation">,</span> width<span class="token operator">=</span><span class="token number">15</span><span class="token punctuation">,</span>
+              height<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span> command<span class="token operator">=</span>print_selection<span class="token punctuation">)</span>
+b1<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h2 id="创建一个Listbox和变量var2，并将var2的值赋给Listbox"><a href="#创建一个Listbox和变量var2，并将var2的值赋给Listbox" class="headerlink" title="创建一个Listbox和变量var2，并将var2的值赋给Listbox"></a>创建一个Listbox和变量var2，并将var2的值赋给Listbox</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python">var2 <span class="token operator">=</span> tk<span class="token punctuation">.</span>StringVar<span class="token punctuation">(</span><span class="token punctuation">)</span>
+var2<span class="token punctuation">.</span><span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">,</span><span class="token number">22</span><span class="token punctuation">,</span><span class="token number">33</span><span class="token punctuation">,</span><span class="token number">44</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">#为变量设置值</span>
+
+<span class="token comment">#创建Listbox</span>
+
+lb <span class="token operator">=</span> tk<span class="token punctuation">.</span>Listbox<span class="token punctuation">(</span>window<span class="token punctuation">,</span> listvariable<span class="token operator">=</span>var2<span class="token punctuation">)</span>  <span class="token comment">#将var2的值赋给Listbox</span>
+
+<span class="token comment">#创建一个list并将值循环添加到Listbox控件中</span>
+list_items <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> item <span class="token keyword">in</span> list_items<span class="token punctuation">:</span>
+    lb<span class="token punctuation">.</span>insert<span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span> item<span class="token punctuation">)</span>  <span class="token comment">#从最后一个位置开始加入值</span>
+lb<span class="token punctuation">.</span>insert<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'first'</span><span class="token punctuation">)</span>       <span class="token comment">#在第一个位置加入'first'字符</span>
+lb<span class="token punctuation">.</span>insert<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'second'</span><span class="token punctuation">)</span>      <span class="token comment">#在第二个位置加入'second'字符</span>
+lb<span class="token punctuation">.</span>delete<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>                <span class="token comment">#删除第二个位置的字符</span>
+lb<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">#显示主窗口</span>
+window<span class="token punctuation">.</span>mainloop<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h1 id="Radiobutton-选择按钮"><a href="#Radiobutton-选择按钮" class="headerlink" title="Radiobutton 选择按钮"></a>Radiobutton 选择按钮</h1><h2 id="radiobutton-部件"><a href="#radiobutton-部件" class="headerlink" title="radiobutton 部件"></a>radiobutton 部件</h2><p>首先我们需要定义一个 <code>var</code> 用来将 radiobutton 的值和 Label 的值联系在一起. 然后创建一个radiobutton部分:</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">var <span class="token operator">=</span> tk<span class="token punctuation">.</span>StringVar<span class="token punctuation">(</span><span class="token punctuation">)</span>
+l <span class="token operator">=</span> tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>window<span class="token punctuation">,</span> bg<span class="token operator">=</span><span class="token string">'yellow'</span><span class="token punctuation">,</span> width<span class="token operator">=</span><span class="token number">20</span><span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'empty'</span><span class="token punctuation">)</span>
+l<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+r1 <span class="token operator">=</span> tk<span class="token punctuation">.</span>Radiobutton<span class="token punctuation">(</span>window<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'Option A'</span><span class="token punctuation">,</span>
+                    variable<span class="token operator">=</span>var<span class="token punctuation">,</span> value<span class="token operator">=</span><span class="token string">'A'</span><span class="token punctuation">,</span>
+                    command<span class="token operator">=</span>print_selection<span class="token punctuation">)</span>
+r1<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>其中<code>variable=var</code>, <code>value='A'</code>的意思就是，当我们鼠标选中了其中一个选项，把value的值<code>A</code>放到变量var中，然后赋值给<code>variable</code></p><h2 id="触发功能"><a href="#触发功能" class="headerlink" title="触发功能"></a>触发功能</h2><p>我们将定义一个功能, 用来对选择的 radiobutton 进行操作. <code>print_selection</code> 功能就是选择了某个 radiobutton 后我们会在屏幕上打印的选项.</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">print_selection</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    l<span class="token punctuation">.</span>config<span class="token punctuation">(</span>text<span class="token operator">=</span><span class="token string">'you have selected '</span> <span class="token operator">+</span> var<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>当触发这个函数功能时，我们的 <code>label</code> 中就会显示 <code>text</code> 所赋值的字符串即 ‘you have selected’, 后面则是我们所选中的选项 <code>var.get()</code>就是获取到变量 <code>var</code> 的值， 举个例子就是我们一开始所做的将选项 “option A” 选中时的值以 “A” 放入 <code>var</code> 中， 所以获取的也就是A 即如果我们这时候选中 “option A” 选项，label显示的值则是 “you have selected A”.</p><h1 id="Scale-尺度"><a href="#Scale-尺度" class="headerlink" title="Scale 尺度"></a>Scale 尺度</h1><h2 id="scale-部件"><a href="#scale-部件" class="headerlink" title="scale 部件"></a>scale 部件</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python">s <span class="token operator">=</span> tk<span class="token punctuation">.</span>Scale<span class="token punctuation">(</span>window<span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'try me'</span><span class="token punctuation">,</span> from_<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">,</span> to<span class="token operator">=</span><span class="token number">11</span><span class="token punctuation">,</span> orient<span class="token operator">=</span>tk<span class="token punctuation">.</span>HORIZONTAL<span class="token punctuation">,</span>
+             length<span class="token operator">=</span><span class="token number">200</span><span class="token punctuation">,</span> showvalue<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> tickinterval<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span> resolution<span class="token operator">=</span><span class="token number">0.01</span><span class="token punctuation">,</span> command<span class="token operator">=</span>print_selection<span class="token punctuation">)</span>
+s<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>这里的参数<code>label</code>是指scale部件的名称，即在这里scale部件名称为try me</p><ul><li>参数<code>from_=5，to=11</code>的意思就是从5到11，即这个滚动条最小值为5，最大值为11（这里使用from_是因为在python中有from这个关键词）</li><li>参数<code>orient=tk.HORIZONTAL</code>在这里就是设置滚动条的方向，如我们所看到的效果图，这里<code>HORIZONTAL</code>就是横向。</li><li>参数<code>length</code>这里是指滚动条部件的长度，但注意的是和其他部件width表示不同，width表示的是以字符为单位，比如<code>width=4</code>，就是4个字符的长度，而此处的<code>length=200</code>，是指我们常用的像素为单位，即长度为200个像素</li><li>参数<code>resolution=0.01</code>这里我们可以借助数学题来理解，我们做的很多数学题都会让我们来保留几位小数，此处的0.01就是保留2位小数，即效果图中的5.00 9.00等等后面的两位小数，如果保留一位就是<code>resolution=0.1</code> 这里的<code>showvalue</code>就是设置在滚动条上方的显示。<code>showvalue=0</code>，上方无结果显示，如果改为<code>showvalue=1</code>,则显示在上面。</li><li>参数<code>tickinterval</code>设置的就是坐标的间隔，此处为tickinterval=2，显示的即为5.00 7.00 9.00 11.00 如果改为tickinterval=3则为5.00 8.00 11.00</li></ul><h2 id="触发功能-1"><a href="#触发功能-1" class="headerlink" title="触发功能"></a>触发功能</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python">l <span class="token operator">=</span> tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>window<span class="token punctuation">,</span> bg<span class="token operator">=</span><span class="token string">'yellow'</span><span class="token punctuation">,</span> width<span class="token operator">=</span><span class="token number">20</span><span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'empty'</span><span class="token punctuation">)</span>
+l<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">print_selection</span><span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    l<span class="token punctuation">.</span>config<span class="token punctuation">(</span>text<span class="token operator">=</span><span class="token string">'you have selected '</span> <span class="token operator">+</span> v<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>这里相比前面多了参数<code>v</code>，这里的参数v即将滚动条定位的数据，即如效果图中最开始，定位到5.00，<code>label</code>中显示you have selected 5.00</p><h1 id="Checkbutton-勾选项"><a href="#Checkbutton-勾选项" class="headerlink" title="Checkbutton 勾选项"></a>Checkbutton 勾选项</h1><h2 id="Checkbutton部件"><a href="#Checkbutton部件" class="headerlink" title="Checkbutton部件"></a>Checkbutton部件</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python">var1 <span class="token operator">=</span> tk<span class="token punctuation">.</span>IntVar<span class="token punctuation">(</span><span class="token punctuation">)</span>
+c1 <span class="token operator">=</span> tk<span class="token punctuation">.</span>Checkbutton<span class="token punctuation">(</span>window<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'Python'</span><span class="token punctuation">,</span> variable<span class="token operator">=</span>var1<span class="token punctuation">,</span> onvalue<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> offvalue<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>
+                    command<span class="token operator">=</span>print_selection<span class="token punctuation">)</span>
+c1<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>参数<code>onvalue</code>和前面讲的部件<code>radiobutton</code>中的value相似， 当我们选中了这个checkbutton，<code>onvalue</code>的值1就会放入到<code>var1</code>中， 然后var1将其赋值给参数<code>variable</code>，<code>offvalue</code>用法相似，但是<code>offvalue</code>是在没有选中这个checkbutton时，<code>offvalue</code>的值1放入var1，然后赋值给参数<code>variable</code> 这是创建一个checkbutton部件，以此类推，可以创建多个checkbutton</p><h2 id="触发功能-2"><a href="#触发功能-2" class="headerlink" title="触发功能"></a>触发功能</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">print_selection</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>var1<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span> <span class="token punctuation">(</span>var2<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>   <span class="token comment">#如果选中第一个选项，未选中第二个选项</span>
+        l<span class="token punctuation">.</span>config<span class="token punctuation">(</span>text<span class="token operator">=</span><span class="token string">'I love only Python '</span><span class="token punctuation">)</span>
+    <span class="token keyword">elif</span> <span class="token punctuation">(</span>var1<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span> <span class="token punctuation">(</span>var2<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token comment">#如果选中第二个选项，未选中第一个选项</span>
+        l<span class="token punctuation">.</span>config<span class="token punctuation">(</span>text<span class="token operator">=</span><span class="token string">'I love only C++'</span><span class="token punctuation">)</span>
+    <span class="token keyword">elif</span> <span class="token punctuation">(</span>var1<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span> <span class="token punctuation">(</span>var2<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>  <span class="token comment">#如果两个选项都未选中</span>
+        l<span class="token punctuation">.</span>config<span class="token punctuation">(</span>text<span class="token operator">=</span><span class="token string">'I do not love either'</span><span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        l<span class="token punctuation">.</span>config<span class="token punctuation">(</span>text<span class="token operator">=</span><span class="token string">'I love both'</span><span class="token punctuation">)</span>             <span class="token comment">#如果两个选项都选中</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>相对于前面学过的 <code>print_selection</code>，这一段比较长，其实功能差不多，只不过加了<code>if...elif...else</code>来选择控制而已即如代码注释，<code>config</code>在前面已经讲过就是将参数<code>text</code>的值显示，这里的<code>var1.get() == 1</code> 就是前面所说的var1获得的变量<code>onvalue=1</code>，<code>var1.get() == 0</code>即是<code>var1</code>获得的变量<code>offvalu=0</code>同理<code>var2</code>也是如此。</p><h1 id="Canvas-画布"><a href="#Canvas-画布" class="headerlink" title="Canvas 画布"></a>Canvas 画布</h1><h2 id="Canvas部件"><a href="#Canvas部件" class="headerlink" title="Canvas部件"></a>Canvas部件</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python">canvas <span class="token operator">=</span> tk<span class="token punctuation">.</span>Canvas<span class="token punctuation">(</span>window<span class="token punctuation">,</span> bg<span class="token operator">=</span><span class="token string">'blue'</span><span class="token punctuation">,</span> height<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">,</span> width<span class="token operator">=</span><span class="token number">200</span><span class="token punctuation">)</span>
+canvas<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>这里的参数和以往学过的部件一样，所以就不再一一解释。</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">image_file <span class="token operator">=</span> tk<span class="token punctuation">.</span>PhotoImage<span class="token punctuation">(</span><span class="token builtin">file</span><span class="token operator">=</span><span class="token string">'ins.gif'</span><span class="token punctuation">)</span>
+image <span class="token operator">=</span> canvas<span class="token punctuation">.</span>create_image<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> anchor<span class="token operator">=</span><span class="token string">'nw'</span><span class="token punctuation">,</span> image<span class="token operator">=</span>image_file<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>这里的代码主要是实现我们最终看到的在左上角的那张小图片。 <code>image_file = tk.PhotoImage(file='ins.gif')</code>这一句是创造一个变量存放<code>ins.gif</code>这张图片。 <code>image = canvas.create_image(10, 10, anchor='nw', image=image_file)</code>里面的参数<code>10,10</code>就是图片放入画布的坐标， 而这里的<code>anchor=nw</code>则是把图片的左上角作为锚定点，在加上刚刚给的坐标位置，即可将图片位置确定。 最后一个参数的意思大家应该都知道，就是将刚刚存入的图片变量，赋值给<code>image</code>。</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">x0<span class="token punctuation">,</span> y0<span class="token punctuation">,</span> x1<span class="token punctuation">,</span> y1<span class="token operator">=</span> <span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">80</span><span class="token punctuation">,</span> <span class="token number">80</span>
+line <span class="token operator">=</span> canvas<span class="token punctuation">.</span>create_line<span class="token punctuation">(</span>x0<span class="token punctuation">,</span> y0<span class="token punctuation">,</span> x1<span class="token punctuation">,</span> y1<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>这段代码主要实现的是画一条直线，后面<code>()</code>中给的参数就是线段两点的坐标，两点确定一条直线。此处给的就是从坐标(50,50)到(80,80)画一条直线。</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">oval <span class="token operator">=</span> canvas<span class="token punctuation">.</span>create_oval<span class="token punctuation">(</span>x0<span class="token punctuation">,</span> y0<span class="token punctuation">,</span> x1<span class="token punctuation">,</span> y1<span class="token punctuation">,</span> fill<span class="token operator">=</span><span class="token string">'red'</span><span class="token punctuation">)</span>  <span class="token comment">#创建一个圆，填充色为`red`红色</span>
+arc <span class="token operator">=</span> canvas<span class="token punctuation">.</span>create_arc<span class="token punctuation">(</span>x0<span class="token operator">+</span><span class="token number">30</span><span class="token punctuation">,</span> y0<span class="token operator">+</span><span class="token number">30</span><span class="token punctuation">,</span> x1<span class="token operator">+</span><span class="token number">30</span><span class="token punctuation">,</span> y1<span class="token operator">+</span><span class="token number">30</span><span class="token punctuation">,</span> start<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> extent<span class="token operator">=</span><span class="token number">180</span><span class="token punctuation">)</span>  <span class="token comment">#创建一个扇形</span>
+rect <span class="token operator">=</span> canvas<span class="token punctuation">.</span>create_rectangle<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token operator">+</span><span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token operator">+</span><span class="token number">20</span><span class="token punctuation">)</span>   <span class="token comment">#创建一个矩形</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>这里面就是创建扇形时多了两个没见过的参数<code>start=0</code>和<code>extent=180</code>，其实就是从0度到180度，就好像扇子的边打开一样。在我们看来就是个半圆， 如果改为<code>extent=90</code>，我们看到的就是一个1/4圆</p><h2 id="触发功能-3"><a href="#触发功能-3" class="headerlink" title="触发功能"></a>触发功能</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">moveit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    canvas<span class="token punctuation">.</span>move<span class="token punctuation">(</span>rect<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>这里的触发不再是以往的print_selection了，哈哈，那么这里的是怎么样的功能呢，首先我们从单词理解来看就是移动的函数，在视频中也演示过了， 就是我们每点一次button 矩形就会移动这里<code>canvas.move(rect, 0, 2)</code>的参数<code>(rect,0,2)</code>就是移动<code>rect</code>这个变量，即我们看到的矩形 后面的0和2，也就是横坐标移动0个单位，纵坐标移动2个单位，简单的说就是每次点击，横向不动，纵向移动两个单位。</p><h1 id="Menubar-菜单"><a href="#Menubar-菜单" class="headerlink" title="Menubar 菜单"></a>Menubar 菜单</h1><h2 id="menubar-部件"><a href="#menubar-部件" class="headerlink" title="menubar 部件"></a>menubar 部件</h2><p>下面是我们制作整个菜单栏的流程, 我们先需要加入一个 Menubar 作为整体框架, 然后再在 Menubar 中加一些部件.</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">##创建一个菜单栏，这里我们可以把他理解成一个容器，在窗口的上方</span>
+menubar <span class="token operator">=</span> tk<span class="token punctuation">.</span>Menu<span class="token punctuation">(</span>window<span class="token punctuation">)</span>
+
+<span class="token comment">##定义一个空菜单单元</span>
+filemenu <span class="token operator">=</span> tk<span class="token punctuation">.</span>Menu<span class="token punctuation">(</span>menubar<span class="token punctuation">,</span> tearoff<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
+
+<span class="token comment">##将上面定义的空菜单命名为`File`，放在菜单栏中，就是装入那个容器中</span>
+menubar<span class="token punctuation">.</span>add_cascade<span class="token punctuation">(</span>label<span class="token operator">=</span><span class="token string">'File'</span><span class="token punctuation">,</span> menu<span class="token operator">=</span>filemenu<span class="token punctuation">)</span>
+
+<span class="token comment">##在`File`中加入`New`的小菜单，即我们平时看到的下拉菜单，每一个小菜单对应命令操作。</span>
+<span class="token comment">##如果点击这些单元, 就会触发`do_job`的功能</span>
+filemenu<span class="token punctuation">.</span>add_command<span class="token punctuation">(</span>label<span class="token operator">=</span><span class="token string">'New'</span><span class="token punctuation">,</span> command<span class="token operator">=</span>do_job<span class="token punctuation">)</span>
+filemenu<span class="token punctuation">.</span>add_command<span class="token punctuation">(</span>label<span class="token operator">=</span><span class="token string">'Open'</span><span class="token punctuation">,</span> command<span class="token operator">=</span>do_job<span class="token punctuation">)</span><span class="token comment">##同样的在`File`中加入`Open`小菜单</span>
+filemenu<span class="token punctuation">.</span>add_command<span class="token punctuation">(</span>label<span class="token operator">=</span><span class="token string">'Save'</span><span class="token punctuation">,</span> command<span class="token operator">=</span>do_job<span class="token punctuation">)</span><span class="token comment">##同样的在`File`中加入`Save`小菜单</span>
+
+filemenu<span class="token punctuation">.</span>add_separator<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">##这里就是一条分割线</span>
+
+<span class="token comment">##同样的在`File`中加入`Exit`小菜单,此处对应命令为`window.quit`</span>
+filemenu<span class="token punctuation">.</span>add_command<span class="token punctuation">(</span>label<span class="token operator">=</span><span class="token string">'Exit'</span><span class="token punctuation">,</span> command<span class="token operator">=</span>window<span class="token punctuation">.</span>quit<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>同样的我们在定义另一个菜单<code>Edit</code>也是如此和定义的<code>File</code>菜单一样 这里再来看一下效果中比较不一样的菜单就是<code>File</code>中的<code>Import</code>菜单, 在这个菜单选项中, 我们还能分支出更多的选项.</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">submenu <span class="token operator">=</span> tk<span class="token punctuation">.</span>Menu<span class="token punctuation">(</span>filemenu<span class="token punctuation">)</span><span class="token comment">##和上面定义菜单一样，不过此处实在`File`上创建一个空的菜单</span>
+filemenu<span class="token punctuation">.</span>add_cascade<span class="token punctuation">(</span>label<span class="token operator">=</span><span class="token string">'Import'</span><span class="token punctuation">,</span> menu<span class="token operator">=</span>submenu<span class="token punctuation">,</span> underline<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token comment">##给放入的菜单`submenu`命名为`Import`</span>
+submenu<span class="token punctuation">.</span>add_command<span class="token punctuation">(</span>label<span class="token operator">=</span><span class="token string">"Submenu1"</span><span class="token punctuation">,</span> command<span class="token operator">=</span>do_job<span class="token punctuation">)</span><span class="token comment">##这里和上面也一样，在`Import`中加入一个小菜单命令`Submenu1`</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h2 id="触发功能-4"><a href="#触发功能-4" class="headerlink" title="触发功能"></a>触发功能</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python">counter <span class="token operator">=</span> <span class="token number">0</span>
+<span class="token keyword">def</span> <span class="token function">do_job</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">global</span> counter
+    l<span class="token punctuation">.</span>config<span class="token punctuation">(</span>text<span class="token operator">=</span><span class="token string">'do '</span><span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>counter<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    counter<span class="token operator">+=</span><span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>这里的功能就是每触发一次命令，counter就会+1，在label上的显示就会从 do 0 ,do 1 , do 2…</p><h1 id="Frame-框架"><a href="#Frame-框架" class="headerlink" title="Frame 框架"></a>Frame 框架</h1><h2 id="Frame-部件"><a href="#Frame-部件" class="headerlink" title="Frame 部件"></a>Frame 部件</h2><p>Frame 是一个在 Windows 上分离小区域的部件, 它能将 Windows 分成不同的区,然后存放不同的其他部件. 同时一个 Frame 上也能再分成两个 Frame, Frame 可以认为是一种容器.</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">###定义一个`label`显示`on the window`</span>
+tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>window<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'on the window'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">###在`window`上创建一个`frame`</span>
+frm <span class="token operator">=</span> tk<span class="token punctuation">.</span>Frame<span class="token punctuation">(</span>window<span class="token punctuation">)</span>
+frm<span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">###在刚刚创建的`frame`上创建两个`frame`，我们可以把它理解成一个大容器里套了一个小容器，即`frm`上有两个`frame` ，`frm_l`和`frm_r`</span>
+
+frm_l <span class="token operator">=</span> tk<span class="token punctuation">.</span>Frame<span class="token punctuation">(</span>frm<span class="token punctuation">)</span>
+frm_r <span class="token operator">=</span> tk<span class="token punctuation">.</span>Frame<span class="token punctuation">(</span>frm<span class="token punctuation">)</span>
+
+<span class="token comment">###这里是控制小的`frm`部件在大的`frm`的相对位置，此处`frm_l`就是在`frm`的左边，`frm_r`在`frm`的右边</span>
+frm_l<span class="token punctuation">.</span>pack<span class="token punctuation">(</span>side<span class="token operator">=</span><span class="token string">'left'</span><span class="token punctuation">)</span>
+frm_r<span class="token punctuation">.</span>pack<span class="token punctuation">(</span>side<span class="token operator">=</span><span class="token string">'right'</span><span class="token punctuation">)</span>
+
+<span class="token comment">###这里的三个label就是在我们创建的frame上定义的label部件，还是以容器理解，就是容器上贴了标签，来指明这个是什么，解释这个容器。</span>
+tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>frm_l<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'on the frm_l1'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">##这个`label`长在`frm_l`上，显示为`on the frm_l1`</span>
+tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>frm_l<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'on the frm_l2'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">##这个`label`长在`frm_l`上，显示为`on the frm_l2`</span>
+tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>frm_r<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'on the frm_r1'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">##这个`label`长在`frm_r`上，显示为`on the frm_r1`</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h1 id="messagebox-弹窗"><a href="#messagebox-弹窗" class="headerlink" title="messagebox 弹窗"></a>messagebox 弹窗</h1><h2 id="messagebox部件"><a href="#messagebox部件" class="headerlink" title="messagebox部件"></a>messagebox部件</h2><p>其实这里的<code>messagebox</code>就是我们平时看到的弹窗。 我们首先需要定义一个触发功能，来触发这个弹窗 这里我们就放上以前学过的<code>button</code>按钮</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">tk<span class="token punctuation">.</span>Button<span class="token punctuation">(</span>window<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'hit me'</span><span class="token punctuation">,</span> command<span class="token operator">=</span>hit_me<span class="token punctuation">)</span><span class="token punctuation">.</span>pack<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>通过触发功能，调用<code>messagebox</code></p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">hit_me</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+   tk<span class="token punctuation">.</span>messagebox<span class="token punctuation">.</span>showinfo<span class="token punctuation">(</span>title<span class="token operator">=</span><span class="token string">'Hi'</span><span class="token punctuation">,</span> message<span class="token operator">=</span><span class="token string">'hahahaha'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>这里点击button按钮就会弹出提示对话窗</p><p>下面给出几种形式</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">tk<span class="token punctuation">.</span>messagebox<span class="token punctuation">.</span>showinfo<span class="token punctuation">(</span>title<span class="token operator">=</span><span class="token string">''</span><span class="token punctuation">,</span>message<span class="token operator">=</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token comment">#提示信息对话窗</span>
+tk<span class="token punctuation">.</span>messagebox<span class="token punctuation">.</span>showwarning<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">#提出警告对话窗</span>
+tk<span class="token punctuation">.</span>messagebox<span class="token punctuation">.</span>showerror<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">#提出错误对话窗</span>
+tk<span class="token punctuation">.</span>messagebox<span class="token punctuation">.</span>askquestion<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">#询问选择对话窗</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>如果给出如下定义就是打印出我们所选项对应的值</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">hit_me</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+   <span class="token keyword">print</span><span class="token punctuation">(</span>tk<span class="token punctuation">.</span>messagebox<span class="token punctuation">.</span>askquestion<span class="token punctuation">(</span>title<span class="token operator">=</span><span class="token string">'Hi'</span><span class="token punctuation">,</span> message<span class="token operator">=</span><span class="token string">'hahahaha'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>同样创建方法都是一样的形式</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span>tk<span class="token punctuation">.</span>messagebox<span class="token punctuation">.</span>askquestion<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment">#返回yes和no</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>tk<span class="token punctuation">.</span>messagebox<span class="token punctuation">.</span>askokcancel<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment">#返回true和false</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>tk<span class="token punctuation">.</span>messagebox<span class="token punctuation">.</span>askyesno<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment">#返回true和false</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>tk<span class="token punctuation">.</span>messagebox<span class="token punctuation">.</span>askretrycancel<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment">#返回true和false</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h1 id="pack-grid-place-放置位置"><a href="#pack-grid-place-放置位置" class="headerlink" title="pack grid place 放置位置"></a>pack grid place 放置位置</h1><h2 id="pack"><a href="#pack" class="headerlink" title="pack"></a>pack</h2><p>首先我们先看看我们常用的<code>pack()</code>, 他会按照上下左右的方式排列.</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>window<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'1'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>pack<span class="token punctuation">(</span>side<span class="token operator">=</span><span class="token string">'top'</span><span class="token punctuation">)</span><span class="token comment">#上</span>
+tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>window<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'1'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>pack<span class="token punctuation">(</span>side<span class="token operator">=</span><span class="token string">'bottom'</span><span class="token punctuation">)</span><span class="token comment">#下</span>
+tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>window<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'1'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>pack<span class="token punctuation">(</span>side<span class="token operator">=</span><span class="token string">'left'</span><span class="token punctuation">)</span><span class="token comment">#左</span>
+tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>window<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'1'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>pack<span class="token punctuation">(</span>side<span class="token operator">=</span><span class="token string">'right'</span><span class="token punctuation">)</span><span class="token comment">#右</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="grid"><a href="#grid" class="headerlink" title="grid"></a>grid</h2><p>接下里我们在看看<code>grid()</code>, grid 是方格, 所以所有的内容会被放在这些规律的方格中.</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> j <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>window<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span>grid<span class="token punctuation">(</span>row<span class="token operator">=</span>i<span class="token punctuation">,</span> column<span class="token operator">=</span>j<span class="token punctuation">,</span> padx<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">,</span> pady<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>以上的代码就是创建一个四行三列的表格，其实<code>grid</code>就是用表格的形式定位的。这里的参数 <code>row</code>为行，<code>colum</code>为列，<code>padx</code>就是单元格左右间距，<code>pady</code>就是单元格上下间距。</p><h2 id="place"><a href="#place" class="headerlink" title="place"></a>place</h2><p>再接下来就是<code>place()</code>, 这个比较容易理解，就是给精确的坐标来定位，如此处给的<code>（20,10）</code>，就是将这个部件放在坐标为<code>（x，y）</code>的这个位置 后面的参数<code>anchor=nw</code>就是前面所讲的锚定点是西北角。</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>window<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span>place<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token number">20</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">,</span> anchor<span class="token operator">=</span><span class="token string">'nw'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h5 id="案例-登录窗口"><a href="#案例-登录窗口" class="headerlink" title="案例: 登录窗口"></a>案例: 登录窗口</h5><p>1.界面创建</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># welcome image</span>
+canvas <span class="token operator">=</span> tk<span class="token punctuation">.</span>Canvas<span class="token punctuation">(</span>window<span class="token punctuation">,</span> height<span class="token operator">=</span><span class="token number">200</span><span class="token punctuation">,</span> width<span class="token operator">=</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token comment">#创建画布</span>
+image_file <span class="token operator">=</span> tk<span class="token punctuation">.</span>PhotoImage<span class="token punctuation">(</span><span class="token builtin">file</span><span class="token operator">=</span><span class="token string">'welcome.gif'</span><span class="token punctuation">)</span><span class="token comment">#加载图片文件</span>
+image <span class="token operator">=</span> canvas<span class="token punctuation">.</span>create_image<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span> anchor<span class="token operator">=</span><span class="token string">'nw'</span><span class="token punctuation">,</span> image<span class="token operator">=</span>image_file<span class="token punctuation">)</span><span class="token comment">#将图片置于画布上</span>
+canvas<span class="token punctuation">.</span>pack<span class="token punctuation">(</span>side<span class="token operator">=</span><span class="token string">'top'</span><span class="token punctuation">)</span><span class="token comment">#放置画布（为上端）</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>这里创建的就是我们效果图中的welcome, 如果你想使用和我一样的 welcome 的图片, 你可以在<a href="/liaojie.github.io/medias/welcome.gif">这里</a>下载。</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># user information</span>
+tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>window<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'User name: '</span><span class="token punctuation">)</span><span class="token punctuation">.</span>place<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token number">50</span><span class="token punctuation">,</span> y<span class="token operator">=</span> <span class="token number">150</span><span class="token punctuation">)</span><span class="token comment">#创建一个`label`名为`User name: `置于坐标（50,150）</span>
+tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>window<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'Password: '</span><span class="token punctuation">)</span><span class="token punctuation">.</span>place<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token number">50</span><span class="token punctuation">,</span> y<span class="token operator">=</span> <span class="token number">190</span><span class="token punctuation">)</span>
+
+var_usr_name <span class="token operator">=</span> tk<span class="token punctuation">.</span>StringVar<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">#定义变量</span>
+var_usr_name<span class="token punctuation">.</span><span class="token builtin">set</span><span class="token punctuation">(</span><span class="token string">'example@python.com'</span><span class="token punctuation">)</span><span class="token comment">#变量赋值'example@python.com'</span>
+entry_usr_name <span class="token operator">=</span> tk<span class="token punctuation">.</span>Entry<span class="token punctuation">(</span>window<span class="token punctuation">,</span> textvariable<span class="token operator">=</span>var_usr_name<span class="token punctuation">)</span><span class="token comment">#创建一个`entry`，显示为变量`var_usr_name`即图中的`example@python.com`</span>
+entry_usr_name<span class="token punctuation">.</span>place<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token number">160</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token number">150</span><span class="token punctuation">)</span>
+var_usr_pwd <span class="token operator">=</span> tk<span class="token punctuation">.</span>StringVar<span class="token punctuation">(</span><span class="token punctuation">)</span>
+entry_usr_pwd <span class="token operator">=</span> tk<span class="token punctuation">.</span>Entry<span class="token punctuation">(</span>window<span class="token punctuation">,</span> textvariable<span class="token operator">=</span>var_usr_pwd<span class="token punctuation">,</span> show<span class="token operator">=</span><span class="token string">'*'</span><span class="token punctuation">)</span><span class="token comment">#`show`这个参数将输入的密码变为`***`的形式</span>
+entry_usr_pwd<span class="token punctuation">.</span>place<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token number">160</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token number">190</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>这里就是创建我们熟悉的登录界面，就是常见的用户名，密码。</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># login and sign up button</span>
+btn_login <span class="token operator">=</span> tk<span class="token punctuation">.</span>Button<span class="token punctuation">(</span>window<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'Login'</span><span class="token punctuation">,</span> command<span class="token operator">=</span>usr_login<span class="token punctuation">)</span><span class="token comment">#定义一个`button`按钮，名为`Login`,触发命令为`usr_login`</span>
+btn_login<span class="token punctuation">.</span>place<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token number">170</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token number">230</span><span class="token punctuation">)</span>
+btn_sign_up <span class="token operator">=</span> tk<span class="token punctuation">.</span>Button<span class="token punctuation">(</span>window<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'Sign up'</span><span class="token punctuation">,</span> command<span class="token operator">=</span>usr_sign_up<span class="token punctuation">)</span>
+btn_sign_up<span class="token punctuation">.</span>place<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token number">270</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token number">230</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>这里定义的就是我们的登录按钮。</p><p>2.触发功能</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">usr_login</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">pass</span>
+<span class="token keyword">def</span> <span class="token function">usr_sign_up</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">pass</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>3.触发的 usr_login 功能</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">##这两行代码就是获取用户输入的`usr_name`和`usr_pwd`</span>
+usr_name <span class="token operator">=</span> var_usr_name<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span>
+usr_pwd <span class="token operator">=</span> var_usr_pwd<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">##这里设置异常捕获，当我们第一次访问用户信息文件时是不存在的，所以这里设置异常捕获。</span>
+<span class="token comment">##中间的两行就是我们的匹配，即程序将输入的信息和文件中的信息匹配。</span>
+<span class="token keyword">try</span><span class="token punctuation">:</span>
+    <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'usrs_info.pickle'</span><span class="token punctuation">,</span> <span class="token string">'rb'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> usr_file<span class="token punctuation">:</span>
+        usrs_info <span class="token operator">=</span> pickle<span class="token punctuation">.</span>load<span class="token punctuation">(</span>usr_file<span class="token punctuation">)</span>
+<span class="token keyword">except</span> FileNotFoundError<span class="token punctuation">:</span>
+ <span class="token comment">##这里就是我们在没有读取到`usr_file`的时候，程序会创建一个`usr_file`这个文件，并将管理员</span>
+ <span class="token comment">##的用户和密码写入，即用户名为`admin`密码为`admin`。</span>
+    <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'usrs_info.pickle'</span><span class="token punctuation">,</span> <span class="token string">'wb'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> usr_file<span class="token punctuation">:</span>
+        usrs_info <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'admin'</span><span class="token punctuation">:</span> <span class="token string">'admin'</span><span class="token punctuation">}</span>
+        pickle<span class="token punctuation">.</span>dump<span class="token punctuation">(</span>usrs_info<span class="token punctuation">,</span> usr_file<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>这一部分就是将用户输入的用户名和密码获取到，和我们保存在<code>usr_file</code>中的数据对比。针对正确的密码和错误的密码分别对待.</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#如果用户名和密码与文件中的匹配成功，则会登录成功，并跳出弹窗`how are you?`加上你的用户名。</span>
+<span class="token keyword">if</span> usr_name <span class="token keyword">in</span> usrs_info<span class="token punctuation">:</span>
+    <span class="token keyword">if</span> usr_pwd <span class="token operator">==</span> usrs_info<span class="token punctuation">[</span>usr_name<span class="token punctuation">]</span><span class="token punctuation">:</span>
+        tk<span class="token punctuation">.</span>messagebox<span class="token punctuation">.</span>showinfo<span class="token punctuation">(</span>title<span class="token operator">=</span><span class="token string">'Welcome'</span><span class="token punctuation">,</span> message<span class="token operator">=</span><span class="token string">'How are you? '</span> <span class="token operator">+</span> usr_name<span class="token punctuation">)</span>
+    <span class="token comment">##如果用户名匹配成功，而密码输入错误，则会弹出'Error, your password is wrong, try again.'</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        tk<span class="token punctuation">.</span>messagebox<span class="token punctuation">.</span>showerror<span class="token punctuation">(</span>message<span class="token operator">=</span><span class="token string">'Error, your password is wrong, try again.'</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>   <span class="token comment"># 如果发现用户名不存在</span>
+    is_sign_up <span class="token operator">=</span> tk<span class="token punctuation">.</span>messagebox<span class="token punctuation">.</span>askyesno<span class="token punctuation">(</span><span class="token string">'Welcome'</span><span class="token punctuation">,</span>
+                           <span class="token string">'You have not sign up yet. Sign up today?'</span><span class="token punctuation">)</span>
+    <span class="token comment"># 提示需不需要注册新用户</span>
+    <span class="token keyword">if</span> is_sign_up<span class="token punctuation">:</span>
+        usr_sign_up<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>4.usr_sign_up 界面</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">window_sign_up <span class="token operator">=</span> tk<span class="token punctuation">.</span>Toplevel<span class="token punctuation">(</span>window<span class="token punctuation">)</span>
+window_sign_up<span class="token punctuation">.</span>geometry<span class="token punctuation">(</span><span class="token string">'350x200'</span><span class="token punctuation">)</span>
+window_sign_up<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'Sign up window'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>这一段首先是创建一个注册的窗口。这里和以往不同的是，多了一个<code>tk.Toplevel</code>我们打个比方，就好像我们前面所学 的<code>frame</code>一样，就是在编辑的功能下还有很多功能一样，这里就是在主体窗口的<code>window</code>上创建一个<code>Sign up window</code>窗口。</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">new_name <span class="token operator">=</span> tk<span class="token punctuation">.</span>StringVar<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">#将输入的注册名赋值给变量</span>
+new_name<span class="token punctuation">.</span><span class="token builtin">set</span><span class="token punctuation">(</span><span class="token string">'example@python.com'</span><span class="token punctuation">)</span><span class="token comment">#将最初显示定为'example@python.com'</span>
+tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>window_sign_up<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'User name: '</span><span class="token punctuation">)</span><span class="token punctuation">.</span>place<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">,</span> y<span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token comment">#将`User name:`放置在坐标（10,10）。</span>
+entry_new_name <span class="token operator">=</span> tk<span class="token punctuation">.</span>Entry<span class="token punctuation">(</span>window_sign_up<span class="token punctuation">,</span> textvariable<span class="token operator">=</span>new_name<span class="token punctuation">)</span><span class="token comment">#创建一个注册名的`entry`，变量为`new_name`</span>
+entry_new_name<span class="token punctuation">.</span>place<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token number">150</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token comment">#`entry`放置在坐标（150,10）.</span>
+
+new_pwd <span class="token operator">=</span> tk<span class="token punctuation">.</span>StringVar<span class="token punctuation">(</span><span class="token punctuation">)</span>
+tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>window_sign_up<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'Password: '</span><span class="token punctuation">)</span><span class="token punctuation">.</span>place<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token number">50</span><span class="token punctuation">)</span>
+entry_usr_pwd <span class="token operator">=</span> tk<span class="token punctuation">.</span>Entry<span class="token punctuation">(</span>window_sign_up<span class="token punctuation">,</span> textvariable<span class="token operator">=</span>new_pwd<span class="token punctuation">,</span> show<span class="token operator">=</span><span class="token string">'*'</span><span class="token punctuation">)</span>
+entry_usr_pwd<span class="token punctuation">.</span>place<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token number">150</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token number">50</span><span class="token punctuation">)</span>
+
+new_pwd_confirm <span class="token operator">=</span> tk<span class="token punctuation">.</span>StringVar<span class="token punctuation">(</span><span class="token punctuation">)</span>
+tk<span class="token punctuation">.</span>Label<span class="token punctuation">(</span>window_sign_up<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'Confirm password: '</span><span class="token punctuation">)</span><span class="token punctuation">.</span>place<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token number">10</span><span class="token punctuation">,</span> y<span class="token operator">=</span> <span class="token number">90</span><span class="token punctuation">)</span>
+entry_usr_pwd_confirm <span class="token operator">=</span> tk<span class="token punctuation">.</span>Entry<span class="token punctuation">(</span>window_sign_up<span class="token punctuation">,</span> textvariable<span class="token operator">=</span>new_pwd_confirm<span class="token punctuation">,</span> show<span class="token operator">=</span><span class="token string">'*'</span><span class="token punctuation">)</span>
+entry_usr_pwd_confirm<span class="token punctuation">.</span>place<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token number">150</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token number">90</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 下面的 sign_to_Mofan_Python 我们再后面接着说</span>
+btn_comfirm_sign_up <span class="token operator">=</span> tk<span class="token punctuation">.</span>Button<span class="token punctuation">(</span>window_sign_up<span class="token punctuation">,</span> text<span class="token operator">=</span><span class="token string">'Sign up'</span><span class="token punctuation">,</span> command<span class="token operator">=</span>sign_to_Mofan_Python<span class="token punctuation">)</span>
+btn_comfirm_sign_up<span class="token punctuation">.</span>place<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token number">150</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token number">130</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>相信大家对这一段代码已经很熟悉了，因为这是大家前面所学过的知识。其实就是像我们平时所见的注册窗口有一样，在<code>Sign up window</code>窗口 上添加<code>new_name</code>，<code>new_pwd</code>， <code>new_pwd_confirm</code>，还有最后一个注册按钮。这里便于大家复习，我们将new_name这段详细介绍一下（如代码注释）。 到这里就完成了我们这个注册的主要界面用户名，密码，确认密码。</p><p>5.sign_to_Mofan_Python() 功能</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">usr_sign_up</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">sign_to_Mofan_Python</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment">##以下三行就是获取我们注册时所输入的信息</span>
+        np <span class="token operator">=</span> new_pwd<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        npf <span class="token operator">=</span> new_pwd_confirm<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        nn <span class="token operator">=</span> new_name<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        <span class="token comment">##这里是打开我们记录数据的文件，将注册信息读出</span>
+        <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'usrs_info.pickle'</span><span class="token punctuation">,</span> <span class="token string">'rb'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> usr_file<span class="token punctuation">:</span>
+            exist_usr_info <span class="token operator">=</span> pickle<span class="token punctuation">.</span>load<span class="token punctuation">(</span>usr_file<span class="token punctuation">)</span>
+
+        <span class="token comment">##这里就是判断，如果两次密码输入不一致，则提示`'Error', 'Password and confirm password must be the same!'`</span>
+        <span class="token keyword">if</span> np <span class="token operator">!=</span> npf<span class="token punctuation">:</span>
+            tk<span class="token punctuation">.</span>messagebox<span class="token punctuation">.</span>showerror<span class="token punctuation">(</span><span class="token string">'Error'</span><span class="token punctuation">,</span> <span class="token string">'Password and confirm password must be the same!'</span><span class="token punctuation">)</span>
+
+        <span class="token comment">##如果用户名已经在我们的数据文件中，则提示`'Error', 'The user has already signed up!'`</span>
+        <span class="token keyword">elif</span> nn <span class="token keyword">in</span> exist_usr_info<span class="token punctuation">:</span>
+            tk<span class="token punctuation">.</span>messagebox<span class="token punctuation">.</span>showerror<span class="token punctuation">(</span><span class="token string">'Error'</span><span class="token punctuation">,</span> <span class="token string">'The user has already signed up!'</span><span class="token punctuation">)</span>
+
+        <span class="token comment">##最后如果输入无以上错误，则将注册输入的信息记录到文件当中，并提示注册成功`'Welcome', 'You have successfully signed up!'`</span>
+        <span class="token comment">##然后销毁窗口。</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            exist_usr_info<span class="token punctuation">[</span>nn<span class="token punctuation">]</span> <span class="token operator">=</span> np
+            <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'usrs_info.pickle'</span><span class="token punctuation">,</span> <span class="token string">'wb'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> usr_file<span class="token punctuation">:</span>
+                pickle<span class="token punctuation">.</span>dump<span class="token punctuation">(</span>exist_usr_info<span class="token punctuation">,</span> usr_file<span class="token punctuation">)</span>
+            tk<span class="token punctuation">.</span>messagebox<span class="token punctuation">.</span>showinfo<span class="token punctuation">(</span><span class="token string">'Welcome'</span><span class="token punctuation">,</span> <span class="token string">'You have successfully signed up!'</span><span class="token punctuation">)</span>
+            <span class="token comment">##然后销毁窗口。</span>
+            window_sign_up<span class="token punctuation">.</span>destroy<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>这里其实和前面所讲的<code>login</code>功能类似，如代码注释。</p><p>如果两次密码输入不一致，则提示<code>'Error'</code>, <code>'Password and confirm password must be the same!'</code></p><p>如果用户名已经在我们的数据文件中，则提示<code>'Error'</code>, <code>'The user has already signed up!'</code></p><p>注册成功就是我们一开始展示的效果图。</p><p>更多代码:</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> tkinter <span class="token keyword">import</span> <span class="token operator">*</span>
+
+root <span class="token operator">=</span> Tk<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># root.title('我的第一个Python窗体')</span>
+<span class="token comment"># root.geometry('240x240') # 这里的乘号不是 * ，而是小写英文字母 x</span>
+
+<span class="token comment"># lb = Label(root, text='我是第一个标签',</span>
+<span class="token comment">#            bg='#d3fbfb',</span>
+<span class="token comment">#            fg='red',</span>
+<span class="token comment">#            font=('华文新魏', 32),</span>
+<span class="token comment">#            width=20,</span>
+<span class="token comment">#            height=2,</span>
+<span class="token comment">#            relief=SUNKEN)</span>
+<span class="token comment"># lb.pack()</span>
+
+<span class="token comment"># root.geometry('320x240')</span>
+<span class="token comment"># msg1 = Message(root, text='''我的水平起始位置相对窗体 0.2，垂直起始位置为绝对位置 80 像素，我的高度是窗体高度的0.4，宽度是200像素''', relief=GROOVE)</span>
+<span class="token comment"># msg1.place(relx=0.2, y=80, relheight=0.4, width=200)</span>
+
+root<span class="token punctuation">.</span>mainloop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">'''
+# 时钟
+# 方法一：利用configure()方法或config()来实现文本变化
+import tkinter
+import time
+
+
+def gettime():
+    timestr = time.strftime("%H:%M:%S")  # 获取当前的时间并转化为字符串
+    lb.configure(text=timestr)  # 重新设置标签文本
+    root.after(1000, gettime)  # 每隔1s调用函数 gettime 自身获取时间
+
+
+root = tkinter.Tk()
+root.title('时钟')
+
+lb = tkinter.Label(root, text='', fg='blue', font=("黑体", 80))
+lb.pack()
+gettime()
+root.mainloop()
+'''</span>
+
+<span class="token triple-quoted-string string">'''# 方法二：利用textvariable变量属性来实现文本变化
+
+import tkinter
+import time
+
+
+def gettime():
+    var.set(time.strftime("%H:%M:%S"))  # 获取当前时间
+    root.after(1000, gettime)  # 每隔1s调用函数 gettime 自身获取时间
+
+
+root = tkinter.Tk()
+root.title('时钟')
+var = tkinter.StringVar()
+
+lb = tkinter.Label(root, textvariable=var, fg='blue', font=("黑体", 80))
+lb.pack()
+gettime()
+root.mainloop()'''</span>
+
+<span class="token triple-quoted-string string">'''from tkinter import *
+import time
+import datetime
+
+
+def gettime():
+    s = str(datetime.datetime.now()) + '\n'
+    txt.insert(END, s)
+    root.after(1000, gettime)  # 每隔1s调用函数 gettime 自身获取时间
+
+
+root = Tk()
+root.geometry('320x240')
+txt = Text(root)
+txt.pack()
+gettime()
+root.mainloop()'''</span>
+
+<span class="token triple-quoted-string string">'''from tkinter import *
+
+
+def run1():
+    a = float(inp1.get())
+    b = float(inp2.get())
+    s = '%0.2f+%0.2f=%0.2f\n' % (a, b, a + b)
+    txt.insert(END, s)  # 追加显示运算结果
+    inp1.delete(0, END)  # 清空输入
+    inp2.delete(0, END)  # 清空输入
+
+
+def run2(x, y):
+    a = float(x)
+    b = float(y)
+    s = '%0.2f+%0.2f=%0.2f\n' % (a, b, a + b)
+    txt.insert(END, s)  # 追加显示运算结果
+    inp1.delete(0, END)  # 清空输入
+    inp2.delete(0, END)  # 清空输入
+
+
+root = Tk()
+root.geometry('460x240')
+root.title('简单加法器')
+
+lb1 = Label(root, text='请输入两个数，按下面两个按钮之一进行加法计算')
+lb1.place(relx=0.1, rely=0.1, relwidth=0.8, relheight=0.1)
+inp1 = Entry(root)
+inp1.place(relx=0.1, rely=0.2, relwidth=0.3, relheight=0.1)
+inp2 = Entry(root)
+inp2.place(relx=0.6, rely=0.2, relwidth=0.3, relheight=0.1)
+
+# 方法-直接调用 run1()
+btn1 = Button(root, text='方法一', command=run1)
+btn1.place(relx=0.1, rely=0.4, relwidth=0.3, relheight=0.1)
+
+# 方法二利用 lambda 传参数调用run2()
+btn2 = Button(root, text='方法二', command=lambda: run2(inp1.get(), inp2.get()))
+btn2.place(relx=0.6, rely=0.4, relwidth=0.3, relheight=0.1)
+
+# 在窗体垂直自上而下位置60%处起，布局相对窗体高度40%高的文本框
+txt = Text(root)
+txt.place(rely=0.6, relheight=0.4)
+
+root.mainloop()
+'''</span>
+
+<span class="token triple-quoted-string string">'''# 单选框
+from tkinter import *
+
+
+def Mysel():
+    dic = {0: '甲', 1: '乙', 2: '丙'}
+    s = "您选了" + dic.get(var.get()) + "项"
+    lb.config(text=s)
+
+
+root = Tk()
+root.title('单选按钮')
+lb = Label(root)
+lb.pack()
+
+var = IntVar()
+rd1 = Radiobutton(root, text="甲", variable=var, value=0, command=Mysel)
+rd1.pack()
+
+rd2 = Radiobutton(root, text="乙", variable=var, value=1, command=Mysel)
+rd2.pack()
+
+rd3 = Radiobutton(root, text="丙", variable=var, value=2, command=Mysel)
+rd3.pack()
+
+root.mainloop()
+'''</span>
+
+<span class="token triple-quoted-string string">'''# 复选框
+from tkinter import *
+import tkinter
+
+
+def run():
+    if (CheckVar1.get() == 0 and CheckVar2.get() == 0 and CheckVar3.get() == 0 and CheckVar4.get() == 0):
+        s = '您还没选择任何爱好项目'
+    else:
+        s1 = "足球" if CheckVar1.get() == 1 else ""
+        s2 = "篮球" if CheckVar2.get() == 1 else ""
+        s3 = "游泳" if CheckVar3.get() == 1 else ""
+        s4 = "田径" if CheckVar4.get() == 1 else ""
+        s = "您选择了%s %s %s %s" % (s1, s2, s3, s4)
+    lb2.config(text=s)
+
+
+root = tkinter.Tk()
+root.title('复选框')
+lb1 = Label(root, text='请选择您的爱好项目')
+lb1.pack()
+
+CheckVar1 = IntVar()
+CheckVar2 = IntVar()
+CheckVar3 = IntVar()
+CheckVar4 = IntVar()
+
+ch1 = Checkbutton(root, text='足球', variable=CheckVar1, onvalue=1, offvalue=0)
+ch2 = Checkbutton(root, text='篮球', variable=CheckVar2, onvalue=1, offvalue=0)
+ch3 = Checkbutton(root, text='游泳', variable=CheckVar3, onvalue=1, offvalue=0)
+ch4 = Checkbutton(root, text='田径', variable=CheckVar4, onvalue=1, offvalue=0)
+
+ch1.pack()
+ch2.pack()
+ch3.pack()
+ch4.pack()
+
+btn = Button(root, text="OK", command=run)
+btn.pack()
+
+lb2 = Label(root, text='')
+lb2.pack()
+root.mainloop()'''</span>
+
+<span class="token triple-quoted-string string">'''# 列表框
+from tkinter import *
+
+
+def ini():
+    Lstbox1.delete(0, END)
+    list_items = ["数学", "物理", "化学", "语文", "外语"]
+    for item in list_items:
+        Lstbox1.insert(END, item)
+
+
+def clear():
+    Lstbox1.delete(0, END)
+
+
+def ins():
+    if entry.get() != '':
+        if Lstbox1.curselection() == ():
+            Lstbox1.insert(Lstbox1.size(), entry.get())
+        else:
+            Lstbox1.insert(Lstbox1.curselection(), entry.get())
+
+
+def updt():
+    if entry.get() != '' and Lstbox1.curselection() != ():
+        selected = Lstbox1.curselection()[0]
+        Lstbox1.delete(selected)
+        Lstbox1.insert(selected, entry.get())
+
+
+def delt():
+    if Lstbox1.curselection() != ():
+        Lstbox1.delete(Lstbox1.curselection())
+
+
+root = Tk()
+root.title('列表框实验')
+root.geometry('320x240')
+
+frame1 = Frame(root, relief=RAISED)
+frame1.place(relx=0.0)
+
+frame2 = Frame(root, relief=GROOVE)
+frame2.place(relx=0.5)
+
+Lstbox1 = Listbox(frame1)
+Lstbox1.pack()
+
+entry = Entry(frame2)
+entry.pack()
+
+btn1 = Button(frame2, text='初始化', command=ini)
+btn1.pack(fill=X)
+
+btn2 = Button(frame2, text='添加', command=ins)
+btn2.pack(fill=X)
+
+btn3 = Button(frame2, text='插入', command=ins)  # 添加和插入功能实质上是一样的
+btn3.pack(fill=X)
+
+btn4 = Button(frame2, text='修改', command=updt)
+btn4.pack(fill=X)
+
+btn5 = Button(frame2, text='删除', command=delt)
+btn5.pack(fill=X)
+
+btn6 = Button(frame2, text='清空', command=clear)
+btn6.pack(fill=X)
+
+root.mainloop()'''</span>
+
+<span class="token triple-quoted-string string">'''# 组合框
+from tkinter.ttk import *
+from tkinter import *
+
+
+def calc(event):
+    a = float(t1.get())
+    b = float(t2.get())
+    dic = {0: a + b, 1: a - b, 2: a * b, 3: a / b}
+    c = dic[comb.current()]
+    lbl.config(text=str(c))
+
+
+root = Tk()
+root.title('四则运算')
+root.geometry('320x240')
+
+t1 = Entry(root)
+t1.place(relx=0.1, rely=0.1, relwidth=0.2, relheight=0.1)
+
+t2 = Entry(root)
+t2.place(relx=0.5, rely=0.1, relwidth=0.2, relheight=0.1)
+
+var = StringVar()
+
+comb = Combobox(root, textvariable=var, values=['加', '减', '乘', '除', ])
+comb.place(relx=0.1, rely=0.5, relwidth=0.2)
+comb.bind('&lt;&lt;ComboboxSelected&gt;&gt;', calc)
+
+lbl = Label(root, text='结果')
+lbl.place(relx=0.5, rely=0.7, relwidth=0.2, relheight=0.3)
+
+root.mainloop()'''</span>
+
+<span class="token triple-quoted-string string">'''# 滑块
+from tkinter import *
+
+
+def show(event):
+    s = '滑块的取值为' + str(var.get())
+    lb.config(text=s)
+
+
+root = Tk()
+root.title('滑块实验')
+root.geometry('320x180')
+var = DoubleVar()
+scl = Scale(root, orient=HORIZONTAL, length=200, from_=1.0, to=5.0, label='请拖动滑块', tickinterval=1, resolution=0.05,
+            variable=var)
+scl.bind('&lt;ButtonRelease-1&gt;', show)
+scl.pack()
+
+lb = Label(root, text='')
+lb.pack()
+
+root.mainloop()'''</span>
+
+<span class="token triple-quoted-string string">'''# 菜单
+from tkinter import *
+
+
+def new():
+    s = '新建'
+    lb1.config(text=s)
+
+
+def ope():
+    s = '打开'
+    lb1.config(text=s)
+
+
+def sav():
+    s = '保存'
+    lb1.config(text=s)
+
+
+def cut():
+    s = '剪切'
+    lb1.config(text=s)
+
+
+def cop():
+    s = '复制'
+    lb1.config(text=s)
+
+
+def pas():
+    s = '粘贴'
+    lb1.config(text=s)
+
+
+def popupmenu(event):
+    mainmenu.post(event.x_root, event.y_root)
+
+
+root = Tk()
+root.title('菜单实验')
+root.geometry('320x240')
+
+lb1 = Label(root, text='显示信息', font=('黑体', 32, 'bold'))
+lb1.place(relx=0.2, rely=0.2)
+
+mainmenu = Menu(root)
+menuFile = Menu(mainmenu)  # 菜单分组 menuFile
+mainmenu.add_cascade(label="文件", menu=menuFile)
+menuFile.add_command(label="新建", command=new)
+menuFile.add_command(label="打开", command=ope)
+menuFile.add_command(label="保存", command=sav)
+menuFile.add_separator()  # 分割线
+menuFile.add_command(label="退出", command=root.destroy)
+
+menuEdit = Menu(mainmenu)  # 菜单分组 menuEdit
+mainmenu.add_cascade(label="编辑", menu=menuEdit)
+menuEdit.add_command(label="剪切", command=cut)
+menuEdit.add_command(label="复制", command=cop())
+menuEdit.add_command(label="粘贴", command=pas())
+
+root.config(menu=mainmenu)
+root.bind('Button-3', popupmenu)  # 根窗体绑定鼠标右击响应事件
+root.mainloop()
+'''</span>
+
+<span class="token triple-quoted-string string">'''# 子窗体
+from tkinter import *
+
+
+def newwind():
+    winNew = Toplevel(root)
+    winNew.geometry('320x240')
+    winNew.title('新窗体')
+    lb2 = Label(winNew, text='我在新窗体上')
+    lb2.place(relx=0.2, rely=0.2)
+    btClose = Button(winNew, text='关闭', command=winNew.destroy)
+    btClose.place(relx=0.7, rely=0.5)
+
+
+root = Tk()
+root.title('新建窗体实验')
+root.geometry('320x240')
+
+lb1 = Label(root, text='主窗体', font=('黑体', 32, 'bold'))
+lb1.place(relx=0.2, rely=0.2)
+
+mainmenu = Menu(root)
+menuFile = Menu(mainmenu)
+mainmenu.add_cascade(label='菜单', menu=menuFile)
+menuFile.add_command(label='新窗体', command=newwind)
+menuFile.add_separator()
+menuFile.add_command(label='退出', command=root.destroy)
+
+root.config(menu=mainmenu)
+root.mainloop()'''</span>
+
+<span class="token triple-quoted-string string">'''# 交互对话框
+from tkinter import *
+import tkinter.messagebox
+
+
+def xz():
+    answer = tkinter.messagebox.askokcancel('请选择', '请选择确定或取消')
+    if answer:
+        lb.config(text='已确认')
+    else:
+        lb.config(text='已取消')
+
+
+root = Tk()
+
+lb = Label(root, text='')
+lb.pack()
+btn = Button(root, text='弹出对话框', command=xz)
+btn.pack()
+root.mainloop()'''</span>
+
+<span class="token triple-quoted-string string">'''# 输入对话框
+from tkinter.simpledialog import *
+
+
+def xz():
+    s = askstring('请输入', '请输入一串文字')
+    lb.config(text=s)
+
+
+root = Tk()
+
+lb = Label(root, text='')
+lb.pack()
+btn = Button(root, text='弹出输入对话框', command=xz)
+btn.pack()
+root.mainloop()
+'''</span>
+
+<span class="token triple-quoted-string string">'''# 文件选择对话框
+from tkinter import *
+import tkinter.filedialog
+
+
+def xz():
+    filename = tkinter.filedialog.askopenfilename()
+    if filename != '':
+        lb.config(text='您选择的文件是' + filename)
+    else:
+        lb.config(text='您没有选择任何文件')
+
+
+root = Tk()
+
+lb = Label(root, text='')
+lb.pack()
+btn = Button(root, text='弹出文件选择对话框', command=xz)
+btn.pack()
+root.mainloop()'''</span>
+
+<span class="token triple-quoted-string string">'''# 颜色选择对话框
+from tkinter import *
+import tkinter.colorchooser
+
+
+def xz():
+    color = tkinter.colorchooser.askcolor()
+    colorstr = str(color)
+    print('打印字符串%s 切掉后=%s' % (colorstr, colorstr[-9:-2]))
+    lb.config(text=colorstr[-9:-2], background=colorstr[-9:-2])
+
+
+root = Tk()
+
+lb = Label(root, text='请关注颜色的变化')
+lb.pack()
+btn = Button(root, text='弹出颜色选择对话框', command=xz)
+btn.pack()
+root.mainloop()
+'''</span>
+
+<span class="token comment"># 背景图片</span>
+<span class="token triple-quoted-string string">'''# 插入文件图片
+import tkinter as tk
+
+root = tk.Tk()
+
+# 创建一个标签类, [justify]:对齐方式
+textLabel = tk.Label(root, text="右边会看到一个图片\n",
+                     justify=tk.LEFT)  # 左对齐
+textLabel.pack(side=tk.LEFT)  # 自动对齐,side：方位
+
+# 创建一个图片管理类
+photo = tk.PhotoImage(file="shop.png")  # file：t图片路径
+imgLabel = tk.Label(root, image=photo)  # 把图片整合到标签类中
+imgLabel.pack(side=tk.RIGHT)  # 自动对齐
+
+tk.mainloop()'''</span>
+
+<span class="token triple-quoted-string string">'''import tkinter as tk
+
+root = tk.Tk()
+
+# 增加背景图片
+photo = tk.PhotoImage(file="shop.png")
+theLabel = tk.Label(root,
+                    text="我是内容,\n请你阅读",
+                    # 内容
+                    justify=tk.LEFT,
+                    # 对齐方式
+                    image=photo,
+                    # 加入图片
+                    compound=tk.CENTER,
+                    # 关键:设置为背景图片
+                    font=("华文行楷", 20),
+                    # 字体和字号
+                    fg="white")  # 前景色
+theLabel.pack()
+
+tk.mainloop()'''</span>
+
+<span class="token triple-quoted-string string">'''# 插入文件图片
+import tkinter as tk
+
+root = tk.Tk()
+
+frame1 = tk.Frame(root)  # 这是上面的框架
+frame2 = tk.Frame(root)  # 这是下面的框架
+
+var = tk.StringVar()  # 储存文字的类
+var.set("右边会看到一个图片，\n换行")  # 设置文字
+
+# 创建一个标签类, [justify]:对齐方式，[frame]所属框架
+textLabel = tk.Label(frame1, textvariable=var,
+                     justify=tk.LEFT)  # 显示文字内容
+textLabel.pack(side=tk.LEFT)  # 自动对齐,side：方位
+
+# 创建一个图片管理类
+photo = tk.PhotoImage(file="shop.png")  # file：t图片路径
+imgLabel = tk.Label(frame1, image=photo)  # 把图片整合到标签类中
+imgLabel.pack(side=tk.RIGHT)  # 自动对齐
+
+
+def callback():  # 触发的函数
+    var.set("设置文字")  # 设置文字
+
+
+# [frame]所属框架 ，text 文字内容 command：触发方法
+theButton = tk.Button(frame2, text="我是下面的按钮", command=callback)
+theButton.pack()  # 自动对齐
+
+frame1.pack(padx=10, pady=10)  # 上框架对齐
+frame2.pack(padx=10, pady=10)  # 下框架对齐
+
+tk.mainloop()
+'''</span>
+
+<span class="token triple-quoted-string string">'''# 摄像头
+from tkinter import *
+import cv2
+from PIL import Image, ImageTk
+
+
+def take_snapshot():
+    print("有人给你点赞啦！")
+
+
+def video_loop():
+    success, img = camera.read()  # 从摄像头读取照片
+    if success:
+        cv2.waitKey(100)
+        cv2image = cv2.cvtColor(img, cv2.COLOR_BGR2RGBA)  # 转换颜色从BGR到RGBA
+        current_image = Image.fromarray(cv2image)  # 将图像转换成Image对象
+        imgtk = ImageTk.PhotoImage(image=current_image)
+        panel.imgtk1 = imgtk
+        panel.config(image=imgtk)
+        root.after(1, video_loop)
+
+
+camera = cv2.VideoCapture(0)  # 摄像头
+
+root = Tk()
+root.title("opencv + tkinter")
+# root.protocol('WM_DELETE_WINDOW', detector)
+
+
+panel = Label(root)  # initialize image panel
+panel.pack(padx=10, pady=10)
+# root.config(cursor="arrow")
+btn = Button(root, text="点赞!", command=take_snapshot)
+btn.pack(fill="both", expand=True, padx=10, pady=10)
+
+video_loop()
+
+root.mainloop()
+# 当一切都完成后，关闭摄像头并释放所占资源
+camera.release()
+cv2.destroyAllWindows()
+'''</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div><hr><div class="reprint" id="reprint-statement"><div class="reprint__author"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-user">文章作者: </i></span><span class="reprint-info"><a href="/liaojie.github.io/about" rel="external nofollow noreferrer">liaojie</a></span></div><div class="reprint__type"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-link">文章链接: </i></span><span class="reprint-info"><a href="https://liaojie.github.io.git/liaojie.github.io/2022/02/12/tkinter/">https://liaojie.github.io.git/liaojie.github.io/2022/02/12/tkinter/</a></span></div><div class="reprint__notice"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-copyright">版权声明: </i></span><span class="reprint-info">本博客所有文章除特別声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a> 许可协议。转载请注明来源 <a href="/liaojie.github.io/about" target="_blank">liaojie</a> !</span></div></div><script async defer>document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }</script><div class="tag_share" style="display:block"><div class="post-meta__tag-list" style="display:inline-block"><div class="article-tag"><a href="/liaojie.github.io/tags/tkinter/"><span class="chip bg-color">tkinter</span></a></div></div><div class="post_share" style="zoom:80%;width:fit-content;display:inline-block;float:right;margin:-.15rem 0"><link rel="stylesheet" type="text/css" href="/liaojie.github.io/libs/share/css/share.min.css"><div id="article-share"><div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div><script src="/liaojie.github.io/libs/share/js/social-share.min.js"></script></div></div></div><style>#reward{margin:40px 0;text-align:center}#reward .reward-link{font-size:1.4rem;line-height:38px}#reward .btn-floating:hover{box-shadow:0 6px 12px rgba(0,0,0,.2),0 5px 15px rgba(0,0,0,.2)}#rewardModal{width:320px;height:350px}#rewardModal .reward-title{margin:15px auto;padding-bottom:5px}#rewardModal .modal-content{padding:10px}#rewardModal .close{position:absolute;right:15px;top:15px;color:rgba(0,0,0,.5);font-size:1.3rem;line-height:20px;cursor:pointer}#rewardModal .close:hover{color:#ef5350;transform:scale(1.3);-moz-transform:scale(1.3);-webkit-transform:scale(1.3);-o-transform:scale(1.3)}#rewardModal .reward-tabs{margin:0 auto;width:210px}.reward-tabs .tabs{height:38px;margin:10px auto;padding-left:0}.reward-content ul{padding-left:0!important}.reward-tabs .tabs .tab{height:38px;line-height:38px}.reward-tabs .tab a{color:#fff;background-color:#ccc}.reward-tabs .tab a:hover{background-color:#ccc;color:#fff}.reward-tabs .wechat-tab .active{color:#fff!important;background-color:#22ab38!important}.reward-tabs .alipay-tab .active{color:#fff!important;background-color:#019fe8!important}.reward-tabs .reward-img{width:210px;height:210px}</style><div id="reward"><a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a><div id="rewardModal" class="modal"><div class="modal-content"><a class="close modal-close"><i class="fas fa-times"></i></a><h4 class="reward-title">你的赏识是我前进的动力</h4><div class="reward-content"><div class="reward-tabs"><ul class="tabs row"><li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li><li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li></ul><div id="alipay"><img src="/liaojie.github.io/medias/loading.gif" data-original="/liaojie.github.io/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码"></div><div id="wechat"><img src="/liaojie.github.io/medias/loading.gif" data-original="/liaojie.github.io/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码"></div></div></div></div></div></div><script>$(function(){$(".tabs").tabs()})</script></div></div><link rel="stylesheet" href="/liaojie.github.io/libs/gitalk/gitalk.css"><link rel="stylesheet" href="/liaojie.github.io/css/my-gitalk.css"><div class="card gitalk-card" data-aos="fade-up"><div class="comment_headling" style="font-size:20px;font-weight:700;position:relative;padding-left:20px;top:15px;padding-bottom:5px"><i class="fas fa-comments fa-fw" aria-hidden="true"></i> <span>评论</span></div><div id="gitalk-container" class="card-content"></div></div><script src="/liaojie.github.io/libs/gitalk/gitalk.min.js"></script><script>let gitalk = new Gitalk({
+        clientID: 'eedac85cd6c0645124b2',
+        clientSecret: '0cbb1e584813da4a45008d2c6048fc84846ef93f',
+        repo: 'liaojie1314-gitalk',
+        owner: 'liaojie1314',
+        admin: "liaojie1314",
+        id: '2022-02-12T00-04-20',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');</script><div class="livere-card card" data-aos="fade-up"><div id="lv-container" class="card-content" data-id="city" data-uid="MTAyMC81NDUzMy8zMTAwNA=="><script type="text/javascript">(function (d, s) {
+                let j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') {
+                    return;
+                }
+
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');</script><noscript>为正常使用来必力评论功能请激活JavaScript。</noscript></div></div><article id="prenext-posts" class="prev-next articles"><div class="row article-row"><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="fas fa-chevron-left"></i>&nbsp;上一篇</div><div class="card"><a href="/liaojie.github.io/2022/02/12/theano/"><div class="card-image"><img src="/liaojie.github.io/medias/loading.gif" data-original="/liaojie.github.io/medias/featureimages/15.jpg" class="responsive-img" alt="Theano"> <span class="card-title">Theano</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i>2022-02-12 </span><span class="publish-author"><i class="fas fa-user fa-fw"></i> lj</span></div></div></div></div><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge right-badge text-color">下一篇&nbsp;<i class="fas fa-chevron-right"></i></div><div class="card"><a href="/liaojie.github.io/2022/02/12/threading/"><div class="card-image"><img src="/liaojie.github.io/medias/loading.gif" data-original="/liaojie.github.io/medias/featureimages/8.jpg" class="responsive-img" alt="Threading"> <span class="card-title">Threading</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i>2022-02-12 </span><span class="publish-author"><i class="fas fa-user fa-fw"></i> lj</span></div></div></div></div></div></article></div><script type="text/javascript" src="/liaojie.github.io/libs/codeBlock/codeBlockFuction.js"></script><script type="text/javascript" src="/liaojie.github.io/libs/codeBlock/codeLang.js"></script><script type="text/javascript" src="/liaojie.github.io/libs/codeBlock/codeCopy.js"></script><script type="text/javascript" src="/liaojie.github.io/libs/codeBlock/codeShrink.js"></script></div><div id="toc-aside" class="expanded col l3 hide-on-med-and-down"><div class="toc-widget card" style="background-color:#fff"><div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div><div id="toc-content"></div></div></div></div><div id="floating-toc-btn" class="hide-on-med-and-down"><a class="btn-floating btn-large bg-color"><i class="fas fa-list-ul"></i></a></div><script src="/liaojie.github.io/libs/tocbot/tocbot.min.js"></script><script>$(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });</script></main><footer class="page-footer bg-color"><div class="container row center-align" style="margin-bottom:15px!important"><div class="col s12 m8 l8 copy-right">Copyright&nbsp;&copy; <span id="year">2021-2022</span> <span id="year">2021</span> <a href="/liaojie.github.io/about" target="_blank">lj</a><br>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">287.9k</span>&nbsp;字 <span id="busuanzi_container_site_pv">|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv" class="white-color"></span>&nbsp;次 </span><span id="busuanzi_container_site_uv">|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv" class="white-color"></span>&nbsp;人</span><br><span id="sitetime">载入运行时间...</span><script>function siteTime(){var e=36e5,t=24*e,n=new Date,o="2021",r=n.getFullYear(),a=n.getMonth()+1,i=n.getDate(),l=n.getHours(),m=n.getMinutes(),M=n.getSeconds(),g=Date.UTC(o,"10","18","0","0","0"),d=Date.UTC(r,a,i,l,m,M)-g,s=Math.floor(d/31536e6),u=Math.floor(d/t-365*s),T=Math.floor((d-(365*s+u)*t)/e),c=Math.floor((d-(365*s+u)*t-T*e)/6e4),f=Math.floor((d-(365*s+u)*t-T*e-6e4*c)/1e3);o==r?(document.getElementById("year").innerHTML=r,document.getElementById("sitetime").innerHTML="本站已安全运行 "+u+" 天 "+T+" 小时 "+c+" 分钟 "+f+" 秒"):(document.getElementById("year").innerHTML=o+" - "+r,document.getElementById("sitetime").innerHTML="本站已安全运行 "+s+" 年 "+u+" 天 "+T+" 小时 "+c+" 分钟 "+f+" 秒")}setInterval(siteTime,1e3)</script><br></div><div class="col s12 m4 l4 social-link social-statis"><a href="https://github.com/liaojie1314" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"><i class="fab fa-github"></i> </a><a href="mailto:1517438366@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50"><i class="fas fa-envelope-open"></i> </a><a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1517438366" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1517438366" data-position="top" data-delay="50"><i class="fab fa-qq"></i></a></div></div></footer><div class="progress-bar"></div><div id="searchModal" class="modal"><div class="modal-content"><div class="search-header"><span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span> <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input"></div><div id="searchResult"></div></div></div><script type="text/javascript">$(function(){!function(t,i,s){"use strict";$.ajax({url:t,dataType:"xml",success:function(t){var e=$("entry",t).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get(),n=document.getElementById(i),r=document.getElementById(s);n.addEventListener("input",function(){var f='<ul class="search-result-list">',m=this.value.trim().toLowerCase().split(/[\s\-]+/);r.innerHTML="",this.value.trim().length<=0||(e.forEach(function(t){var n,e,r,i,s,l=!0,a=t.title.trim().toLowerCase(),c=t.content.trim().replace(/<[^>]+>/g,"").toLowerCase(),u=0===(u=t.url).indexOf("/")?t.url:"/"+u,o=-1,h=-1;""!==a&&""!==c&&m.forEach(function(t,e){n=a.indexOf(t),o=c.indexOf(t),n<0&&o<0?l=!1:(o<0&&(o=0),0===e&&(h=o))}),l&&(f+="<li><a href='"+u+"' class='search-result-title'>"+a+"</a>",e=t.content.trim().replace(/<[^>]+>/g,""),0<=h&&(i=h+80,(r=h-20)<0&&(r=0),0===r&&(i=100),i>e.length&&(i=e.length),s=e.substr(r,i),m.forEach(function(t){var e=new RegExp(t,"gi");s=s.replace(e,'<em class="search-keyword">'+t+"</em>")}),f+='<p class="search-result">'+s+"...</p>"),f+="</li>")}),f+="</ul>",r.innerHTML=f)})}})}("/liaojie.github.io/search.xml","searchInput","searchResult")})</script><div id="backTop" class="top-scroll"><a class="btn-floating btn-large waves-effect waves-light" href="#!"><i class="fas fa-arrow-up"></i></a></div><script src="/liaojie.github.io/libs/materialize/materialize.min.js"></script><script src="/liaojie.github.io/libs/masonry/masonry.pkgd.min.js"></script><script src="/liaojie.github.io/libs/aos/aos.js"></script><script src="/liaojie.github.io/libs/scrollprogress/scrollProgress.min.js"></script><script src="/liaojie.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script><script src="/liaojie.github.io/js/matery.js"></script><script type="text/javascript" color="122 103 238" opacity="0.7" zindex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script><script type="text/javascript">var st,OriginTitile=document.title;document.addEventListener("visibilitychange",function(){document.hidden?(document.title="ヽ(●-`Д´-)ノ你要玩捉迷藏嘛",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3))})</script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script src="/liaojie.github.io/libs/others/clicklove.js" async></script><script async src="/liaojie.github.io/libs/others/busuanzi.pure.mini.js"></script><script src="/liaojie.github.io/libs/instantpage/instantpage.js" type="module"></script><script>window.imageLazyLoadSetting={isSPA:!1,preloadRatio:1,processImages:null}</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})})</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var e=r[a],t=e,n=function(){r=r.filter(function(t){return e!==t})},i=new Image,o=t.getAttribute("data-original");i.onload=function(){t.src=o,n()},t.src!==o&&(i.src=o)}()}o(),n.addEventListener("scroll",function(){var t=o,e=n;clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this)</script></body></html>
